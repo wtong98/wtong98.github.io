@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/jekyll/update/2019/01/01/welcome-to-jekyll.html</loc>
-<lastmod>2019-01-01T16:50:35-06:00</lastmod>
+<loc>https://wlt.soy/about/</loc>
 </url>
 <url>
-<loc>/personal/2019/01/01/first-steps.html</loc>
-<lastmod>2019-01-01T17:30:12-06:00</lastmod>
+<loc>https://wlt.soy/</loc>
 </url>
 <url>
-<loc>/about/</loc>
-</url>
-<url>
-<loc>/</loc>
-</url>
-<url>
-<loc>/posts.html</loc>
+<loc>https://wlt.soy/posts.html</loc>
 </url>
 </urlset>
