@@ -1,1 +1,143 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://wlt.soy/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wlt.soy/" rel="alternate" type="text/html" /><updated>2019-01-04T07:59:43-06:00</updated><id>https://wlt.soy/feed.xml</id><title type="html">william + lettuce + tongmato</title><subtitle>Doodling in my little corner of the web</subtitle><author><name>William L. Tong</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://wlt.soy/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wlt.soy/" rel="alternate" type="text/html" /><updated>2019-01-04T20:22:30-06:00</updated><id>https://wlt.soy/feed.xml</id><title type="html">william + lettuce + tongmato</title><subtitle>Doodling in my little corner of the web</subtitle><author><name>William L. Tong</name></author><entry><title type="html">Getting started with Jekyll</title><link href="https://wlt.soy/howto/tech/2019/01/04/getting-started-with-jekyll.html" rel="alternate" type="text/html" title="Getting started with Jekyll" /><published>2019-01-04T19:39:00-06:00</published><updated>2019-01-04T19:39:00-06:00</updated><id>https://wlt.soy/howto/tech/2019/01/04/getting-started-with-jekyll</id><content type="html" xml:base="https://wlt.soy/howto/tech/2019/01/04/getting-started-with-jekyll.html">&lt;p&gt;A simple guide to setting up a Jekyll installation. Existing documentation left
+some pieces out, so I’ve put together this document to guide anyone else (and
+my future self) through the process.&lt;/p&gt;
+
+&lt;p class=&quot;intro&quot;&gt;&lt;em&gt;Audience: tech-oriented folks comfortable on the command line.&lt;/em&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/getting-started-with-jekyll/jekyll_logo.png&quot; alt=&quot;Source: https://github.com/jekyll/brand&quot; /&gt;
+    &lt;figcaption&gt;Source: https://github.com/jekyll/brand&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Jekyll is a &lt;em&gt;static website generator&lt;/em&gt;. It doesn’t host. It doesn’t create
+content. It’s a clean, simple machine that you feed text and out pops magically
+formed HTML. It’s “blog aware”, so it includes clever tools and short-cuts for
+bloggers — but don’t feel limited. You can use it to build portfolios, documentation
+sites, tech showcases, anything you can dream. If you’re a tech-friendly blogger
+ready to get your hands dirty with a little web dev, Jekyll is perfect for you.&lt;/p&gt;
+
+&lt;p class=&quot;big-skip&quot;&gt;First things first, to follow this guide, you’ll need a *nix system (Mac, Linux)
+and be okay with command-line stuff. Personally, I run an Arch Linux based
+distribution, so my examples are geared towards my home system. Your mileage
+may vary.&lt;/p&gt;
+
+&lt;h3 id=&quot;initial-steps&quot;&gt;Initial steps&lt;/h3&gt;
+&lt;p&gt;Jekyll is written in Ruby. To use it, you’ll need a &lt;a href=&quot;https://www.ruby-lang.org/en/downloads/&quot;&gt;Ruby installation&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Me, on Arch Linux&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;pacman &lt;span class=&quot;nt&quot;&gt;-S&lt;/span&gt; ruby
+
+&lt;span class=&quot;c&quot;&gt;# Debian, Ubuntu&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt install ruby
+
+&lt;span class=&quot;c&quot;&gt;# Mac&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew install ruby
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To verify your installation, go ahead and check:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ruby &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next, we’ll need Bundler:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install bundler
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;small-skip&quot;&gt;In Ruby, &lt;a href=&quot;https://en.wikipedia.org/wiki/RubyGems&quot;&gt;gems&lt;/a&gt; are packaged pieces of code,
+like .jar files for Java or modules for Python. Bundler is a utility that
+makes managing gems possible with minimum teeth-gnashing and hair loss.&lt;/p&gt;
+
+&lt;p&gt;Bundler itself will have been installed in your gem user installation directory.
+To see where that is, do:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem env
+RubyGems Environment:
+  - RUBYGEMS VERSION: 2.7.7
+  - RUBY VERSION: 2.5.3 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2018-10-18 patchlevel 105&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;x86_64-linux]
+  - INSTALLATION DIRECTORY: /usr/lib/ruby/gems/2.5.0
+  - USER INSTALLATION DIRECTORY: /home/username/.gem/ruby/2.5.0
+&lt;span class=&quot;c&quot;&gt;# ... and lots more&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;And that line at the bottom that says “USER INSTALLATION DIRECTORY” is your
+ticket. Add that file path to your environment PATH variable to use Bundler
+on the command line.&lt;/p&gt;
+
+&lt;p&gt;For me, in place of [USER INSTALLATION DIRECTORY],
+I’d put &lt;code class=&quot;highlighter-rouge&quot;&gt;/home/username/.gem/ruby/2.5.0&lt;/code&gt;. Note the &lt;code class=&quot;highlighter-rouge&quot;&gt;/bin&lt;/code&gt; appended to the path:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Using bash (note: you do not need an &quot;export&quot;):&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;:[USER INSTALLATION DIRECTORY]/bin
+
+&lt;span class=&quot;c&quot;&gt;# Using fish, my preferred shell:&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-gx&lt;/span&gt; PATH &lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;USER INSTALLATION DIRECTORY]/bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;big-skip&quot;&gt;To make the change permanent, add that command to your &lt;code class=&quot;highlighter-rouge&quot;&gt;.profile&lt;/code&gt; (or &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_profile&lt;/code&gt;),
+&lt;code class=&quot;highlighter-rouge&quot;&gt;config.fish&lt;/code&gt;, or whatever you use for setting environment variables. Restart your
+shell to allow the change to take effect.&lt;/p&gt;
+
+&lt;h3 id=&quot;installing-jekyll&quot;&gt;Installing Jekyll&lt;/h3&gt;
+&lt;p&gt;Now, we’re in shape for grabbing Jekyll. In preparation, we need to tell Bundler
+to install gems in the same default directory as RubyGem:&lt;/p&gt;
+&lt;div class=&quot;language-shell small-skip highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle config path &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;USER INSTALLATION DIRECTORY]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next, Bundler needs a special file called a &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; to begin installing gems.
+Go ahead and make one and copy the following into it:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then to execute, in the &lt;strong&gt;same directory as the &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;&lt;/strong&gt;, do:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle install
+Fetching gem metadata from https://rubygems.org/............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+&lt;span class=&quot;c&quot;&gt;# ... and lots more ...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p class=&quot;small-skip&quot;&gt;Now sit back and relax. It’ll take a few minutes to run, installing Jekyll along
+with a whole hog of useful plugins for the Jekyll + GitHub marriage.&lt;/p&gt;
+
+&lt;p&gt;After installation completes, make a new blog site and &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt; into it:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll new myblog
+&lt;span class=&quot;c&quot;&gt;# ... output from jekyll ...&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;myblog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that we’re now in the directory &lt;code class=&quot;highlighter-rouge&quot;&gt;myblog&lt;/code&gt;. To test your newly minted blog, do:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This command will compile your Jekyll files into fully-formed HTML, place them in the
+directory &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt;, and host these files off a development server. To check
+out the website, open your favorite browser and navigate to &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;big-skip&quot;&gt;Note: remember to prepend &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec&lt;/code&gt; to every &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; command you execute.
+Doing so tells &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; to run using gems installed by Bundler. So when the
+documentation tells you to do &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;, you should instead do
+&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll build&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;looking-ahead&quot;&gt;Looking ahead&lt;/h3&gt;
+&lt;p class=&quot;small-skip&quot;&gt;And now, you’re the proud owner of a beautiful, minimal-functioning blog! But
+it’s still a ton of work to get from here to the fabulous work of
+social-media-art your have in mind. On your journey, you will need to:&lt;/p&gt;
+
+&lt;h4 id=&quot;learn-how-jekyll-works&quot;&gt;Learn how Jekyll works&lt;/h4&gt;
+&lt;p class=&quot;small-skip&quot;&gt;Get your hands dirty in the details of Jekyll with the official
+&lt;a href=&quot;https://jekyllrb.com/docs/step-by-step/02-liquid/&quot;&gt;step-by-step guide&lt;/a&gt;. It
+covers things like the &lt;a href=&quot;https://shopify.github.io/liquid/&quot;&gt;Liquid&lt;/a&gt; template
+language for shnazzing up your HTML, the mechanics of the site generator, and
+deploying to &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;host-on-github-pages&quot;&gt;Host on Github pages&lt;/h4&gt;
+&lt;p class=&quot;small-skip&quot;&gt;Speaking of GitHub Pages, when you’re ready to show the world your hard work,
+it’s time to publish on the Interwebs. Make sure you familiarize yourself with
+the basics of &lt;a href=&quot;https://guides.github.com/activities/hello-world/&quot;&gt;Github&lt;/a&gt; and
+&lt;a href=&quot;https://git-scm.com/docs/gittutorial&quot;&gt;git version control&lt;/a&gt;. Then start a
+&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; repository to host your site. Pick
+a catchy &lt;a href=&quot;https://domains.google&quot;&gt;domain name&lt;/a&gt; to polish.&lt;/p&gt;
+
+&lt;h4 id=&quot;play-with-themes&quot;&gt;Play with themes&lt;/h4&gt;
+&lt;p class=&quot;small-skip&quot;&gt;The default theme generated by Jekyll is &lt;a href=&quot;https://github.com/jekyll/minima&quot;&gt;minima&lt;/a&gt;.
+I like it. I used it as a starting base for this site. But for those seeking
+a more sublime theme experience, there’s &lt;a href=&quot;https://jekyllthemes.io/&quot;&gt;this beauty&lt;/a&gt;,
+plenty more on Google, or dream up your own.&lt;/p&gt;
+
+&lt;p&gt;Happy blogging!&lt;/p&gt;</content><author><name>William L. Tong</name></author><category term="jekyll" /><category term="blog" /><category term="install" /><category term="Arch Linux" /><summary type="html">A simple guide to setting up a Jekyll installation. Existing documentation left some pieces out, so I’ve put together this document to guide anyone else (and my future self) through the process. Audience: tech-oriented folks comfortable on the command line.</summary></entry></feed>

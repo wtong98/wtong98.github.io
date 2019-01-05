@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Getting started with Jekyll | william + lettuce + tongmato</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Getting started with Jekyll" />
+<meta name="author" content="William L. Tong" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A simple guide to setting up a Jekyll installation. Existing documentation left some pieces out, so I’ve put together this document to guide anyone else (and my future self) through the process. Audience: tech-oriented folks comfortable on the command line." />
+<meta property="og:description" content="A simple guide to setting up a Jekyll installation. Existing documentation left some pieces out, so I’ve put together this document to guide anyone else (and my future self) through the process. Audience: tech-oriented folks comfortable on the command line." />
+<link rel="canonical" href="https://wlt.soy/howto/tech/2019/01/04/getting-started-with-jekyll.html" />
+<meta property="og:url" content="https://wlt.soy/howto/tech/2019/01/04/getting-started-with-jekyll.html" />
+<meta property="og:site_name" content="william + lettuce + tongmato" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-01-04T19:39:00-06:00" />
+<script type="application/ld+json">
+{"description":"A simple guide to setting up a Jekyll installation. Existing documentation left some pieces out, so I’ve put together this document to guide anyone else (and my future self) through the process. Audience: tech-oriented folks comfortable on the command line.","@type":"BlogPosting","headline":"Getting started with Jekyll","dateModified":"2019-01-04T19:39:00-06:00","datePublished":"2019-01-04T19:39:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://wlt.soy/howto/tech/2019/01/04/getting-started-with-jekyll.html"},"url":"https://wlt.soy/howto/tech/2019/01/04/getting-started-with-jekyll.html","author":{"@type":"Person","name":"William L. Tong"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://wlt.soy/feed.xml" title="william + lettuce + tongmato" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131763341-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131763341-1');
+</script>
+</head>
+<body><header class="site-header" role="banner">
+
+    <div class="wrapper"><a id="top-site-title" class="site-title" rel="author" href="/">william + lettuce + tongmato</a>
+
+        <script type="text/javascript">
+            // can move to assets javascript
+            function checkSize(query) {
+                const element = document.getElementById("top-site-title");
+                if (query.matches) {
+                    element.innerHTML = "WLT";
+                } else {
+                    element.innerHTML = "william + lettuce + tongmato";
+                }
+            }
+
+            const query = window.matchMedia("(max-width: 700px)");
+            checkSize(query);
+            query.addListener(checkSize);
+        </script><nav class="site-nav">
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger">
+                <span class="menu-icon">
+                    <svg viewBox="0 0 18 15" width="18px" height="15px">
+                        <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+                    </svg>
+                </span>
+            </label>
+
+            <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/posts.html">Posts</a></div>
+        </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Getting started with Jekyll</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-01-04T19:39:00-06:00" itemprop="datePublished">Jan 4, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>A simple guide to setting up a Jekyll installation. Existing documentation left
+some pieces out, so I’ve put together this document to guide anyone else (and
+my future self) through the process.</p>
+
+<p class="intro"><em>Audience: tech-oriented folks comfortable on the command line.</em></p>
+
+<figure>
+    <img src="/assets/getting-started-with-jekyll/jekyll_logo.png" alt="Source: https://github.com/jekyll/brand" />
+    <figcaption>Source: https://github.com/jekyll/brand</figcaption>
+</figure>
+
+<p>Jekyll is a <em>static website generator</em>. It doesn’t host. It doesn’t create
+content. It’s a clean, simple machine that you feed text and out pops magically
+formed HTML. It’s “blog aware”, so it includes clever tools and short-cuts for
+bloggers — but don’t feel limited. You can use it to build portfolios, documentation
+sites, tech showcases, anything you can dream. If you’re a tech-friendly blogger
+ready to get your hands dirty with a little web dev, Jekyll is perfect for you.</p>
+
+<p class="big-skip">First things first, to follow this guide, you’ll need a *nix system (Mac, Linux)
+and be okay with command-line stuff. Personally, I run an Arch Linux based
+distribution, so my examples are geared towards my home system. Your mileage
+may vary.</p>
+
+<h3 id="initial-steps">Initial steps</h3>
+<p>Jekyll is written in Ruby. To use it, you’ll need a <a href="https://www.ruby-lang.org/en/downloads/">Ruby installation</a>:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Me, on Arch Linux</span>
+<span class="nv">$ </span><span class="nb">sudo </span>pacman <span class="nt">-S</span> ruby
+
+<span class="c"># Debian, Ubuntu</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt install ruby
+
+<span class="c"># Mac</span>
+<span class="nv">$ </span>brew install ruby
+</code></pre></div></div>
+
+<p>To verify your installation, go ahead and check:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ruby <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>Next, we’ll need Bundler:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem install bundler
+</code></pre></div></div>
+
+<p class="small-skip">In Ruby, <a href="https://en.wikipedia.org/wiki/RubyGems">gems</a> are packaged pieces of code,
+like .jar files for Java or modules for Python. Bundler is a utility that
+makes managing gems possible with minimum teeth-gnashing and hair loss.</p>
+
+<p>Bundler itself will have been installed in your gem user installation directory.
+To see where that is, do:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem env
+RubyGems Environment:
+  - RUBYGEMS VERSION: 2.7.7
+  - RUBY VERSION: 2.5.3 <span class="o">(</span>2018-10-18 patchlevel 105<span class="o">)</span> <span class="o">[</span>x86_64-linux]
+  - INSTALLATION DIRECTORY: /usr/lib/ruby/gems/2.5.0
+  - USER INSTALLATION DIRECTORY: /home/username/.gem/ruby/2.5.0
+<span class="c"># ... and lots more</span>
+</code></pre></div></div>
+<p>And that line at the bottom that says “USER INSTALLATION DIRECTORY” is your
+ticket. Add that file path to your environment PATH variable to use Bundler
+on the command line.</p>
+
+<p>For me, in place of [USER INSTALLATION DIRECTORY],
+I’d put <code class="highlighter-rouge">/home/username/.gem/ruby/2.5.0</code>. Note the <code class="highlighter-rouge">/bin</code> appended to the path:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Using bash (note: you do not need an "export"):</span>
+<span class="nv">$ PATH</span><span class="o">=</span><span class="nv">$PATH</span>:[USER INSTALLATION DIRECTORY]/bin
+
+<span class="c"># Using fish, my preferred shell:</span>
+<span class="nv">$ </span><span class="nb">set</span> <span class="nt">-gx</span> PATH <span class="nv">$PATH</span> <span class="o">[</span>USER INSTALLATION DIRECTORY]/bin
+</code></pre></div></div>
+
+<p class="big-skip">To make the change permanent, add that command to your <code class="highlighter-rouge">.profile</code> (or <code class="highlighter-rouge">.bash_profile</code>),
+<code class="highlighter-rouge">config.fish</code>, or whatever you use for setting environment variables. Restart your
+shell to allow the change to take effect.</p>
+
+<h3 id="installing-jekyll">Installing Jekyll</h3>
+<p>Now, we’re in shape for grabbing Jekyll. In preparation, we need to tell Bundler
+to install gems in the same default directory as RubyGem:</p>
+<div class="language-shell small-skip highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle config path <span class="o">[</span>USER INSTALLATION DIRECTORY]
+</code></pre></div></div>
+
+<p>Next, Bundler needs a special file called a <code class="highlighter-rouge">Gemfile</code> to begin installing gems.
+Go ahead and make one and copy the following into it:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+</code></pre></div></div>
+<p>Then to execute, in the <strong>same directory as the <code class="highlighter-rouge">Gemfile</code></strong>, do:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle install
+Fetching gem metadata from https://rubygems.org/............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+<span class="c"># ... and lots more ...</span>
+</code></pre></div></div>
+<p class="small-skip">Now sit back and relax. It’ll take a few minutes to run, installing Jekyll along
+with a whole hog of useful plugins for the Jekyll + GitHub marriage.</p>
+
+<p>After installation completes, make a new blog site and <code class="highlighter-rouge">cd</code> into it:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll new myblog
+<span class="c"># ... output from jekyll ...</span>
+<span class="nv">$ </span><span class="nb">cd </span>myblog
+</code></pre></div></div>
+
+<p>Note that we’re now in the directory <code class="highlighter-rouge">myblog</code>. To test your newly minted blog, do:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+<p>This command will compile your Jekyll files into fully-formed HTML, place them in the
+directory <code class="highlighter-rouge">_site</code>, and host these files off a development server. To check
+out the website, open your favorite browser and navigate to <a href="http://localhost:4000">http://localhost:4000</a>.</p>
+
+<p class="big-skip">Note: remember to prepend <code class="highlighter-rouge">bundle exec</code> to every <code class="highlighter-rouge">jekyll</code> command you execute.
+Doing so tells <code class="highlighter-rouge">jekyll</code> to run using gems installed by Bundler. So when the
+documentation tells you to do <code class="highlighter-rouge">jekyll build</code>, you should instead do
+<code class="highlighter-rouge">bundle exec jekyll build</code>.</p>
+
+<h3 id="looking-ahead">Looking ahead</h3>
+<p class="small-skip">And now, you’re the proud owner of a beautiful, minimal-functioning blog! But
+it’s still a ton of work to get from here to the fabulous work of
+social-media-art your have in mind. On your journey, you will need to:</p>
+
+<h4 id="learn-how-jekyll-works">Learn how Jekyll works</h4>
+<p class="small-skip">Get your hands dirty in the details of Jekyll with the official
+<a href="https://jekyllrb.com/docs/step-by-step/02-liquid/">step-by-step guide</a>. It
+covers things like the <a href="https://shopify.github.io/liquid/">Liquid</a> template
+language for shnazzing up your HTML, the mechanics of the site generator, and
+deploying to <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+
+<h4 id="host-on-github-pages">Host on Github pages</h4>
+<p class="small-skip">Speaking of GitHub Pages, when you’re ready to show the world your hard work,
+it’s time to publish on the Interwebs. Make sure you familiarize yourself with
+the basics of <a href="https://guides.github.com/activities/hello-world/">Github</a> and
+<a href="https://git-scm.com/docs/gittutorial">git version control</a>. Then start a
+<a href="https://pages.github.com/">GitHub Pages</a> repository to host your site. Pick
+a catchy <a href="https://domains.google">domain name</a> to polish.</p>
+
+<h4 id="play-with-themes">Play with themes</h4>
+<p class="small-skip">The default theme generated by Jekyll is <a href="https://github.com/jekyll/minima">minima</a>.
+I like it. I used it as a starting base for this site. But for those seeking
+a more sublime theme experience, there’s <a href="https://jekyllthemes.io/">this beauty</a>,
+plenty more on Google, or dream up your own.</p>
+
+<p>Happy blogging!</p>
+
+  </div><div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://wlt.soy/howto/tech/2019/01/04/getting-started-with-jekyll.html';
+      this.page.identifier = 'https://wlt.soy/howto/tech/2019/01/04/getting-started-with-jekyll.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://wlt-1.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/howto/tech/2019/01/04/getting-started-with-jekyll.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">william + lettuce + tongmato</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">William L. Tong</li><li><a class="u-email" href="mailto:williamtong105@gmail.com">williamtong105@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/wtong98"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">wtong98</span></a></li><li><a href="https://www.linkedin.com/in/william-tong-693632133"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">william</span></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>subscribe</span></a></li></ul>
+
+<!--
+Original list of all the social sites you could possibly want:<li><a href="https://github.com/wtong98"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">wtong98</span></a></li><li><a href="https://www.linkedin.com/in/william-tong-693632133"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">william-tong-693632133</span></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>subscribe</span></a></li>-->
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Doodling in my little corner of the web</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
