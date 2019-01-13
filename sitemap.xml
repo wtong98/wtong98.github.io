@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://wlt.soy/howto/tech/2019/01/04/getting-started-with-jekyll.html</loc>
+<loc>https://wlt.soy/tech/howto/2019/01/04/getting-started-with-jekyll.html</loc>
 <lastmod>2019-01-04T19:39:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://wlt.soy/tech/curio/2019/01/12/from-1011-to-laptop-how-to-build-a-computer-from-binary.html</loc>
+<lastmod>2019-01-12T21:29:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://wlt.soy/about/</loc>
