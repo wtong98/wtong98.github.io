@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Programming for n00bs: an introduction to our craft | william + lettuce + tongmato</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Programming for n00bs: an introduction to our craft" />
+<meta name="author" content="William L. Tong" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="If you’ve always wanted to learn how to program, but never know where to start, you’re in the right place. Start here. Today is the first day of your glorious programming future. Audience: curious folks interested in programming" />
+<meta property="og:description" content="If you’ve always wanted to learn how to program, but never know where to start, you’re in the right place. Start here. Today is the first day of your glorious programming future. Audience: curious folks interested in programming" />
+<link rel="canonical" href="https://wlt.soy/tech/howto/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html" />
+<meta property="og:url" content="https://wlt.soy/tech/howto/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html" />
+<meta property="og:site_name" content="william + lettuce + tongmato" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-22T21:05:54-05:00" />
+<script type="application/ld+json">
+{"description":"If you’ve always wanted to learn how to program, but never know where to start, you’re in the right place. Start here. Today is the first day of your glorious programming future. Audience: curious folks interested in programming","@type":"BlogPosting","headline":"Programming for n00bs: an introduction to our craft","dateModified":"2019-02-22T21:05:54-05:00","url":"https://wlt.soy/tech/howto/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html","datePublished":"2019-02-22T21:05:54-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://wlt.soy/tech/howto/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html"},"author":{"@type":"Person","name":"William L. Tong"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+    <link rel="shortcut icon" type="image/png" href="/assets/global/favicon.png"><link type="application/atom+xml" rel="alternate" href="https://wlt.soy/feed.xml" title="william + lettuce + tongmato" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131763341-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131763341-1');
+</script>
+</head>
+<body><header class="site-header" role="banner">
+
+    <div class="wrapper"><a id="top-site-title" class="site-title" rel="author" href="/">william + lettuce + tongmato</a>
+
+        <script type="text/javascript">
+            // can move to assets javascript
+            function checkSize(query) {
+                const element = document.getElementById("top-site-title");
+                if (query.matches) {
+                    element.innerHTML = "WLT";
+                } else {
+                    element.innerHTML = "william + lettuce + tongmato";
+                }
+            }
+
+            const query = window.matchMedia("(max-width: 700px)");
+            checkSize(query);
+            query.addListener(checkSize);
+        </script><nav class="site-nav">
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger">
+                <span class="menu-icon">
+                    <svg viewBox="0 0 18 15" width="18px" height="15px">
+                        <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+                    </svg>
+                </span>
+            </label>
+
+            <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/posts.html">Posts</a></div>
+        </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Programming for n00bs: an introduction to our craft</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-02-22T21:05:54-05:00" itemprop="datePublished">Feb 22, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>If you’ve always wanted to learn how to program, but never know where to start,
+you’re in the right place. Start here. Today is the first day of your
+glorious programming future.</p>
+
+<p class="intro"><em>Audience: curious folks interested in programming</em></p>
+
+<figure>
+    <img src="/assets/programming-for-n00bs/intro_to_programming.jpg" alt="Source: https://www.lynda.com/Programming-Foundations-tutorials" />
+    <figcaption>Source: https://www.lynda.com/Programming-Foundations-tutorials</figcaption>
+</figure>
+
+<p>There’s a common myth that programming is polarizing. You either get it or you
+don’t.</p>
+
+<p>Lies.</p>
+
+<p>Here’s more falsehood: you need to be super smart to learn how to program. Only
+geeks like programming. Women are rare in this field. You’re too old to learn
+programming. You’re too young to learn programming.</p>
+
+<p>Anyone — and I mean <em>anyone</em> — can learn how to program.</p>
+
+<p>It’s easy. It’s fun. Sure, you can make a lot of money — but to be honest,
+no one I know who’s serious about programming is here for $$$.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> It’s a
+genuinely meaningful activity. There’s creativity, imagination, a chance
+to sprinkle your thoughts in a text file and watch it spring to life.</p>
+
+<p>In this two-part guide, I will give you the tools (and ideally the mindset) to
+begin your programming journey. This first part focuses on the basic skills to
+start. The second part dives deeper into the craft.</p>
+
+<p class="big-skip">Whether you’re hoping to pick up a new hobby or gunning for a software
+engineering future, this is the perfect place to begin.</p>
+
+<h3 id="big-picture-stuff">Big picture stuff</h3>
+<p>At it’s most general, computer programming is the art of writing instructions.</p>
+
+<p>Two keywords here: <strong>art</strong>. And <strong>instructions</strong>. Let’s start with the sexier
+term: instructions.</p>
+
+<p>In a very real sense, programming is no different than writing a grocery list of
+goodies you want your spouse to pick up. It’s no different than scribbling a
+note to your mom, telling her what to get from Subway, or jotting down
+a cooking recipe to remember for later.<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+<p>But instead of your spouse, Mom, or your future self, the audience for our
+particular instructions are <a href="https://wlt.soy/tech/curio/2019/01/12/from-1011-to-laptop-how-to-build-a-computer-from-binary.html">computers</a>.
+Computers don’t speak English (<a href="https://towardsdatascience.com/an-easy-introduction-to-natural-language-processing-b1e2801291c1">yet</a>)
+so it’s up to the programmer to learn their language. That’s the easy part,
+and the part we’ll focus on in this guide.</p>
+
+<p>The other side, <em>art</em>, is trickier to tap. There’s an art to writing
+code, just as there’s an art to writing prose. Good code tends to look good,
+<em>feel</em> good. It’s aesthetic. Expressive. So damn clean you can eat off it. It’s
+hard to get into the details without first learning some, so we’ll come back
+to this concept in part II.</p>
+
+<p>But the biggest thing I want you to keep in mind moving forward is this:
+<strong>programming is possible</strong>. Sometimes, it’ll seem hard. Sometimes, it’ll seem
+impossible. Sometimes, you’ll want to smash a hole through your laptop because
+nothing seems to work right. Don’t. You can do it. And more importantly, laptops
+are expensive.</p>
+
+<p class="big-skip">Programming requires a different mindset than what you may be used to. It takes
+time to sink in. Give it a shot, and if it doesn’t make sense, leave it to cook
+on the back-burners for a little while and come back later. I promise you won’t
+regret it.</p>
+
+<h3 id="setting-up">Setting up</h3>
+<p>Setting up is the hardest part of the journey. Everyone’s machine will be a
+little different. The instructions I give will try to be general enough to get
+everyone, but you might have a really cranky laptop that just isn’t feeling it.
+In that case, Google and <a href="https://stackoverflow.com/">Stack Overflow</a> will be
+your best bet.</p>
+
+<p>The single most important thing you’ll need is a terminal. Fortunately, your
+computer should come equipped with one. Unfortunately, they’ll all be a little
+different depending on your operating system.</p>
+
+<p>If you’re running <strong>Windows</strong>, you have three options:</p>
+<ol>
+  <li>cmd</li>
+  <li>PowerShell</li>
+  <li>Windows Subsystem for Linux</li>
+</ol>
+
+<p>The first two come with Windows. Open up your applications menu or search box,
+and you’ll find them.</p>
+
+<figure>
+    <img src="/assets/programming-for-n00bs/powershell.webp" alt="Source: https://www.digitalcitizen.life/ways-launch-powershell-windows-admin" />
+    <figcaption>Source: https://www.digitalcitizen.life/ways-launch-powershell-windows-admin</figcaption>
+</figure>
+
+<p>However, if you don’t mind installing a little extra gear, I recommend option 3.
+To get it, open up your Windows Store app, search for <a href="https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab">Ubuntu on Windows</a>, and
+install it. This application isn’t a simple terminal, but will emulate a whole
+operating system (Linux) for you. Using it will allow you to follow the rest of
+this guide with minimal headaches.</p>
+
+<p>If you prefer to stick with the native Windows options, I’d take PowerShell.
+It’s far more advanced, and will play nicer with the instructions I will shortly
+give for using your terminal. If, for some reason, you’re married to cmd,
+you’re on your own, but you can learn more about it <a href="https://www.lifewire.com/command-prompt-2625840">here</a>.</p>
+
+<p>If you’re running <strong>macOS</strong>, things are a lot simpler. The terminal is called
+“Terminal” (go figure) and is easily searchable with Spotlight (ctrl + spacebar).</p>
+
+<p class="small-skip">And if you’re running a flavor of <strong>Linux</strong>, terminals will differ between distros,
+but you’re likely proficient enough anyway to know how to use one.</p>
+
+<p>Next, you’ll need a text editor. It’s a program that allows you to write text
+into files, and it’s the Swiss Army Knife of coding. Most computers will
+have ones built-in, but you’ll need something with a little more power than
+Notepad to do proper work.</p>
+
+<p>My personal favorite is <a href="https://atom.io/">Atom</a>. It’s slick. Hackable. Easy.
+And I’m using it right now to write this post.</p>
+
+<p>If you’re willing to shell out some cash, another popular editor is
+<a href="https://www.sublimetext.com/">Sublime</a>. It’s an industry favorite, but comes
+with a hefty price tag. Why pay when Atom is just as excellent, and free?</p>
+
+<p>And for the hard-core, there’s <a href="https://www.vim.org/">Vim</a>.</p>
+
+<figure>
+    <img src="/assets/programming-for-n00bs/vim_curve.jpg" alt="Source: https://stackoverflow.com/questions/10942008/what-does-emacs-learning-curve-actually-look-like" />
+    <figcaption>Source: https://stackoverflow.com/questions/10942008/what-does-emacs-learning-curve-actually-look-like</figcaption>
+</figure>
+
+<p>It’s infamous for being tough to learn. But master it’s wizardry, and you’ll
+blaze with obscene speed. If you’re prepared for an epic challenge,
+<a href="https://danielmiessler.com/study/vim/">here</a> is my favorite tutorial for the
+editor.</p>
+
+<p>Take some time to learn your chosen editor. They’re often geared towards
+programming, but you can use them for just about anything word-related. Write
+your essays with them, if you’d like. Compose poetry.<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></p>
+
+<p class="big-skip">Once you’re ready, let’s sink our teeth into some serious work.</p>
+
+<h3 id="shell">Shell</h3>
+<p>A terminal is a special environment that runs a program called a <em>shell</em>. In
+the old days, a terminal was a physical device attached to a computer. Today,
+you can access one through a window on your screen.</p>
+
+<p>A shell is a special kind of program that launches other programs. You’re
+running a shell right now. On Windows, it’s called “Windows shell,” and it’s
+the familiar environment you use to interact with your computer. The desktop.
+File explorer. Login window. All of it is part of the shell. Using it, you
+can double-click on an icon to launch a program.</p>
+
+<p>But the kinds of shells we’re interested in are called “command-line shells,”
+or sometimes “command-line interface” (CLI). Whereas the Windows shell is
+<em>graphical</em>, CLI’s are <em>text-based</em>. There are no fancy desktops. No
+icons. No clicking. To launch a program, you type its name and hit enter. From
+here on out, when I use the word “shell,” I’m referring to these text-based
+versions.</p>
+
+<p>PowerShell and Mac’s Terminal are terminals that run these text-based shells.
+Open one right now, and here’s what you might see:</p>
+
+<figure>
+    <img src="/assets/programming-for-n00bs/my_terminal.png" alt="Source: me" />
+    <figcaption>Source: me</figcaption>
+</figure>
+
+<p>Yours will likely look a little different, but the basic gist should be the
+same: a blinking cursor in front of a prompt. Try typing <code class="highlighter-rouge">ls</code> and hit
+enter. Mine looks like this:</p>
+
+<figure>
+    <img src="/assets/programming-for-n00bs/my_terminal_ls.png" alt="Source: me" />
+    <figcaption>Source: me</figcaption>
+</figure>
+
+<p>Yours will differ, depending on the files in your system. To save myself some
+space, I can also use a convention to write the output like this:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">ls
+</span>a_directory/    another_directory/  file.txt    also_a_file.txt
+</code></pre></div></div>
+<p>The “$” represents the prompt. A line without “$” signifies output.</p>
+
+<p>So what just happened?</p>
+
+<p>Unlike a graphical shell, where we can double-click an icon
+to launch a program, to launch a program in our text-based shell, we need to
+type the name and hit enter.</p>
+
+<p class="big-skip">In the example above, we launched a program called <code class="highlighter-rouge">ls</code>, short for
+“list files.” To understand what this means, let’s talk about files and
+directories.</p>
+
+<h3 id="files-and-directories">Files and Directories</h3>
+<p>The data in your laptop are organized into files and directories — “directory,”
+by the way, is another word for “folder.” CS folks just prefer “directory” for
+reasons of taste and style.</p>
+
+<p>If you open your file explorer, you’ll see a bunch of them. Here’s what I
+see:</p>
+
+<figure>
+    <img src="/assets/programming-for-n00bs/nautilus.png" alt="Source: me" />
+    <figcaption>Source: me</figcaption>
+</figure>
+
+<p>Files are blobs of data collected in place. In the example above, there are
+two text files. They don’t have to be just text. Laying around my computer,
+I’ve got images, music, video, PDFs, programs — all are files.</p>
+
+<p>Directories are special structures that hold other files and directories. In
+the image above, there are two directories marked by little folder
+icons. In your file explorer, you might be able to double-click a directory
+to open, and see what’s inside.</p>
+
+<p>Every file and directory in your computer is housed in the <em>root directory</em>.
+It’s a humongous directory that contains everything else. In Windows, it’s
+called <code class="highlighter-rouge">C:\</code>. In macOS or Linux, it’s simply <code class="highlighter-rouge">/</code>.</p>
+
+<p>Every file and directory also has an address, called a <em>path</em>. A path is a
+string of directory names leading to the location of a particular file
+or directory. The path to the root directory would simply be <code class="highlighter-rouge">/</code> (assuming
+we’re using a Mac or Linux). If we had a directory called “home” within the
+root directory, its path would be <code class="highlighter-rouge">/home</code>. Inside the <code class="highlighter-rouge">home</code> directory, we
+might have another directory called “wlt.” It’s path would be <code class="highlighter-rouge">/home/wlt</code>.
+Inside <code class="highlighter-rouge">wlt</code>, if we had a text file called “sample.txt,” its path would be
+<code class="highlighter-rouge">/home/wlt/sample.txt</code>.</p>
+
+<p>Windows’ paths look a little different. Instead of beginning with a <code class="highlighter-rouge">/</code>, the
+root directory on Windows is <code class="highlighter-rouge">C:\</code>. Instead of forward slashes <code class="highlighter-rouge">/</code>, Windows uses
+backslashes <code class="highlighter-rouge">\</code> to separate directory names. Our example on Windows would look
+like <code class="highlighter-rouge">C:\home\wlt\sample.txt</code>.</p>
+
+<p>Return to your terminal, type <code class="highlighter-rouge">pwd</code>, and hit enter. I get:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">pwd</span>
+/home/wlt/example
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">pwd</code> stands for “print working directory.” Your terminal squats in a directory
+when executing commands, and <code class="highlighter-rouge">pwd</code> prints the path to this directory. In this
+case, we’re sitting in a directory called “example” that’s nested within <code class="highlighter-rouge">wlt</code>,
+which in turn is nested within <code class="highlighter-rouge">home</code>, which is located in the root directory.</p>
+
+<p>Remember from before, the command <code class="highlighter-rouge">ls</code>? When it executes, it lists the files
+in your current working directory. So when I did:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">ls
+</span>a_directory/    another_directory/  file.txt    also_a_file.txt
+</code></pre></div></div>
+
+<p>I’m listing files in <code class="highlighter-rouge">example</code>. The path to the directory <code class="highlighter-rouge">a_directory</code> would be
+<code class="highlighter-rouge">/home/wlt/example/a_directory</code>.</p>
+
+<p>A note on terminology, when talking about paths, we were really talking about
+<em>absolute paths</em>. An absolute path is one that describes the chain of
+directories starting from the root directory.</p>
+
+<p class="big-skip">Alternatively, a <em>relative path</em> is a path described from the current working directory.
+For example, located in <code class="highlighter-rouge">example</code>, the absolute path to <code class="highlighter-rouge">file.txt</code> is
+<code class="highlighter-rouge">/home/wlt/example/file.txt</code>, but its relative path would simply be <code class="highlighter-rouge">file.txt</code>,
+because the file is located directly in our current working directory. If
+<code class="highlighter-rouge">file.txt</code> were located in <code class="highlighter-rouge">a_directory</code>, it’s relative path would instead
+be <code class="highlighter-rouge">a_directory/file.txt</code>.</p>
+
+<h3 id="simple-commands">Simple commands</h3>
+<p>Now that we have a handle on the file system, we can start learning basic
+commands with the terminal.</p>
+
+<p>Remember that a command is nothing more than a simple program, like Microsoft
+Word or your Internet browser. To execute a program in a shell, you simply have
+to type its name and hit enter. Try it:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>notepad
+</code></pre></div></div>
+
+<p>If you’re on Windows, that command should have launched your Notepad text
+editor. If you’re on Mac or Linux, try this instead:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vi
+</code></pre></div></div>
+
+<p>This command launches the Vim text editor (or it’s predecessor, vi) To exit,
+type <code class="highlighter-rouge">:q</code>.</p>
+
+<p>To customize how a command behaves, you can add additional <em>options</em>. These
+are basically extra words or letters we can tag to the end of commands for
+bonus functionality. For example, recall from before we can use <code class="highlighter-rouge">ls</code> to list the
+contents of our current working directory.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">ls
+</span>a_directory/    another_directory/  file.txt    also_a_file.txt
+</code></pre></div></div>
+
+<p>If I wanted a little more information about each file, I can do:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span>
+drwxr-xr-x 2 wlt wlt 4096 Feb  3  5:58  a_directory/
+drwxr-xr-x 2 wlt wlt 4096 Feb  2  19:40 another_directory/
+<span class="nt">-rw-r--r--</span> 1 wlt wlt  156 Jan 30  8:01  also_a_file.txt
+<span class="nt">-rw-r--r--</span> 1 wlt wlt   38 Feb  1  12:52 file.txt
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">-l</code> option stands for “long,” and it tells <code class="highlighter-rouge">ls</code> to list extra details about
+each file. Options will usually be preceded by a dash <code class="highlighter-rouge">-</code> or sometimes two
+if the option is in “long form,” i.e. typed out as in something like <code class="highlighter-rouge">--color</code>.</p>
+
+<p>Related to options, many commands take <em>arguments</em>. These are targets that a
+command acts on, and are often appended to the very end of a command. For
+example, <code class="highlighter-rouge">ls</code> can take an argument that specifies what file exactly to list:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span> a_directory
+<span class="nt">-rw-r--r--</span> 1 wlt wlt  5 Feb  5 20:07 deep_magic.txt
+<span class="nt">-rw-r--r--</span> 1 wlt wlt 12 Feb  5 20:07 stuff.txt
+</code></pre></div></div>
+
+<p>Note that I’ve used the option <code class="highlighter-rouge">-l</code> again, giving us the long form of the data.</p>
+
+<p class="small-skip">It’s also nifty to note that most terminals offer tab-completion. It allows you
+to type a partial name, then press tab to quickly fill out the rest. In typing the
+above command, for example, I simply typed <code class="highlighter-rouge">ls -l a_dir</code> then pressed tab. Magic!</p>
+
+<p>Another nifty command to learn is <code class="highlighter-rouge">cd</code>, which stands for “change directory.”<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup>
+It changes your current working directory to a different one. To use it,
+you specify your target directory as an argument. So if I do:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>a_directory
+</code></pre></div></div>
+
+<p>I’m now located in the directory <code class="highlighter-rouge">a_directory</code>. I could’ve also specified
+absolute paths:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># with an absolute path:</span>
+<span class="nv">$ </span><span class="nb">cd</span> /home/wlt/example/a_directory
+
+<span class="c"># with a relative path:</span>
+<span class="nv">$ </span><span class="nb">cd </span>a_directory
+</code></pre></div></div>
+<p>There’s a special file called <code class="highlighter-rouge">..</code> (two periods) in every single directory
+that links to the directory above. If I <code class="highlighter-rouge">cd</code> into it, I change my current
+directory to the one above. For example:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>a_directory
+<span class="nv">$ </span><span class="nb">cd</span> ..
+<span class="c"># I'm back where I started!</span>
+</code></pre></div></div>
+
+<p>You can chain together <code class="highlighter-rouge">..</code>’s to rise multiple levels up the hierarchy at once:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">pwd</span>
+/home/wlt/example
+<span class="nv">$ </span><span class="nb">cd</span> ../..
+<span class="nv">$ </span><span class="nb">pwd</span>
+/home
+</code></pre></div></div>
+
+<p>There’s another special symbol called a tilde <code class="highlighter-rouge">~</code>. It should be on the
+upper left-hand side of your keyboard. The tilde represents your <em>home directory</em>,
+a special directory set aside just for you that contains all your personal
+files. To get there, do</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> ~
+</code></pre></div></div>
+
+<p>Like with other files, you can chain the tilde into paths:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> ~/a_directory
+</code></pre></div></div>
+
+<p class="big-skip">Play around with <code class="highlighter-rouge">cd</code>, <code class="highlighter-rouge">ls</code>, and <code class="highlighter-rouge">pwd</code> in your shell until you get comfortable
+using them. They will be the bread and butter of your workflow, allowing you to
+swim smoothly through your filesystem with minimal effort. It may feel awkward
+now, but soon you’ll be faster with your terminal than the graphical
+file explorers you’re used to.</p>
+
+<h3 id="other-useful-commands">Other useful commands</h3>
+<p>A few last ones to know before we wrap up:</p>
+
+<p>Moving files: <code class="highlighter-rouge">mv</code>. It takes two arguments: a source and a destination.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mv file.txt a_directory
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">file.txt</code> is now located in <code class="highlighter-rouge">a_directory</code>.</p>
+
+<p><code class="highlighter-rouge">mv</code> is also the most common way to rename files.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mv file.txt awesome.txt
+</code></pre></div></div>
+
+<p class="small-skip">Because <code class="highlighter-rouge">awesome.txt</code> did not exist, <code class="highlighter-rouge">mv</code> went ahead and created a new file
+called <code class="highlighter-rouge">awesome.txt</code> and transferred the contents of <code class="highlighter-rouge">file.txt</code> over,
+effectively renaming the file.<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup></p>
+
+<p>Copying files: <code class="highlighter-rouge">cp</code>. It also takes two arguments: a source and a destination.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>cp file.txt a_directory
+</code></pre></div></div>
+
+<p>There is now a copy of <code class="highlighter-rouge">file.txt</code> in <code class="highlighter-rouge">a_directory</code>.</p>
+
+<p>If I want to copy an entire directory, I have to specify an extra option
+<code class="highlighter-rouge">-r</code>, which stands for “recursive.”</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>cp <span class="nt">-r</span> a_directory another_directory
+</code></pre></div></div>
+
+<p>If I wanted to copy a file or directory into my current working directory, I
+can use the special symbol <code class="highlighter-rouge">.</code> <sup id="fnref:6"><a href="#fn:6" class="footnote">6</a></sup></p>
+
+<div class="language-shell small-skip highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>cp /some/distant/file.txt <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>Making directories: <code class="highlighter-rouge">mkdir</code>. It takes one argument: the name of the new directory.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mkdir new_directory
+</code></pre></div></div>
+
+<p class="small-skip">There’s is now a fresh <code class="highlighter-rouge">new_directory</code> in our workspace.</p>
+
+<p>Removing files: <code class="highlighter-rouge">rm</code>. It takes one argument: the name of the file to be removed.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rm file.txt
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">file.txt</code> has now been consigned to the void.</p>
+
+<p>To remove directories, you’ll again need to specify a <code class="highlighter-rouge">-r</code> to perform the operation
+recursively.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rm <span class="nt">-r</span> a_directory
+</code></pre></div></div>
+
+<p>And that’s probably <em>the most dangerous</em> command I’ve taught you. One careless
+keystroke and your project is lost forever (<a href="https://en.wikipedia.org/wiki/File_carving">almost</a>).
+A much safer alternative is <code class="highlighter-rouge">rmdir</code></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rmdir a_directory
+</code></pre></div></div>
+
+<p class="small-skip">but the directory in question must be empty in order for the command to operate.
+It’s an extra safety-precaution to ensure you don’t do anything stupid, and I
+wholeheartedly advocate its use. But I get lazy too, and sometimes it’s just
+easier to <code class="highlighter-rouge">rm -r</code> things into oblivion.</p>
+
+<p>And finally, probably the most useful command you will ever use, <code class="highlighter-rouge">man</code>. It’s
+short for “manual” and gives you a help page on any command. Forget how to use
+<code class="highlighter-rouge">ls</code>? No problem:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>man <span class="nb">ls</span>
+</code></pre></div></div>
+
+<p>Wanna learn more about <code class="highlighter-rouge">man</code> itself? It’s got you covered:</p>
+
+<div class="language-shell small-skip highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>man man
+</code></pre></div></div>
+
+<p>These basic commands will probably be about 75 percent of everything you do
+on a terminal. Again, things will feel awkward and slow at first, but give it
+time. Before you know it, you’ll be a blazing wizard at the command line.</p>
+
+<p class="big-skip">If you’re interested in learning more, there’s tons of great resources out
+there. If you’re using Mac or Linux, check out <a href="http://linuxcommand.org/lc3_learning_the_shell.php">this awesome guide</a>.
+For Windows PowerShell users, <a href="https://www.varonis.com/blog/windows-powershell-tutorials/">here’s a nice tutorial</a>.</p>
+
+<h2 id="looking-ahead">Looking ahead</h2>
+<p>And that about wraps things up for part 1.</p>
+
+<p>You must be wondering, a whole blog post and not a single line of code in
+sight? Instead, we wasted a whole lot of nothing on learning the command line.</p>
+
+<p>Why?</p>
+
+<p>Here’s the thing – programming is never just opening a magic program and
+typing code that just works. It’s built with tools. These tools take time
+to learn. What I’m teaching you are real tools that <em>real software engineers
+use</em>. No kiddy stuff here, we’re working with the real deal.</p>
+
+<p>What’s more, if you’re looking into a career in software, you’ll be learning
+tools like these the rest of your life. Countless tools. Countless programs
+they help write. We’ve started with the most common set that drives everything
+else. Learn the command line, and you’re well on your way to mastering
+<em>anything</em> else.</p>
+
+<p class="big-skip">Next time, we’ll start diving into actual code. Stay tuned, I’ll link
+the post below as soon as it’s written.</p>
+
+<h3 id="footnotes">Footnotes</h3>
+<p>Here are some stray thoughts that didn’t make it into the normal flow of prose.
+These are completely optional, but may add color to your reading.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+
+      <p>That’s actually a half-lie. I got to school in New York. There’s plenty of
+Financial Engineering majors on campus learning CS for Wall Street, but of
+the dedicated, hard-core software folks I know, we’re all in it for the love. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+
+      <p>In fact, there’s a programming language out there that looks exactly like
+writing a recipe. It’s called <a href="http://www.dangermouse.net/esoteric/chef.html">chef</a>. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+
+      <p>I had a teacher once that used Vim for <em>everything</em>. Lecture notes. Exams.
+Homework. Love letters to his wife. You name it, he used Vim to write it.</p>
+
+      <p>Maybe not actually the love letters, but everything else, I promise. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+
+      <p>The commands I’ll outlining are with a shell called Bash. It’s popular on
+Linux and macOS. If you’re using Windows’ PowerShell, the commands should
+still work, but you can find their proper equivalents <a href="http://ilovepowershell.com/2011/11/03/list-of-top-powershell-alias/">here</a> <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+
+      <p>BE CAREFUL THOUGH! If <code class="highlighter-rouge">awesome.txt</code> really did exist before, I would have
+overwritten its original content with that of <code class="highlighter-rouge">file.txt</code>. <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+
+      <p>In summary, there are 3 special symbols we talked about: <code class="highlighter-rouge">..</code>, <code class="highlighter-rouge">~</code>, and <code class="highlighter-rouge">.</code>.
+Each of them are like a shorthand for a path. <code class="highlighter-rouge">..</code> represents the directory
+above. <code class="highlighter-rouge">~</code> represents the home directory, and <code class="highlighter-rouge">.</code> represents the current
+working directory. <a href="#fnref:6" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://wlt.soy/tech/howto/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html';
+      this.page.identifier = 'https://wlt.soy/tech/howto/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://wlt-1.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/tech/howto/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/"></data>
+
+    <div class="wrapper">
+
+        <a href=https://wlt.soy>
+            <h2 class="footer-heading">william + lettuce + tongmato</h2>
+        </a>
+
+        <div class="footer-col-wrapper">
+            <div class="footer-col footer-col-1">
+                <ul class="contact-list">
+                    <li class="p-name">William L. Tong</li><li><a class="u-email" href="mailto:williamtong105@gmail.com">williamtong105@gmail.com</a></li></ul>
+            </div>
+
+            <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/wtong98"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">wtong98</span></a></li><li><a href="https://www.linkedin.com/in/william-tong-693632133"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">william</span></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>subscribe</span></a></li></ul>
+
+<!--
+Original list of all the social sites you could possibly want:<li><a href="https://github.com/wtong98"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">wtong98</span></a></li><li><a href="https://www.linkedin.com/in/william-tong-693632133"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">william-tong-693632133</span></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>subscribe</span></a></li>-->
+</div>
+
+            <div class="footer-col footer-col-3">
+                <p>Doodling in my little corner of the web</p>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+</body>
+
+</html>
