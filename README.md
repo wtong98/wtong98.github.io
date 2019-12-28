@@ -8,10 +8,14 @@ Jekyll infrastructure for wlt blog. Better documentation forthcoming.
 - out-of-the-way spots in New York
 - power of a smile / social tips and stuff
 - the power of short paragraphs
+- glossary of common tech terms
+- blockchain
 
 - Python intro
 - basic webdev or dev in general
 - duel booting Linux
+
+- cryptocurrency
 
 ## Categories
 - tech

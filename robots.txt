@@ -1,1 +1,1 @@
-Sitemap: https://wlt.soy/sitemap.xml
+Sitemap: http://localhost:4000/_site/sitemap.xml
