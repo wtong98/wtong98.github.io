@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/_site/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/_site/" rel="alternate" type="text/html" /><updated>2019-12-28T13:50:22-06:00</updated><id>http://localhost:4000/_site/feed.xml</id><title type="html">william + lettuce + tongmato</title><subtitle>Doodling in my little corner of the web</subtitle><author><name>William L. Tong</name></author><entry><title type="html">Everything you need to know about webtech</title><link href="http://localhost:4000/_site/tech/2019/12/28/everything-you-need-to-know-about-webtech.html" rel="alternate" type="text/html" title="Everything you need to know about webtech" /><published>2019-12-28T13:25:00-06:00</published><updated>2019-12-28T13:25:00-06:00</updated><id>http://localhost:4000/_site/tech/2019/12/28/everything-you-need-to-know-about-webtech</id><content type="html" xml:base="http://localhost:4000/_site/tech/2019/12/28/everything-you-need-to-know-about-webtech.html">&lt;p&gt;React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://wlt.soy/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wlt.soy/" rel="alternate" type="text/html" /><updated>2019-12-28T13:58:26-06:00</updated><id>https://wlt.soy/feed.xml</id><title type="html">william + lettuce + tongmato</title><subtitle>Doodling in my little corner of the web</subtitle><author><name>William L. Tong</name></author><entry><title type="html">Everything you need to know about webtech</title><link href="https://wlt.soy/tech/2019/12/28/everything-you-need-to-know-about-webtech.html" rel="alternate" type="text/html" title="Everything you need to know about webtech" /><published>2019-12-28T13:25:00-06:00</published><updated>2019-12-28T13:25:00-06:00</updated><id>https://wlt.soy/tech/2019/12/28/everything-you-need-to-know-about-webtech</id><content type="html" xml:base="https://wlt.soy/tech/2019/12/28/everything-you-need-to-know-about-webtech.html">&lt;p&gt;React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL,
 ORMs – webtech is a dizzying world with diverse technologies, wacky lingo, and
 more frameworks than stars in the sky. Looking for a way in? You just found it.&lt;/p&gt;
 
 &lt;p class=&quot;intro&quot;&gt;&lt;em&gt;Audience: burgeoning programmers looking for an intro to webtech&lt;/em&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/everything-you-need-to-know-about-webtech/internet.jpg&quot; alt=&quot;Source: https://askleo.askleomedia.com/wp-content/uploads/2018/10/internet.jpg&quot; /&gt;
+    &lt;img src=&quot;/assets/everything-you-need-to-know-about-webtech/internet.jpg&quot; alt=&quot;Source: https://askleo.askleomedia.com/wp-content/uploads/2018/10/internet.jpg&quot; /&gt;
     &lt;figcaption&gt;Source: https://askleo.askleomedia.com/wp-content/uploads/2018/10/internet.jpg&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -24,7 +24,7 @@ thinking of a career in web dev, you’ve made it to the right place.&lt;/p&gt;
 
 &lt;h3 id=&quot;internet&quot;&gt;Internet&lt;/h3&gt;
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/everything-you-need-to-know-about-webtech/arpanet.jpg&quot; alt=&quot;Source: http://mercury.lcs.mit.edu/~jnc/tech/arpageo.html&quot; /&gt;
+    &lt;img src=&quot;/assets/everything-you-need-to-know-about-webtech/arpanet.jpg&quot; alt=&quot;Source: http://mercury.lcs.mit.edu/~jnc/tech/arpageo.html&quot; /&gt;
     &lt;figcaption&gt;Source: http://mercury.lcs.mit.edu/~jnc/tech/arpageo.html&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -62,7 +62,7 @@ is figuring out how to make that page in the first place.&lt;/p&gt;
 &lt;/ol&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/everything-you-need-to-know-about-webtech/frontend_backend.png&quot; alt=&quot;Source: https://www.seobility.net/en/wiki/Frontend&quot; /&gt;
+    &lt;img src=&quot;/assets/everything-you-need-to-know-about-webtech/frontend_backend.png&quot; alt=&quot;Source: https://www.seobility.net/en/wiki/Frontend&quot; /&gt;
     &lt;figcaption&gt;Source: https://www.seobility.net/en/wiki/Frontend&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -140,7 +140,7 @@ and it uses a special querying language called &lt;a href=&quot;https://www.w3sc
 to store and retrieve information.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/everything-you-need-to-know-about-webtech/database.jpg&quot; alt=&quot;A stylized database schema. Source: https://www.cbronline.com&quot; /&gt;
+    &lt;img src=&quot;/assets/everything-you-need-to-know-about-webtech/database.jpg&quot; alt=&quot;A stylized database schema. Source: https://www.cbronline.com&quot; /&gt;
     &lt;figcaption&gt;A stylized database schema. Source: https://www.cbronline.com&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -181,7 +181,7 @@ two websites:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.taco.com/&quot;&gt;TACO&lt;/a&gt;&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/everything-you-need-to-know-about-webtech/taco.png&quot; alt=&quot;A very old-fashioned, 90s era website. Likely written by hand
+    &lt;img src=&quot;/assets/everything-you-need-to-know-about-webtech/taco.png&quot; alt=&quot;A very old-fashioned, 90s era website. Likely written by hand
     with traditional HTML and CSS techniques.&quot; /&gt;
     &lt;figcaption&gt;A very old-fashioned, 90s era website. Likely written by hand
     with traditional HTML and CSS techniques.&lt;/figcaption&gt;
@@ -189,7 +189,7 @@ two websites:&lt;/p&gt;
 
 &lt;p class=&quot;small-skip&quot;&gt;&lt;a href=&quot;http://www.feedmusic.com/&quot;&gt;Feed&lt;/a&gt;&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/everything-you-need-to-know-about-webtech/feed.png&quot; alt=&quot;Beautifully animated, sleek, modern website.&quot; /&gt;
+    &lt;img src=&quot;/assets/everything-you-need-to-know-about-webtech/feed.png&quot; alt=&quot;Beautifully animated, sleek, modern website.&quot; /&gt;
     &lt;figcaption&gt;Beautifully animated, sleek, modern website.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -270,12 +270,12 @@ need &lt;a href=&quot;http://www.celeryproject.org/&quot;&gt;Celery&lt;/a&gt; an
 JavaScript, which has async built in. &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>William L. Tong</name></author><category term="education" /><summary type="html">React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL, ORMs – webtech is a dizzying world with diverse technologies, wacky lingo, and more frameworks than stars in the sky. Looking for a way in? You just found it. Audience: burgeoning programmers looking for an intro to webtech</summary></entry><entry><title type="html">Smile.</title><link href="http://localhost:4000/_site/personal/2019/08/26/smile.html" rel="alternate" type="text/html" title="Smile." /><published>2019-08-26T12:36:54-05:00</published><updated>2019-08-26T12:36:54-05:00</updated><id>http://localhost:4000/_site/personal/2019/08/26/smile</id><content type="html" xml:base="http://localhost:4000/_site/personal/2019/08/26/smile.html">&lt;p&gt;Sometimes, it’s just been a bad day.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>William L. Tong</name></author><category term="education" /><summary type="html">React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL, ORMs – webtech is a dizzying world with diverse technologies, wacky lingo, and more frameworks than stars in the sky. Looking for a way in? You just found it. Audience: burgeoning programmers looking for an intro to webtech</summary></entry><entry><title type="html">Smile.</title><link href="https://wlt.soy/personal/2019/08/26/smile.html" rel="alternate" type="text/html" title="Smile." /><published>2019-08-26T12:36:54-05:00</published><updated>2019-08-26T12:36:54-05:00</updated><id>https://wlt.soy/personal/2019/08/26/smile</id><content type="html" xml:base="https://wlt.soy/personal/2019/08/26/smile.html">&lt;p&gt;Sometimes, it’s just been a bad day.&lt;/p&gt;
 
 &lt;p class=&quot;intro&quot;&gt;&lt;em&gt;Audience: everyone&lt;/em&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/smile/dark_forest.jpg&quot; alt=&quot;Source: https://www.pinterest.com/pin/94364554676402286/&quot; /&gt;
+    &lt;img src=&quot;/assets/smile/dark_forest.jpg&quot; alt=&quot;Source: https://www.pinterest.com/pin/94364554676402286/&quot; /&gt;
     &lt;figcaption&gt;Source: https://www.pinterest.com/pin/94364554676402286/&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -290,14 +290,14 @@ Maybe flash a little teeth, if you’re feeling good.&lt;/p&gt;
 
 &lt;p&gt;Deep breath.&lt;/p&gt;
 
-&lt;p&gt;And relax, but see if you can keep a small smile resting on your lips.&lt;/p&gt;</content><author><name>William L. Tong</name></author><category term="curio" /><summary type="html">Sometimes, it’s just been a bad day. Audience: everyone</summary></entry><entry><title type="html">Programming for n00bs: an introduction to our craft</title><link href="http://localhost:4000/_site/tech/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html" rel="alternate" type="text/html" title="Programming for n00bs: an introduction to our craft" /><published>2019-02-22T20:05:54-06:00</published><updated>2019-02-22T20:05:54-06:00</updated><id>http://localhost:4000/_site/tech/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft</id><content type="html" xml:base="http://localhost:4000/_site/tech/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html">&lt;p&gt;If you’ve always wanted to learn how to program, but never know where to start,
+&lt;p&gt;And relax, but see if you can keep a small smile resting on your lips.&lt;/p&gt;</content><author><name>William L. Tong</name></author><category term="curio" /><summary type="html">Sometimes, it’s just been a bad day. Audience: everyone</summary></entry><entry><title type="html">Programming for n00bs: an introduction to our craft</title><link href="https://wlt.soy/tech/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html" rel="alternate" type="text/html" title="Programming for n00bs: an introduction to our craft" /><published>2019-02-22T20:05:54-06:00</published><updated>2019-02-22T20:05:54-06:00</updated><id>https://wlt.soy/tech/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft</id><content type="html" xml:base="https://wlt.soy/tech/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html">&lt;p&gt;If you’ve always wanted to learn how to program, but never know where to start,
 you’re in the right place. Start here. Today is the first day of your
 glorious programming future.&lt;/p&gt;
 
 &lt;p class=&quot;intro&quot;&gt;&lt;em&gt;Audience: curious folks interested in programming&lt;/em&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/programming-for-n00bs/intro_to_programming.jpg&quot; alt=&quot;Source: https://www.lynda.com/Programming-Foundations-tutorials&quot; /&gt;
+    &lt;img src=&quot;/assets/programming-for-n00bs/intro_to_programming.jpg&quot; alt=&quot;Source: https://www.lynda.com/Programming-Foundations-tutorials&quot; /&gt;
     &lt;figcaption&gt;Source: https://www.lynda.com/Programming-Foundations-tutorials&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -380,7 +380,7 @@ different depending on your operating system.&lt;/p&gt;
 and you’ll find them.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/programming-for-n00bs/powershell.webp&quot; alt=&quot;Source: https://www.digitalcitizen.life/ways-launch-powershell-windows-admin&quot; /&gt;
+    &lt;img src=&quot;/assets/programming-for-n00bs/powershell.webp&quot; alt=&quot;Source: https://www.digitalcitizen.life/ways-launch-powershell-windows-admin&quot; /&gt;
     &lt;figcaption&gt;Source: https://www.digitalcitizen.life/ways-launch-powershell-windows-admin&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -416,7 +416,7 @@ with a hefty price tag. Why pay when Atom is just as excellent, and free?&lt;/p&
 &lt;p&gt;And for the hard-core, there’s &lt;a href=&quot;https://www.vim.org/&quot;&gt;Vim&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/programming-for-n00bs/vim_curve.jpg&quot; alt=&quot;Source: https://stackoverflow.com/questions/10942008/what-does-emacs-learning-curve-actually-look-like&quot; /&gt;
+    &lt;img src=&quot;/assets/programming-for-n00bs/vim_curve.jpg&quot; alt=&quot;Source: https://stackoverflow.com/questions/10942008/what-does-emacs-learning-curve-actually-look-like&quot; /&gt;
     &lt;figcaption&gt;Source: https://stackoverflow.com/questions/10942008/what-does-emacs-learning-curve-actually-look-like&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -453,7 +453,7 @@ versions.&lt;/p&gt;
 Open one right now, and here’s what you might see:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/programming-for-n00bs/my_terminal.png&quot; alt=&quot;Source: me&quot; /&gt;
+    &lt;img src=&quot;/assets/programming-for-n00bs/my_terminal.png&quot; alt=&quot;Source: me&quot; /&gt;
     &lt;figcaption&gt;Source: me&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -462,7 +462,7 @@ same: a blinking cursor in front of a prompt. Try typing &lt;code class=&quot;la
 enter. Mine looks like this:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/programming-for-n00bs/my_terminal_ls.png&quot; alt=&quot;Source: me&quot; /&gt;
+    &lt;img src=&quot;/assets/programming-for-n00bs/my_terminal_ls.png&quot; alt=&quot;Source: me&quot; /&gt;
     &lt;figcaption&gt;Source: me&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -493,7 +493,7 @@ reasons of taste and style.&lt;/p&gt;
 see:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/programming-for-n00bs/nautilus.png&quot; alt=&quot;Source: me&quot; /&gt;
+    &lt;img src=&quot;/assets/programming-for-n00bs/nautilus.png&quot; alt=&quot;Source: me&quot; /&gt;
     &lt;figcaption&gt;Source: me&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -825,7 +825,7 @@ working directory. &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&
       &lt;p&gt;Still on its way, I promise! &lt;a href=&quot;#fnref:7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>William L. Tong</name></author><category term="education" /><summary type="html">If you’ve always wanted to learn how to program, but never know where to start, you’re in the right place. Start here. Today is the first day of your glorious programming future. Audience: curious folks interested in programming</summary></entry><entry><title type="html">From 1011 to Laptop: How to build a computer from binary</title><link href="http://localhost:4000/_site/tech/2019/01/12/from-1011-to-laptop-how-to-build-a-computer-from-binary.html" rel="alternate" type="text/html" title="From 1011 to Laptop: How to build a computer from binary" /><published>2019-01-12T21:29:00-06:00</published><updated>2019-01-12T21:29:00-06:00</updated><id>http://localhost:4000/_site/tech/2019/01/12/from-1011-to-laptop-how-to-build-a-computer-from-binary</id><content type="html" xml:base="http://localhost:4000/_site/tech/2019/01/12/from-1011-to-laptop-how-to-build-a-computer-from-binary.html">&lt;p&gt;How exactly do computers work? How do you go from simple electrical impulses to
+&lt;/div&gt;</content><author><name>William L. Tong</name></author><category term="education" /><summary type="html">If you’ve always wanted to learn how to program, but never know where to start, you’re in the right place. Start here. Today is the first day of your glorious programming future. Audience: curious folks interested in programming</summary></entry><entry><title type="html">From 1011 to Laptop: How to build a computer from binary</title><link href="https://wlt.soy/tech/2019/01/12/from-1011-to-laptop-how-to-build-a-computer-from-binary.html" rel="alternate" type="text/html" title="From 1011 to Laptop: How to build a computer from binary" /><published>2019-01-12T21:29:00-06:00</published><updated>2019-01-12T21:29:00-06:00</updated><id>https://wlt.soy/tech/2019/01/12/from-1011-to-laptop-how-to-build-a-computer-from-binary</id><content type="html" xml:base="https://wlt.soy/tech/2019/01/12/from-1011-to-laptop-how-to-build-a-computer-from-binary.html">&lt;p&gt;How exactly do computers work? How do you go from simple electrical impulses to
 this incredible wonder-box? Tucked beneath our palms, in our pockets, and on our
 desks are veritable miracles of delicate wiring and clever engineering. For the
 next few minutes, I’ll take you on a whirlwind tour: from simple 1’s and 0’s to
@@ -834,7 +834,7 @@ the whole, hulking beast that we call a computer.&lt;/p&gt;
 &lt;p class=&quot;intro&quot;&gt;&lt;em&gt;Audience: anyone and everyone&lt;/em&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/from-1011-to-laptop/iconic_computer.png&quot; alt=&quot;Source: https://en.wikipedia.org/wiki/Desktop_computer&quot; /&gt;
+    &lt;img src=&quot;/assets/from-1011-to-laptop/iconic_computer.png&quot; alt=&quot;Source: https://en.wikipedia.org/wiki/Desktop_computer&quot; /&gt;
     &lt;figcaption&gt;Source: https://en.wikipedia.org/wiki/Desktop_computer&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1113,7 +1113,7 @@ therefore also with binary). I’ll leave it up to Google to show you how.&lt;/p
 &lt;p class=&quot;small-skip&quot;&gt;We have logic gates. We have binary. We’re now ready to build the actual beast.&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/from-1011-to-laptop/von_neumann.png&quot; alt=&quot;Source: https://en.wikipedia.org/wiki/Von_Neumann_architecture&quot; /&gt;
+    &lt;img src=&quot;/assets/from-1011-to-laptop/von_neumann.png&quot; alt=&quot;Source: https://en.wikipedia.org/wiki/Von_Neumann_architecture&quot; /&gt;
     &lt;figcaption&gt;Source: https://en.wikipedia.org/wiki/Von_Neumann_architecture&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1129,7 +1129,7 @@ touch on it a little, but will save the meat for a future post.&lt;/p&gt;
 complex web of AND, OR, and NOT logic gates. Check it out:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/from-1011-to-laptop/complicated_schematic.png&quot; alt=&quot;Source: http://www.sciencegeek.net/Biology/Presentations/Respiration/&quot; /&gt;
+    &lt;img src=&quot;/assets/from-1011-to-laptop/complicated_schematic.png&quot; alt=&quot;Source: http://www.sciencegeek.net/Biology/Presentations/Respiration/&quot; /&gt;
     &lt;figcaption&gt;Source: http://www.sciencegeek.net/Biology/Presentations/Respiration/&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1146,7 +1146,7 @@ got a functioning laptop.&lt;/p&gt;
 And it looks something like this:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/from-1011-to-laptop/adder.png&quot; alt=&quot;Source: me&quot; /&gt;
+    &lt;img src=&quot;/assets/from-1011-to-laptop/adder.png&quot; alt=&quot;Source: me&quot; /&gt;
     &lt;figcaption&gt;Source: me&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1171,7 +1171,7 @@ cleverly so that the circuit “remembers” the last value inputted. Below is a
 neat graphic stolen from the Wikipedia page illustrating how this works:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/from-1011-to-laptop/latch.gif&quot; alt=&quot;Source: https://en.wikipedia.org/wiki/Flip-flop_(electronics)&quot; /&gt;
+    &lt;img src=&quot;/assets/from-1011-to-laptop/latch.gif&quot; alt=&quot;Source: https://en.wikipedia.org/wiki/Flip-flop_(electronics)&quot; /&gt;
     &lt;figcaption&gt;Source: https://en.wikipedia.org/wiki/Flip-flop_(electronics)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1215,7 +1215,7 @@ called decoders and encoders.&lt;/p&gt;
 like this:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/from-1011-to-laptop/decoder.png&quot; alt=&quot;Source: me&quot; /&gt;
+    &lt;img src=&quot;/assets/from-1011-to-laptop/decoder.png&quot; alt=&quot;Source: me&quot; /&gt;
     &lt;figcaption&gt;Source: me&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1326,7 +1326,7 @@ an operating system.&lt;/p&gt;
 &lt;p&gt;So which came first?&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/from-1011-to-laptop/chicken_egg.jpg&quot; alt=&quot;Source: http://signlanguageco.com/the-chicken-and-the-egg-and-the-interpreter/&quot; /&gt;
+    &lt;img src=&quot;/assets/from-1011-to-laptop/chicken_egg.jpg&quot; alt=&quot;Source: http://signlanguageco.com/the-chicken-and-the-egg-and-the-interpreter/&quot; /&gt;
     &lt;figcaption&gt;Source: http://signlanguageco.com/the-chicken-and-the-egg-and-the-interpreter/&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1459,14 +1459,14 @@ your laptop, embedded systems you never knew existed, all of it runs on
 software written mostly in C (or it’s controversial child, C++). &lt;a href=&quot;#fnref:11&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>William L. Tong</name></author><category term="education" /><summary type="html">How exactly do computers work? How do you go from simple electrical impulses to this incredible wonder-box? Tucked beneath our palms, in our pockets, and on our desks are veritable miracles of delicate wiring and clever engineering. For the next few minutes, I’ll take you on a whirlwind tour: from simple 1’s and 0’s to the whole, hulking beast that we call a computer. Audience: anyone and everyone</summary></entry><entry><title type="html">Getting started with Jekyll</title><link href="http://localhost:4000/_site/tech/2019/01/04/getting-started-with-jekyll.html" rel="alternate" type="text/html" title="Getting started with Jekyll" /><published>2019-01-04T19:39:00-06:00</published><updated>2019-01-04T19:39:00-06:00</updated><id>http://localhost:4000/_site/tech/2019/01/04/getting-started-with-jekyll</id><content type="html" xml:base="http://localhost:4000/_site/tech/2019/01/04/getting-started-with-jekyll.html">&lt;p&gt;A simple guide to setting up a Jekyll installation. Existing documentation left
+&lt;/div&gt;</content><author><name>William L. Tong</name></author><category term="education" /><summary type="html">How exactly do computers work? How do you go from simple electrical impulses to this incredible wonder-box? Tucked beneath our palms, in our pockets, and on our desks are veritable miracles of delicate wiring and clever engineering. For the next few minutes, I’ll take you on a whirlwind tour: from simple 1’s and 0’s to the whole, hulking beast that we call a computer. Audience: anyone and everyone</summary></entry><entry><title type="html">Getting started with Jekyll</title><link href="https://wlt.soy/tech/2019/01/04/getting-started-with-jekyll.html" rel="alternate" type="text/html" title="Getting started with Jekyll" /><published>2019-01-04T19:39:00-06:00</published><updated>2019-01-04T19:39:00-06:00</updated><id>https://wlt.soy/tech/2019/01/04/getting-started-with-jekyll</id><content type="html" xml:base="https://wlt.soy/tech/2019/01/04/getting-started-with-jekyll.html">&lt;p&gt;A simple guide to setting up a Jekyll installation. Existing documentation left
 some pieces out, so I’ve put together this document to guide anyone else (and
 my future self) through the process.&lt;/p&gt;
 
 &lt;p class=&quot;intro&quot;&gt;&lt;em&gt;Audience: tech-oriented folks comfortable on the command line&lt;/em&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/_site/assets/getting-started-with-jekyll/jekyll_logo.png&quot; alt=&quot;Source: https://github.com/jekyll/brand&quot; /&gt;
+    &lt;img src=&quot;/assets/getting-started-with-jekyll/jekyll_logo.png&quot; alt=&quot;Source: https://github.com/jekyll/brand&quot; /&gt;
     &lt;figcaption&gt;Source: https://github.com/jekyll/brand&lt;/figcaption&gt;
 &lt;/figure&gt;
 
