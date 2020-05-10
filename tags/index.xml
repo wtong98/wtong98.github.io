@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on william lettuce tongmato</title>
+    <link>https://wlt.coffee/tags/</link>
+    <description>Recent content in Tags on william lettuce tongmato</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 28 Dec 2019 13:25:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wlt.coffee/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>education</title>
+      <link>https://wlt.coffee/tags/education/</link>
+      <pubDate>Sat, 28 Dec 2019 13:25:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://wlt.coffee/tags/tech/</link>
+      <pubDate>Sat, 28 Dec 2019 13:25:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>curio</title>
+      <link>https://wlt.coffee/tags/curio/</link>
+      <pubDate>Mon, 26 Aug 2019 12:36:54 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/tags/curio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>https://wlt.coffee/tags/personal/</link>
+      <pubDate>Mon, 26 Aug 2019 12:36:54 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>howto</title>
+      <link>https://wlt.coffee/tags/howto/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/tags/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>https://wlt.coffee/tags/demo/</link>
+      <pubDate>Mon, 24 Dec 2018 12:29:41 +0800</pubDate>
+      
+      <guid>https://wlt.coffee/tags/demo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image</title>
+      <link>https://wlt.coffee/tags/image/</link>
+      <pubDate>Mon, 24 Dec 2018 12:29:41 +0800</pubDate>
+      
+      <guid>https://wlt.coffee/tags/image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Typography</title>
+      <link>https://wlt.coffee/tags/typography/</link>
+      <pubDate>Sat, 29 Sep 2018 11:36:33 +0800</pubDate>
+      
+      <guid>https://wlt.coffee/tags/typography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://wlt.coffee/tags/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://wlt.coffee/tags/go/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/tags/go/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

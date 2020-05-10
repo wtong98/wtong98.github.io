@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>education on william lettuce tongmato</title>
+    <link>https://wlt.coffee/tags/education/</link>
+    <description>Recent content in education on william lettuce tongmato</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 28 Dec 2019 13:25:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wlt.coffee/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Everything you need to know about webtech</title>
+      <link>https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/</link>
+      <pubDate>Sat, 28 Dec 2019 13:25:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/</guid>
+      <description>&lt;p&gt;React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL,
+ORMs &amp;ndash; webtech is a dizzying world with diverse technologies, wacky lingo, and
+more frameworks than stars in the sky. Looking for a way in? You just found it.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: burgeoning programmers looking for an intro to webtech&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Programming for n00bs: an introduction to our craft</title>
+      <link>https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/</link>
+      <pubDate>Fri, 22 Feb 2019 21:05:54 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve always wanted to learn how to program, but never know where to start,
+you&amp;rsquo;re in the right place. Start here. Today is the first day of your
+glorious programming future.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: curious folks interested in programming&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>From 1011 to Laptop: How to build a computer from binary</title>
+      <link>https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/</guid>
+      <description>&lt;p&gt;How exactly do computers work? How do you go from simple electrical impulses to
+this incredible wonder-box? Tucked beneath our palms, in our pockets, and on our
+desks are veritable miracles of delicate wiring and clever engineering. For the
+next few minutes, I&amp;rsquo;ll take you on a whirlwind tour: from simple 1&amp;rsquo;s and 0&amp;rsquo;s to
+the whole, hulking beast that we call a computer.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: anyone and everyone&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

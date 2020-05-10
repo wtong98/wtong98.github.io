@@ -1,0 +1,1265 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on william lettuce tongmato</title>
+		<link>https://wlt.coffee/posts/</link>
+		<description>Recent content in Posts on william lettuce tongmato</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Sat, 28 Dec 2019 13:25:00 +0000</lastBuildDate>
+		<atom:link href="https://wlt.coffee/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Everything you need to know about webtech</title>
+			<link>https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/</link>
+			<pubDate>Sat, 28 Dec 2019 13:25:00 +0000</pubDate>
+			
+			<guid>https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/</guid>
+			<description>&lt;p&gt;React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL,
+ORMs &amp;ndash; webtech is a dizzying world with diverse technologies, wacky lingo, and
+more frameworks than stars in the sky. Looking for a way in? You just found it.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: burgeoning programmers looking for an intro to webtech&lt;/em&gt;&lt;/p&gt;</description>
+			<content type="html"><![CDATA[<p>React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL,
+ORMs &ndash; webtech is a dizzying world with diverse technologies, wacky lingo, and
+more frameworks than stars in the sky. Looking for a way in? You just found it.</p>
+<p><em>Audience: burgeoning programmers looking for an intro to webtech</em></p>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/internet.jpg"
+         alt="Internet"/> <figcaption>
+            <p>Source: <a href="https://askleo.askleomedia.com/wp-content/uploads/2018/10/internet.jpg">https://askleo.askleomedia.com/wp-content/uploads/2018/10/internet.jpg</a></p>
+        </figcaption>
+</figure>
+
+<hr>
+<p>Webtech<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> is a <em>monster</em>. The barrier to entry is high for a number of reasons:</p>
+<ol>
+<li><strong>Lightning pace</strong>: technologies popular three years ago
+are already becoming obsolete</li>
+<li><strong>Informal training</strong>: teaching something that changes this fast is challenging.
+Most of the education happens on the job or via blog tutorials (like this one!)</li>
+<li><strong>Sheer volume</strong>: the raw number of tools, packages, and frameworks for modern
+web development is overwhelming</li>
+</ol>
+<p>But that&rsquo;s why posts like this exist. Whether you&rsquo;re a casual programmer or
+thinking of a career in web dev, you&rsquo;ve made it to the right place.</p>
+<h2 id="internet">Internet</h2>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/arpanet.jpg"
+         alt="Arpanet"/> <figcaption>
+            <p>Source: <a href="http://mercury.lcs.mit.edu/~jnc/tech/arpageo.html">http://mercury.lcs.mit.edu/~jnc/tech/arpageo.html</a></p>
+        </figcaption>
+</figure>
+
+<p>Open your favorite browser. Type <code>www.google.com</code>. Hit enter.</p>
+<p>The moment your finger brushes the key, your laptop&rsquo;s wireless card sends a beam
+of light<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> encoding information like <code>www.google.com</code>, <code>1:25 pm</code>, and <code>I am coming from Jane's laptop</code> to a tiny computer in your home/office called a
+router. The router then transmits the information as electrical impulses through
+a tangle of cables to a supercomputer. Depending on where you live and the location
+of the nearest Google servers, these electrical impulses will get rocketed around
+the country, potentially under the ocean, until they arrive at last to routers
+owned by Google. From here, they feed to a Google computer, which interprets
+the information, assembles the Google search page, and sends that data back
+through the routers, tangle of cables, supercomputers, and finally the router
+in your home or office, where it can be beamed back to your laptop as light &ndash;
+and lo! Google search appears on your screen.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>If this whole process sounds immensely cool and complicated, it is. Check out
+<a href="https://www.vox.com/a/internet-maps">this article</a> from Vox with impressive
+graphics about the whole process.</p>
+<p>Most of this process lies in the realm of telecom giants and hardcore engineers.
+For the software geeks, there&rsquo;s only one part that really matters: assembling
+the page. All the hard stuff &ndash; getting the users&rsquo; signals to your computer, sending
+your page out to users &ndash; is handled by the Internet. The real work for us
+is figuring out how to make that page in the first place.</p>
+<h2 id="web-stack">Web stack</h2>
+<p>That page &ndash; which I&rsquo;ll now call a web application &ndash; requires three parts:</p>
+<ol>
+<li>Frontend: what the user sees</li>
+<li>Backend: data and logic powering the web app</li>
+<li>Server: software that glues everything together</li>
+</ol>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/frontend_backend.png"
+         alt="Full stack"/> <figcaption>
+            <p>Source: <a href="https://www.seobility.net/en/wiki/Frontend">https://www.seobility.net/en/wiki/Frontend</a></p>
+        </figcaption>
+</figure>
+
+<p>A world of technology goes into building these three components. Software
+engineers then pick their favorite and assemble them into a <a href="https://whatis.techtarget.com/definition/Web-stack">web stack</a>.
+For example, a traditional choice is to pick <!-- raw HTML omitted -->L<!-- raw HTML omitted -->inux and <!-- raw HTML omitted -->A<!-- raw HTML omitted -->pache for the server,
+<!-- raw HTML omitted -->M<!-- raw HTML omitted -->ySQL and <!-- raw HTML omitted -->P<!-- raw HTML omitted -->HP for the backend, and more PHP for the frontend. The
+<a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a> stack. Let&rsquo;s walk
+through each part in greater detail below:</p>
+<h3 id="frontend">Frontend</h3>
+<p>Arguably the gnarliest part of the whole stack, the frontend governs everything
+the user sees, touches, and hears. Everything you interact with directly on the
+Internet lies in the realm of frontend.</p>
+<p>Three core technologies to know:</p>
+<ol>
+<li><a href="https://www.w3schools.com/html/">HTML</a></li>
+<li><a href="https://www.w3schools.com/css/">CSS</a></li>
+<li><a href="https://www.w3schools.com/js/">Javascript</a></li>
+</ol>
+<p><strong>HTML</strong> (short for Hypertext Markup Language) describes the structure of a
+webpage. It looks something like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> describes the structure of a webpage.
+    It looks something like this:
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div><p>The funny-looking sections enclosed in angle brackets are called <em>tags</em>. They
+denote sections of an HTML document. For example <code>&lt;p&gt;</code> denotes the beginning
+of a paragraph, and <code>&lt;/p&gt;</code> denotes the end. Closing tags always include the <code>/</code>
+between the brackets. The tag <code>&lt;strong&gt;</code> denotes really important text, which
+should be emphasized. To view the HTML of this webpage, you can right-click
+on the page and select &ldquo;View page source.&rdquo;</p>
+<p><strong>CSS</strong> (short for Cascading Style Sheet) describes how a webpage should look.
+It looks like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>This snippet means that the text color for all paragraphs should be blue. You
+can use CSS to stylize just about any visual element on your webpage, from the
+color to the spacing to the placement, and even animations. Whereas HTML
+gives you content and structure, CSS gives you visuals.</p>
+<p>Just HTML + CSS is enough to build a decent webpage. But for the fancy stuff
+like <a href="http://weavesilk.com/">this</a>, you&rsquo;ll need <strong>JavaScript</strong>.</p>
+<p>JavaScript is a fully-fledged programming language.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> Webpages rely on them
+for animation, logic, interfaces, basically anything a general programming
+language can do. In fact, JavaScript is so powerful that some websites are built
+purely from it. No HTML. No CSS. Pure JavaScript. It&rsquo;s a large topic and
+deserving of its own post.</p>
+<p>JavaScript, by the way, has nothing to do with <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>.
+The name was chosen for hype, back when Java was all the rage. But nowadays
+Java has about as much relation to JavaScript as &ldquo;car&rdquo; to &ldquo;carpet.&rdquo;</p>
+<h3 id="backend">Backend</h3>
+<p>For a lot of websites (like this one), the frontend is all you need. But if
+you want a higher degree of interaction with your users &ndash; like a
+browser-based video game, web email, online gradebook, basically anything that
+requires you to log on &ndash; you&rsquo;ll also need a backend.</p>
+<p>The primary job of the backend is to host a <strong>database</strong>. A database is a
+collection of structured information. Think Excel, but with multiple spreadsheets
+that connect to each other. Using it, you might store usernames, passwords,
+favorite color, preferred pizza parlor, opinion on bananas vs plantains, virtually
+any data you&rsquo;d like. A popular database is <a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a>,
+and it uses a special querying language called <a href="https://www.w3schools.com/sql/">SQL</a>
+to store and retrieve information.</p>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/database.jpg"
+         alt="Full stack"/> <figcaption>
+            <p>Source: <a href="https://www.seobility.net/en/wiki/Frontend">https://www.seobility.net/en/wiki/Frontend</a></p>
+        </figcaption>
+</figure>
+
+<p>The rest of the backend includes code that connects the database to the rest of
+the website. Suppose your website orders pizza from a user&rsquo;s favorite pizza
+parlor. Then once the user hits &ldquo;Order!&rdquo; your backend might query the database,
+discover that the user likes &ldquo;Pizza Hut,&rdquo; connect to Pizza Hut&rsquo;s online ordering
+system, and submit an order for a large pepperoni with extra cheese.</p>
+<p>The code itself can be written in virtually any popular programming language.
+Traditionally, the choice is <a href="https://www.w3schools.com/php/">PHP</a>, but no
+modern website will touch it. Other common choices include (in my personal
+order of preference) Java, <a href="https://www.djangoproject.com/">Python</a>, and even
+<a href="https://nodejs.org/en/">JavaScript</a> itself. But if you&rsquo;re a hardcore disciple
+of SomeObscureLanguage, chances are, someone somewhere has written a package
+that lets you use it for a backend.</p>
+<h3 id="server">Server</h3>
+<p>Often paired with the backend, the server is a piece of software that connects
+users to the actual website.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Its primary job is to direct traffic: when
+a user types <code>google.com</code> and hits enter, servers at Google receive that
+request, give it to the backend to process, and return the assembled
+webpage to the user.</p>
+<p>In practice, the server is not something a web developer touches directly.
+Instead, clever people have already written multitudes of servers ready
+for you to plug-and-play. The traditional go-to has been
+<a href="https://httpd.apache.org/">Apache</a>, though a popular option today is <a href="https://www.nginx.com/">nginx</a>
+(pronounced like &ldquo;engine - X&rdquo;).</p>
+<h2 id="frameworks">Frameworks</h2>
+<p>And that&rsquo;s about it! Those three building blocks &ndash; frontend, backend, server &ndash;
+form the core of any web project. The rest of webtech is an endless elaboration
+on these three themes.</p>
+<p>One last thing to talk about is the <strong>web framework</strong>. Take a look at these
+two websites:</p>
+<p><a href="http://www.taco.com/">TACO</a>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/taco.png"
+         alt="TACO"/> <figcaption>
+            <p>A very old-fashioned, 90s era website. Likely written by hand with traditional HTML and CSS techniques.</p>
+        </figcaption>
+</figure>
+</p>
+<p><a href="http://www.feedmusic.com/">Feed</a>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/feed.png"
+         alt="Full stack"/> <figcaption>
+            <p>Beautifully animated, sleek, modern website.</p>
+        </figcaption>
+</figure>
+</p>
+<p>Imagine trying to write the website for Feed by hand using plain HTML, CSS, and
+JavaScript. It&rsquo;s doable, but doable in the same sense that building the Great
+Wall of China brick-by-brick is doable.</p>
+<p>To build something beautiful, interactive, and <em>modern</em>, you need a framework.
+These are software packages that in some way make your life easier when
+building a website. Some help structure your project. Others provide starting
+templates. Many blur the line between frontend, backend, and server, providing
+one complete solution that encompasses all parts.</p>
+<p>Each framework is itself the topic of a whole post. Below is a short overview of
+some popular ones, plus my unsolicited opinions:</p>
+<ul>
+<li><a href="https://reactjs.org/">React</a>: frontend framework that helps your write beautiful web apps. It
+does away entirely with HTML (and often CSS) and allows you to code the whole
+thing in JavaScript. The project is headed by Facebook, and <a href="https://facebook.com">facebook.com</a>
+is an excellent example of a website built with React.</li>
+<li><a href="https://angular.io/">Angular</a>: also a frontend framework, it&rsquo;s a primary competitor to React
+made by Google. Personally, I&rsquo;m not a huge fan. It&rsquo;s clunky, finicky, and
+difficult to learn. If you have the choice, I recommend React.</li>
+<li><a href="https://expressjs.com/">Express</a>: backend framework for JavaScript. Often
+you&rsquo;ll find it in a MERN stack: MongoDB (database) + Express + React + Node (JavaScript engine).</li>
+<li><a href="https://www.djangoproject.com/">Django</a>: backend framework for Python.
+It&rsquo;s got a little bit of everything you might need to build an enterprise-grade
+website.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></li>
+<li><a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a>: a competitor to Django.
+Whereas Django gives you everything, including an opinionated way to organize
+your project, Flask takes a leaner, simpler, minimalist approach. They say
+if Django is the Navy, then Flask is the pirates.</li>
+</ul>
+<p>If you&rsquo;re curious, this website is built using <a href="/tech/2019/01/04/getting-started-with-jekyll.html">Jekyll</a>.
+It&rsquo;s a blog-oriented framework that crunches text files containing my posts into
+the web pages you see now.</p>
+<h2 id="footnotes">Footnotes</h2>
+<p>Some extra tidbits to color your reading experience:</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>I use the term &ldquo;webtech&rdquo; to broadly cover everything related to building
+a web page or web-based application. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>In fact, it&rsquo;s the same kind of light that your microwave uses on leftovers.
+Check out <a href="https://scienceblogs.com/builtonfacts/2009/09/17/wifi-and-radiation">this interesting article</a>
+for more information. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Remember, all this happens on the order of seconds. And it has to happen
+every time you click on a link, browse to a new page, or generally use
+the Internet. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>For more on programming languages themselves, check out my
+<a href="http://localhost:4000/tech/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html">guide to programming</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Sometimes, people refer to the &ldquo;server&rdquo; as the physical machine that runs
+your backend code. In this article, I refer to &ldquo;server&rdquo; exclusively in
+the software sense. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Except built-in support for asynchronous Python, in which case you&rsquo;ll
+need <a href="http://www.celeryproject.org/">Celery</a> and a message broker like
+<a href="https://www.rabbitmq.com/">RabbitMQ</a>. The extra bulk is why I prefer
+JavaScript, which has async built in. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>]]></content>
+		</item>
+		
+		<item>
+			<title>Smile.</title>
+			<link>https://wlt.coffee/posts/2019-08-26-smile/</link>
+			<pubDate>Mon, 26 Aug 2019 12:36:54 +0000</pubDate>
+			
+			<guid>https://wlt.coffee/posts/2019-08-26-smile/</guid>
+			<description>&lt;p&gt;Sometimes, it&amp;rsquo;s just been a bad day.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: everyone&lt;/em&gt;&lt;/p&gt;</description>
+			<content type="html"><![CDATA[<p>Sometimes, it&rsquo;s just been a bad day.</p>
+<p><em>Audience: everyone</em></p>
+<figure>
+    <img src="/images/smile/dark_forest.jpg"
+         alt="Dark forest"/> <figcaption>
+            <p>Source: <a href="https://www.pinterest.com/pin/94364554676402286/">https://www.pinterest.com/pin/94364554676402286/</a></p>
+        </figcaption>
+</figure>
+
+<p>Smile.</p>
+<p>Go ahead, do it. Right here. Right now.</p>
+<p>Feel the corners of your mouth rise, your cheeks tighten, your eyes crinkle.
+Maybe flash a little teeth, if you&rsquo;re feeling good.</p>
+<p>Hold it for a few seconds.</p>
+<p>Deep breath.</p>
+<p>And relax, but see if you can keep a small smile resting on your lips.</p>]]></content>
+		</item>
+		
+		<item>
+			<title>Programming for n00bs: an introduction to our craft</title>
+			<link>https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/</link>
+			<pubDate>Fri, 22 Feb 2019 21:05:54 +0000</pubDate>
+			
+			<guid>https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/</guid>
+			<description>&lt;p&gt;If you&amp;rsquo;ve always wanted to learn how to program, but never know where to start,
+you&amp;rsquo;re in the right place. Start here. Today is the first day of your
+glorious programming future.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: curious folks interested in programming&lt;/em&gt;&lt;/p&gt;</description>
+			<content type="html"><![CDATA[<p>If you&rsquo;ve always wanted to learn how to program, but never know where to start,
+you&rsquo;re in the right place. Start here. Today is the first day of your
+glorious programming future.</p>
+<p><em>Audience: curious folks interested in programming</em></p>
+<figure>
+    <img src="/images/programming-for-n00bs/intro_to_programming.jpg"
+         alt="Programming for n00bs"/> <figcaption>
+            <p>Source: <a href="https://www.lynda.com/Programming-Foundations-tutorials">https://www.lynda.com/Programming-Foundations-tutorials</a></p>
+        </figcaption>
+</figure>
+
+<p>There&rsquo;s a common myth that programming is polarizing. You either get it or you
+don&rsquo;t.</p>
+<p>Lies.</p>
+<p>Here&rsquo;s more falsehood: you need to be super smart to learn how to program. Only
+geeks like programming. Women are rare in this field. You&rsquo;re too old to learn
+programming. You&rsquo;re too young to learn programming.</p>
+<p>Anyone &mdash; and I mean <em>anyone</em> &mdash; can learn how to program.</p>
+<p>It&rsquo;s easy. It&rsquo;s fun. Sure, you can make a lot of money &mdash; but to be honest,
+no one I know who&rsquo;s serious about programming is here for $$$.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> It&rsquo;s a
+genuinely meaningful activity. There&rsquo;s creativity, imagination, a chance
+to sprinkle your thoughts in a text file and watch it spring to life.</p>
+<p>In this two-part guide, I will give you the tools (and ideally the mindset) to
+begin your programming journey. This first part focuses on the basic skills to
+start. The second part dives deeper into the craft.</p>
+<p>Whether you&rsquo;re hoping to pick up a new hobby or gunning for a software
+engineering future, this is the perfect place to begin.</p>
+<h2 id="big-picture-stuff">Big picture stuff</h2>
+<p>At it&rsquo;s most general, computer programming is the art of writing instructions.</p>
+<p>Two keywords here: <strong>art</strong>. And <strong>instructions</strong>. Let&rsquo;s start with the sexier
+term: instructions.</p>
+<p>In a very real sense, programming is no different than writing a grocery list of
+goodies you want your spouse to pick up. It&rsquo;s no different than scribbling a
+note to your mom, telling her what to get from Subway, or jotting down
+a cooking recipe to remember for later.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>But instead of your spouse, Mom, or your future self, the audience for our
+particular instructions are <a href="https://wlt.soy/tech/curio/2019/01/12/from-1011-to-laptop-how-to-build-a-computer-from-binary.html">computers</a>.
+Computers don&rsquo;t speak English (<a href="https://towardsdatascience.com/an-easy-introduction-to-natural-language-processing-b1e2801291c1">yet</a>)
+so it&rsquo;s up to the programmer to learn their language. That&rsquo;s the easy part,
+and the part we&rsquo;ll focus on in this guide.</p>
+<p>The other side, <em>art</em>, is trickier to tap. There&rsquo;s an art to writing
+code, just as there&rsquo;s an art to writing prose. Good code tends to look good,
+<em>feel</em> good. It&rsquo;s aesthetic. Expressive. So damn clean you can eat off it. It&rsquo;s
+hard to get into the details without first learning some, so we&rsquo;ll come back
+to this concept in part II.</p>
+<p>But the biggest thing I want you to keep in mind moving forward is this:
+<strong>programming is possible</strong>. Sometimes, it&rsquo;ll seem hard. Sometimes, it&rsquo;ll seem
+impossible. Sometimes, you&rsquo;ll want to smash a hole through your laptop because
+nothing seems to work right. Don&rsquo;t. You can do it. And more importantly, laptops
+are expensive.</p>
+<p>Programming requires a different mindset than what you may be used to. It takes
+time to sink in. Give it a shot, and if it doesn&rsquo;t make sense, leave it to cook
+on the back-burners for a little while and come back later. I promise you won&rsquo;t
+regret it.</p>
+<h2 id="setting-up">Setting up</h2>
+<p>Setting up is the hardest part of the journey. Everyone&rsquo;s machine will be a
+little different. The instructions I give will try to be general enough to get
+everyone, but you might have a really cranky laptop that just isn&rsquo;t feeling it.
+In that case, Google and <a href="https://stackoverflow.com/">Stack Overflow</a> will be
+your best bet.</p>
+<p>The single most important thing you&rsquo;ll need is a terminal. Fortunately, your
+computer should come equipped with one. Unfortunately, they&rsquo;ll all be a little
+different depending on your operating system.</p>
+<p>If you&rsquo;re running <strong>Windows</strong>, you have three options:</p>
+<ol>
+<li>cmd</li>
+<li>PowerShell</li>
+<li>Windows Subsystem for Linux</li>
+</ol>
+<p>The first two come with Windows. Open up your applications menu or search box,
+and you&rsquo;ll find them.</p>
+<figure class="left">
+    <img src="/images/programming-for-n00bs/powershell.webp"
+         alt="Powershell"/> <figcaption>
+            <p>Source: <a href="https://www.digitalcitizen.life/ways-launch-powershell-windows-admin">https://www.digitalcitizen.life/ways-launch-powershell-windows-admin</a></p>
+        </figcaption>
+</figure>
+
+<p>However, if you don&rsquo;t mind installing a little extra gear, I recommend option 3.
+To get it, open up your Windows Store app, search for <a href="https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab">Ubuntu on Windows</a>, and
+install it. This application isn&rsquo;t a simple terminal, but will emulate a whole
+operating system (Linux) for you. Using it will allow you to follow the rest of
+this guide with minimal headaches.</p>
+<p>If you prefer to stick with the native Windows options, I&rsquo;d take PowerShell.
+It&rsquo;s far more advanced, and will play nicer with the instructions I will shortly
+give for using your terminal. If, for some reason, you&rsquo;re married to cmd,
+you&rsquo;re on your own, but you can learn more about it <a href="https://www.lifewire.com/command-prompt-2625840">here</a>.</p>
+<p>If you&rsquo;re running <strong>macOS</strong>, things are a lot simpler. The terminal is called
+&ldquo;Terminal&rdquo; (go figure) and is easily searchable with Spotlight (ctrl + spacebar).</p>
+<p>And if you&rsquo;re running a flavor of <strong>Linux</strong>, terminals will differ between distros,
+but you&rsquo;re likely proficient enough anyway to know how to use one.</p>
+<p>Next, you&rsquo;ll need a text editor. It&rsquo;s a program that allows you to write text
+into files, and it&rsquo;s the Swiss Army Knife of coding. Most computers will
+have ones built-in, but you&rsquo;ll need something with a little more power than
+Notepad to do proper work.</p>
+<p>My personal favorite is <a href="https://atom.io/">Atom</a>. It&rsquo;s slick. Hackable. Easy.
+And I&rsquo;m using it right now to write this post.</p>
+<p>If you&rsquo;re willing to shell out some cash, another popular editor is
+<a href="https://www.sublimetext.com/">Sublime</a>. It&rsquo;s an industry favorite, but comes
+with a hefty price tag. Why pay when Atom is just as excellent, and free?</p>
+<p>And for the hard-core, there&rsquo;s <a href="https://www.vim.org/">Vim</a>.</p>
+<figure class="right">
+    <img src="/images/programming-for-n00bs/vim_curve.jpg"
+         alt="Vim curve"/> <figcaption>
+            <p>Source: <a href="https://stackoverflow.com/questions/10942008/what-does-emacs-learning-curve-actually-look-like">https://stackoverflow.com/questions/10942008/what-does-emacs-learning-curve-actually-look-like</a></p>
+        </figcaption>
+</figure>
+
+<p>It&rsquo;s infamous for being tough to learn. But master it&rsquo;s wizardry, and you&rsquo;ll
+blaze with obscene speed. If you&rsquo;re prepared for an epic challenge,
+<a href="https://danielmiessler.com/study/vim/">here</a> is my favorite tutorial for the
+editor.</p>
+<p>Take some time to learn your chosen editor. They&rsquo;re often geared towards
+programming, but you can use them for just about anything word-related. Write
+your essays with them, if you&rsquo;d like. Compose poetry.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>Once you&rsquo;re ready, let&rsquo;s sink our teeth into some serious work.</p>
+<h2 id="shell">Shell</h2>
+<p>A terminal is a special environment that runs a program called a <em>shell</em>. In
+the old days, a terminal was a physical device attached to a computer. Today,
+you can access one through a window on your screen.</p>
+<p>A shell is a special kind of program that launches other programs. You&rsquo;re
+running a shell right now. On Windows, it&rsquo;s called &ldquo;Windows shell,&rdquo; and it&rsquo;s
+the familiar environment you use to interact with your computer. The desktop.
+File explorer. Login window. All of it is part of the shell. Using it, you
+can double-click on an icon to launch a program.</p>
+<p>But the kinds of shells we&rsquo;re interested in are called &ldquo;command-line shells,&rdquo;
+or sometimes &ldquo;command-line interface&rdquo; (CLI). Whereas the Windows shell is
+<em>graphical</em>, CLI&rsquo;s are <em>text-based</em>. There are no fancy desktops. No
+icons. No clicking. To launch a program, you type its name and hit enter. From
+here on out, when I use the word &ldquo;shell,&rdquo; I&rsquo;m referring to these text-based
+versions.</p>
+<p>PowerShell and Mac&rsquo;s Terminal are terminals that run these text-based shells.
+Open one right now, and here&rsquo;s what you might see:</p>
+<figure>
+    <img src="/images/programming-for-n00bs/my_terminal.png"
+         alt="terminal"/> <figcaption>
+            <p>Source: me</p>
+        </figcaption>
+</figure>
+
+<p>Yours will likely look a little different, but the basic gist should be the
+same: a blinking cursor in front of a prompt. Try typing <code>ls</code> and hit
+enter. Mine looks like this:</p>
+<figure>
+    <img src="/images/programming-for-n00bs/my_terminal_ls.png"
+         alt="ls"/> <figcaption>
+            <p>Source: me</p>
+        </figcaption>
+</figure>
+
+<p>Yours will differ, depending on the files in your system. To save myself some
+space, I can also use a convention to write the output like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ls
+a_directory/    another_directory/  file.txt    also_a_file.txt
+</code></pre></div><p>The &ldquo;$&rdquo; represents the prompt. A line without &ldquo;$&rdquo; signifies output.</p>
+<p>So what just happened?</p>
+<p>Unlike a graphical shell, where we can double-click an icon
+to launch a program, to launch a program in our text-based shell, we need to
+type the name and hit enter.</p>
+<p>In the example above, we launched a program called <code>ls</code>, short for
+&ldquo;list files.&rdquo; To understand what this means, let&rsquo;s talk about files and
+directories.</p>
+<h2 id="files-and-directories">Files and Directories</h2>
+<p>The data in your laptop are organized into files and directories &mdash; &ldquo;directory,&rdquo;
+by the way, is another word for &ldquo;folder.&rdquo; CS folks just prefer &ldquo;directory&rdquo; for
+reasons of taste and style.</p>
+<p>If you open your file explorer, you&rsquo;ll see a bunch of them. Here&rsquo;s what I
+see:</p>
+<figure>
+    <img src="/images/programming-for-n00bs/nautilus.png"
+         alt="nautilus"/> <figcaption>
+            <p>Source: me</p>
+        </figcaption>
+</figure>
+
+<p>Files are blobs of data collected in place. In the example above, there are
+two text files. They don&rsquo;t have to be just text. Laying around my computer,
+I&rsquo;ve got images, music, video, PDFs, programs &mdash; all are files.</p>
+<p>Directories are special structures that hold other files and directories. In
+the image above, there are two directories marked by little folder
+icons. In your file explorer, you might be able to double-click a directory
+to open, and see what&rsquo;s inside.</p>
+<p>Every file and directory in your computer is housed in the <em>root directory</em>.
+It&rsquo;s a humongous directory that contains everything else. In Windows, it&rsquo;s
+called <code>C:\</code>. In macOS or Linux, it&rsquo;s simply <code>/</code>.</p>
+<p>Every file and directory also has an address, called a <em>path</em>. A path is a
+string of directory names leading to the location of a particular file
+or directory. The path to the root directory would simply be <code>/</code> (assuming
+we&rsquo;re using a Mac or Linux). If we had a directory called &ldquo;home&rdquo; within the
+root directory, its path would be <code>/home</code>. Inside the <code>home</code> directory, we
+might have another directory called &ldquo;wlt.&rdquo; It&rsquo;s path would be <code>/home/wlt</code>.
+Inside <code>wlt</code>, if we had a text file called &ldquo;sample.txt,&rdquo; its path would be
+<code>/home/wlt/sample.txt</code>.</p>
+<p>Windows&rsquo; paths look a little different. Instead of beginning with a <code>/</code>, the
+root directory on Windows is <code>C:\</code>. Instead of forward slashes <code>/</code>, Windows uses
+backslashes <code>\</code> to separate directory names. Our example on Windows would look
+like <code>C:\home\wlt\sample.txt</code>.</p>
+<p>Return to your terminal, type <code>pwd</code>, and hit enter. I get:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">pwd</span>
+/home/wlt/example
+</code></pre></div><p><code>pwd</code> stands for &ldquo;print working directory.&rdquo; Your terminal squats in a directory
+when executing commands, and <code>pwd</code> prints the path to this directory. In this
+case, we&rsquo;re sitting in a directory called &ldquo;example&rdquo; that&rsquo;s nested within <code>wlt</code>,
+which in turn is nested within <code>home</code>, which is located in the root directory.</p>
+<p>Remember from before, the command <code>ls</code>? When it executes, it lists the files
+in your current working directory. So when I did:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ls
+a_directory/    another_directory/  file.txt    also_a_file.txt
+</code></pre></div><p>I&rsquo;m listing files in <code>example</code>. The path to the directory <code>a_directory</code> would be
+<code>/home/wlt/example/a_directory</code>.</p>
+<p>A note on terminology, when talking about paths, we were really talking about
+<em>absolute paths</em>. An absolute path is one that describes the chain of
+directories starting from the root directory.</p>
+<p>Alternatively, a <em>relative path</em> is a path described from the current working directory.
+For example, located in <code>example</code>, the absolute path to <code>file.txt</code> is
+<code>/home/wlt/example/file.txt</code>, but its relative path would simply be <code>file.txt</code>,
+because the file is located directly in our current working directory. If
+<code>file.txt</code> were located in <code>a_directory</code>, it&rsquo;s relative path would instead
+be <code>a_directory/file.txt</code>.</p>
+<h2 id="simple-commands">Simple commands</h2>
+<p>Now that we have a handle on the file system, we can start learning basic
+commands with the terminal.</p>
+<p>Remember that a command is nothing more than a simple program, like Microsoft
+Word or your Internet browser. To execute a program in a shell, you simply have
+to type its name and hit enter. Try it:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ notepad
+</code></pre></div><p>If you&rsquo;re on Windows, that command should have launched your Notepad text
+editor. If you&rsquo;re on Mac or Linux, try this instead:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ vi
+</code></pre></div><p>This command launches the Vim text editor (or it&rsquo;s predecessor, vi) To exit,
+type <code>:q</code>.</p>
+<p>To customize how a command behaves, you can add additional <em>options</em>. These
+are basically extra words or letters we can tag to the end of commands for
+bonus functionality. For example, recall from before we can use <code>ls</code> to list the
+contents of our current working directory.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ls
+a_directory/    another_directory/  file.txt    also_a_file.txt
+</code></pre></div><p>If I wanted a little more information about each file, I can do:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ls -l
+drwxr-xr-x <span class="m">2</span> wlt wlt <span class="m">4096</span> Feb  <span class="m">3</span>  5:58  a_directory/
+drwxr-xr-x <span class="m">2</span> wlt wlt <span class="m">4096</span> Feb  <span class="m">2</span>  19:40 another_directory/
+-rw-r--r-- <span class="m">1</span> wlt wlt  <span class="m">156</span> Jan <span class="m">30</span>  8:01  also_a_file.txt
+-rw-r--r-- <span class="m">1</span> wlt wlt   <span class="m">38</span> Feb  <span class="m">1</span>  12:52 file.txt
+</code></pre></div><p>The <code>-l</code> option stands for &ldquo;long,&rdquo; and it tells <code>ls</code> to list extra details about
+each file. Options will usually be preceded by a dash <code>-</code> or sometimes two
+if the option is in &ldquo;long form,&rdquo; i.e. typed out as in something like <code>--color</code>.</p>
+<p>Related to options, many commands take <em>arguments</em>. These are targets that a
+command acts on, and are often appended to the very end of a command. For
+example, <code>ls</code> can take an argument that specifies what file exactly to list:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ls -l a_directory
+-rw-r--r-- <span class="m">1</span> wlt wlt  <span class="m">5</span> Feb  <span class="m">5</span> 20:07 deep_magic.txt
+-rw-r--r-- <span class="m">1</span> wlt wlt <span class="m">12</span> Feb  <span class="m">5</span> 20:07 stuff.txt
+</code></pre></div><p>Note that I&rsquo;ve used the option <code>-l</code> again, giving us the long form of the data.</p>
+<p>It&rsquo;s also nifty to note that most terminals offer tab-completion. It allows you
+to type a partial name, then press tab to quickly fill out the rest. In typing the
+above command, for example, I simply typed <code>ls -l a_dir</code> then pressed tab. Magic!</p>
+<p>Another nifty command to learn is <code>cd</code>, which stands for &ldquo;change directory.&quot;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>
+It changes your current working directory to a different one. To use it,
+you specify your target directory as an argument. So if I do:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> a_directory
+</code></pre></div><p>I&rsquo;m now located in the directory <code>a_directory</code>. I could&rsquo;ve also specified
+absolute paths:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># with an absolute path:</span>
+$ <span class="nb">cd</span> /home/wlt/example/a_directory
+
+<span class="c1"># with a relative path:</span>
+$ <span class="nb">cd</span> a_directory
+</code></pre></div><p>There&rsquo;s a special file called <code>..</code> (two periods) in every single directory
+that links to the directory above. If I <code>cd</code> into it, I change my current
+directory to the one above. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> a_directory
+$ <span class="nb">cd</span> ..
+<span class="c1"># I&#39;m back where I started!</span>
+</code></pre></div><p>You can chain together <code>..</code>'s to rise multiple levels up the hierarchy at once:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">pwd</span>
+/home/wlt/example
+$ <span class="nb">cd</span> ../..
+$ <span class="nb">pwd</span>
+/home
+</code></pre></div><p>There&rsquo;s another special symbol called a tilde <code>~</code>. It should be on the
+upper left-hand side of your keyboard. The tilde represents your <em>home directory</em>,
+a special directory set aside just for you that contains all your personal
+files. To get there, do</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> ~
+</code></pre></div><p>Like with other files, you can chain the tilde into paths:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> ~/a_directory
+</code></pre></div><p>Play around with <code>cd</code>, <code>ls</code>, and <code>pwd</code> in your shell until you get comfortable
+using them. They will be the bread and butter of your workflow, allowing you to
+swim smoothly through your filesystem with minimal effort. It may feel awkward
+now, but soon you&rsquo;ll be faster with your terminal than the graphical
+file explorers you&rsquo;re used to.</p>
+<h2 id="other-useful-commands">Other useful commands</h2>
+<p>A few last ones to know before we wrap up:</p>
+<p>Moving files: <code>mv</code>. It takes two arguments: a source and a destination.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ mv file.txt a_directory
+</code></pre></div><p><code>file.txt</code> is now located in <code>a_directory</code>.</p>
+<p><code>mv</code> is also the most common way to rename files.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ mv file.txt awesome.txt
+</code></pre></div><p>Because <code>awesome.txt</code> did not exist, <code>mv</code> went ahead and created a new file
+called <code>awesome.txt</code> and transferred the contents of <code>file.txt</code> over,
+effectively renaming the file.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
+<p>Copying files: <code>cp</code>. It also takes two arguments: a source and a destination.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ cp file.txt a_directory
+</code></pre></div><p>There is now a copy of <code>file.txt</code> in <code>a_directory</code>.</p>
+<p>If I want to copy an entire directory, I have to specify an extra option
+<code>-r</code>, which stands for &ldquo;recursive.&rdquo;</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ cp -r a_directory another_directory
+</code></pre></div><p>If I wanted to copy a file or directory into my current working directory, I
+can use the special symbol <code>.</code> <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ cp /some/distant/file.txt .
+</code></pre></div><p>Making directories: <code>mkdir</code>. It takes one argument: the name of the new directory.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ mkdir new_directory
+</code></pre></div><p>There&rsquo;s is now a fresh <code>new_directory</code> in our workspace.</p>
+<p>Removing files: <code>rm</code>. It takes one argument: the name of the file to be removed.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ rm file.txt
+</code></pre></div><p><code>file.txt</code> has now been consigned to the void.</p>
+<p>To remove directories, you&rsquo;ll again need to specify a <code>-r</code> to perform the operation
+recursively.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ rm -r a_directory
+</code></pre></div><p>And that&rsquo;s probably <em>the most dangerous</em> command I&rsquo;ve taught you. One careless
+keystroke and your project is lost forever (<a href="https://en.wikipedia.org/wiki/File_carving">almost</a>).
+A much safer alternative is <code>rmdir</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ rmdir a_directory
+</code></pre></div><p>but the directory in question must be empty in order for the command to operate.
+It&rsquo;s an extra safety-precaution to ensure you don&rsquo;t do anything stupid, and I
+wholeheartedly advocate its use. But I get lazy too, and sometimes it&rsquo;s just
+easier to <code>rm -r</code> things into oblivion.</p>
+<p>And finally, probably the most useful command you will ever use, <code>man</code>. It&rsquo;s
+short for &ldquo;manual&rdquo; and gives you a help page on any command. Forget how to use
+<code>ls</code>? No problem:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ man ls
+</code></pre></div><p>Wanna learn more about <code>man</code> itself? It&rsquo;s got you covered:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ man man
+</code></pre></div><p>These basic commands will probably be about 75 percent of everything you do
+on a terminal. Again, things will feel awkward and slow at first, but give it
+time. Before you know it, you&rsquo;ll be a blazing wizard at the command line.</p>
+<p>If you&rsquo;re interested in learning more, there&rsquo;s tons of great resources out
+there. If you&rsquo;re using Mac or Linux, check out <a href="http://linuxcommand.org/lc3_learning_the_shell.php">this awesome guide</a>.
+For Windows PowerShell users, <a href="https://www.varonis.com/blog/windows-powershell-tutorials/">here&rsquo;s a nice tutorial</a>.</p>
+<h2 id="looking-ahead">Looking ahead</h2>
+<p>And that about wraps things up for part 1.</p>
+<p>You must be wondering, a whole blog post and not a single line of code in
+sight? Instead, we wasted a whole lot of nothing on learning the command line.</p>
+<p>Why?</p>
+<p>Here&rsquo;s the thing &ndash; programming is never just opening a magic program and
+typing code that just works. It&rsquo;s built with tools. These tools take time
+to learn. What I&rsquo;m teaching you are real tools that <em>real software engineers
+use</em>. No kiddy stuff here, we&rsquo;re working with the real deal.</p>
+<p>What&rsquo;s more, if you&rsquo;re looking into a career in software, you&rsquo;ll be learning
+tools like these the rest of your life. Countless tools. Countless programs
+they help write. We&rsquo;ve started with the most common set that drives everything
+else. Learn the command line, and you&rsquo;re well on your way to mastering
+<em>anything</em> else.</p>
+<p>Next time, we&rsquo;ll start diving into actual code. Stay tuned, I&rsquo;ll link
+the post below as soon as it&rsquo;s written.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+<h2 id="footnotes">Footnotes</h2>
+<p>Here are some stray thoughts that didn&rsquo;t make it into the normal flow of prose.
+These are completely optional, but may add color to your reading.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>That&rsquo;s actually a half-lie. I got to school in New York. There&rsquo;s plenty of
+Financial Engineering majors on campus learning CS for Wall Street, but of
+the dedicated, hard-core software folks I know, we&rsquo;re all in it for the love. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>In fact, there&rsquo;s a programming language out there that looks exactly like
+writing a recipe. It&rsquo;s called <a href="http://www.dangermouse.net/esoteric/chef.html">chef</a>. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>I had a teacher once that used Vim for <em>everything</em>. Lecture notes. Exams.
+Homework. Love letters to his wife. You name it, he used Vim to write it.</p>
+<p>Maybe not actually the love letters, but everything else, I promise. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>The commands I&rsquo;ll outlining are with a shell called Bash. It&rsquo;s popular on
+Linux and macOS. If you&rsquo;re using Windows&rsquo; PowerShell, the commands should
+still work, but you can find their proper equivalents <a href="http://ilovepowershell.com/2011/11/03/list-of-top-powershell-alias/">here</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>BE CAREFUL THOUGH! If <code>awesome.txt</code> really did exist before, I would have
+overwritten its original content with that of <code>file.txt</code>. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>In summary, there are 3 special symbols we talked about: <code>..</code>, <code>~</code>, and <code>.</code>.
+Each of them are like a shorthand for a path. <code>..</code> represents the directory
+above. <code>~</code> represents the home directory, and <code>.</code> represents the current
+working directory. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Still on its way, I promise! <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>]]></content>
+		</item>
+		
+		<item>
+			<title>From 1011 to Laptop: How to build a computer from binary</title>
+			<link>https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/</link>
+			<pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+			
+			<guid>https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/</guid>
+			<description>&lt;p&gt;How exactly do computers work? How do you go from simple electrical impulses to
+this incredible wonder-box? Tucked beneath our palms, in our pockets, and on our
+desks are veritable miracles of delicate wiring and clever engineering. For the
+next few minutes, I&amp;rsquo;ll take you on a whirlwind tour: from simple 1&amp;rsquo;s and 0&amp;rsquo;s to
+the whole, hulking beast that we call a computer.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: anyone and everyone&lt;/em&gt;&lt;/p&gt;</description>
+			<content type="html"><![CDATA[<p>How exactly do computers work? How do you go from simple electrical impulses to
+this incredible wonder-box? Tucked beneath our palms, in our pockets, and on our
+desks are veritable miracles of delicate wiring and clever engineering. For the
+next few minutes, I&rsquo;ll take you on a whirlwind tour: from simple 1&rsquo;s and 0&rsquo;s to
+the whole, hulking beast that we call a computer.</p>
+<p><em>Audience: anyone and everyone</em></p>
+<p><figure>
+    <img src="/images/from-1011-to-laptop/iconic_computer.png"
+         alt="Iconic computer"/> <figcaption>
+            <p>Source: <a href="https://en.wikipedia.org/wiki/Desktop_computer">https://en.wikipedia.org/wiki/Desktop_computer</a></p>
+        </figcaption>
+</figure>
+
+Look here.</p>
+<p>Well, not <em>here</em> here, exactly, but <strong>here</strong>.</p>
+<p>The screen, I mean.</p>
+<p>And more importantly, the machine it&rsquo;s attached to. Beneath the surface buzzes a sea
+of electricity, performing calculations that might take you a month &mdash; in <strong>one second</strong>*.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Today, you will learn how this magic works, and it all starts with a simple switch.</p>
+<h2 id="on-and-off">On and off</h2>
+<p>Consider the modern household light-switch. Flick it up. Light! Flick it down.
+Dark! Profound stuff, I know. Let&rsquo;s put it in at table:</p>
+<pre><code>                            switch  |  light
+                            --------|---------
+                            up      |  on
+                            down    |  off
+</code></pre><p>What happens if we add a little extra machinery to it? Now, when you flick it
+up, it turns the light <strong>off</strong>. When you flick it down, it turns the light <strong>on</strong>.
+Basically the reverse of our original light switch. Let&rsquo;s call it a <em>&ldquo;NOT switch&rdquo;</em>,
+because it does the opposite of our original. It&rsquo;s table looks like this:</p>
+<pre><code>                            switch  |  light
+                            --------|---------
+                            up      |  off
+                            down    |  on
+</code></pre><p>My hands are getting a little tired typing &ldquo;up&rdquo; and &ldquo;off&rdquo;. Why don&rsquo;t we use a
+shorthand: let&rsquo;s say &ldquo;1&rdquo; means &ldquo;up&rdquo; or &ldquo;on,&rdquo; and &ldquo;0&rdquo; means &ldquo;down&rdquo; or &ldquo;off&rdquo;? Our
+NOT switch table might look like this:</p>
+<pre><code>                            switch  |  light
+                            --------|---------
+                            1       |  0
+                            0       |  1
+</code></pre><p>Let&rsquo;s do something fancier. Say we have two switches connected to a single
+light-bulb: switch A and B. When A <strong>and</strong> B are flicked up, the light turns
+on. Otherwise, the light stays off. Let&rsquo;s call it an <em>&ldquo;AND switch&rdquo;</em>:</p>
+<pre><code>                            A | B |  light
+                            --|---|---------
+                            0 | 0 |   0
+                            0 | 1 |   0
+                            1 | 0 |   0
+                            1 | 1 |   1
+</code></pre><p>Now what if we have the opposite? If A <strong>or</strong> B (or both) are flicked up, the
+light turns on. Otherwise, when neither switch is up, the light stays off. Why
+don&rsquo;t we call this one an <em>&ldquo;OR switch&rdquo;</em>:</p>
+<pre><code>                            A | B |  light
+                            --|---|---------
+                            0 | 0 |   0
+                            0 | 1 |   1
+                            1 | 0 |   1
+                            1 | 1 |   1
+</code></pre><p>And there we have it. These three switches &mdash; NOT, AND, OR &mdash; are the
+fundamental building blocks of computers. In the field, they&rsquo;re called
+<em>logic gates</em>. They&rsquo;re not actually light-switches or bulbs, but wires carrying
+electricity. When electricity flows through a wire, it&rsquo;s called a &ldquo;1&rdquo;. When
+it doesn&rsquo;t, you have a &ldquo;0&rdquo;.</p>
+<p>The logic gate itself is kind of like a microscopic box with wires sticking out.
+If electricity flows into the wire going <em>in</em> to a NOT gate, no electricity will
+flow through the wire pointing <em>out</em>. Similarly if you have electricity flowing
+down two wires going <em>in</em> to an AND gate, electricity will also flow <em>out</em> of the
+AND gate.</p>
+<p>By etching circuit boards into logic gates and roping these into larger and
+larger circuits, you can build just about any digital device.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<h2 id="binary">Binary</h2>
+<p>Before we move on to building circuits, let&rsquo;s pause for a moment and consider:
+what can we actually do with just 1&rsquo;s and 0&rsquo;s? What about letters? Words?
+Images?</p>
+<p>Let&rsquo;s start easy and look at just numbers. We have 0. We have 1. What about the
+other 8 digits? I have a clever idea. Check this out:</p>
+<pre><code>0 | 1 | 2 | 3  |  4  |  5  |  6  |  7  |  8   |  9   |  10
+0 | 1 | 10| 11 | 100 | 101 | 110 | 111 | 1000 | 1001 | 1010
+</code></pre><p>0 matches 0 and 1 matches 1. So far so good. But 2 = 10???</p>
+<p>The key is to dissect the value &ldquo;10&rdquo; into component pieces. The number itself
+is composed of two digits, a 1 on the right and a 0 on the left. Imagine that
+the &ldquo;1&rdquo; on the right gets associated with $2^1$, and the &ldquo;0&rdquo;&rdquo; on the left
+gets associated with $2^0$. Then let&rsquo;s compute:</p>
+<p>$$\mathbf{1} \times 2^1 + \mathbf{0} \times 2^0 = \mathbf{2}$$</p>
+<p>The bolded values on the left are smooshed together to form our representation
+using just 1&rsquo;s and 0&rsquo;s &mdash; called <em>binary</em>. The value on the right is the
+familiar number we&rsquo;re trying to represent.</p>
+<p>Confused? Let&rsquo;s try again with &ldquo;3&rdquo;. To get &ldquo;3&rdquo;, I wrote &ldquo;11&rdquo; above. If we walk
+through the same process, that means:</p>
+<p>$$\mathbf{1} \times 2^1 + \mathbf{1} \times 2^0 = \mathbf{3}$$</p>
+<p>which checks out.</p>
+<p>Now let&rsquo;s do 4. But hang on, there&rsquo;s more than 2 binary digits.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> Let&rsquo;s have
+the new digit on the left associated with $2^2$, the middle be $2^1$, and the far
+right remain $2^0$. We then have:</p>
+<p>$$\mathbf{1} \times 2^2 + \mathbf{0} \times 2^1 + \mathbf{0} \times 2^0 = \mathbf{4}$$</p>
+<p>Do you see a pattern?.</p>
+<p>As we keep tagging on digits to the left, the power of 2 increases. So with
+&ldquo;1110&rdquo;, we would have:</p>
+<p>$$\mathbf{1} \times 2^3 + \mathbf{1} \times 2^2 + \mathbf{0} \times 2^1 + \mathbf{1} \times 2^0 = \mathbf{13}$$</p>
+<p>So the value &ldquo;13&rdquo; is represented as &ldquo;1101&rdquo; in binary.</p>
+<p>Why do things this way? Remember from grade school learning about the &ldquo;ones
+place&rdquo;, the &ldquo;tens place&rdquo;, and the &ldquo;hundreds place&rdquo;? The number &ldquo;356&rdquo; for example
+has a &ldquo;3&rdquo; in the hundreds place, a &ldquo;5&rdquo; in the tens place, and a &ldquo;6&rdquo; in the ones place.
+It can be written like this:</p>
+<p>$$\mathbf{3} \times 10^2 + \mathbf{5} \times 10^1 + \mathbf{6} \times 10^0 = \mathbf{356}$$</p>
+<p>We&rsquo;re doing the exact same thing except instead of &ldquo;hundreds&rdquo; and &ldquo;tens&rdquo;,
+we&rsquo;re working with &ldquo;fours&rdquo; and &ldquo;twos.&rdquo; Because in binary, we&rsquo;re limited to
+just two numbers rather than 10, our &ldquo;places&rdquo; count off as powers of 2 rather
+than powers of 10. Forming the number &ldquo;5&rdquo; in binary therefore requires a
+&ldquo;1&rdquo; in the fours place, a &ldquo;0&rdquo; in the twos place, and a &ldquo;1&rdquo; in the ones place,
+so 5 in binary would be &ldquo;101&rdquo;.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p>Don&rsquo;t be worried if it doesn&rsquo;t click right away. It takes some time to grok.
+Sit with it a little. Take a walk. When you&rsquo;re showering tomorrow morning
+it&rsquo;ll all become clear like magic. In the meanwhile, <a href="https://ryanstutorials.net/binary-tutorial/">here&rsquo;s an excellent guide</a> going into the concept with more depth.</p>
+<p>Once you can represent numbers with 1&rsquo;s and 0&rsquo;s, the rest is just gravy. Just
+about every other form of data can be represented numerically.
+Letters? Easy. <a href="https://unicode-table.com/en/">Unicode</a> is a system mapping
+letters (English or otherwise) to numbers. Once you have letters, you can
+string<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> them together to make words. Images are a little tricker. One way
+is to assign 3 numbers to each pixel, where the numbers represent the
+<a href="https://www.w3schools.com/colors/colors_rgb.asp">RGB</a> values of a color.</p>
+<p>Audio, video, programs, all of it can be similarly encoded with numbers (and
+therefore also with binary). I&rsquo;ll leave it up to Google to show you how.</p>
+<h2 id="components">Components</h2>
+<p>We have logic gates. We have binary. We&rsquo;re now ready to build the actual beast.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+<figure>
+    <img src="/images/from-1011-to-laptop/von_neumann.png"
+         alt="Von neumann"/> <figcaption>
+            <p>Source: <a href="https://en.wikipedia.org/wiki/Von_Neumann_architecture">https://en.wikipedia.org/wiki/Von_Neumann_architecture</a></p>
+        </figcaption>
+</figure>
+
+<p>Computers have four basic components: CPU, memory, input, and output. The CPU,
+short for &ldquo;central processing unit,&rdquo; is like a souped-up calculator. It&rsquo;s hooked
+to memory, which allows it to store and load data, as well as input and output (I/O)
+devices like your keyboard, monitor, and speakers. In the next few sections,
+we&rsquo;ll go more depth into CPU and memory. I/O gets a little messy. I&rsquo;ll
+touch on it a little, but will save the meat for a future post.</p>
+<h3 id="processor">Processor</h3>
+<p>The CPU (and memory) can be expressed as one, giant, virtually-unimaginably
+complex web of AND, OR, and NOT logic gates. Check it out:</p>
+<figure>
+    <img src="/images/from-1011-to-laptop/complicated_schematic.png"
+         alt="Schematic"/> <figcaption>
+            <p>Source: <a href="http://www.sciencegeek.net/Biology/Presentations/Respiration/">http://www.sciencegeek.net/Biology/Presentations/Respiration/</a></p>
+        </figcaption>
+</figure>
+
+<p>Just kidding &mdash; that&rsquo;s something different. At the risk of offending biologists,
+I claim that, believe it or not, the intricacies in your laptop are just as
+complicated, if not more so, than the above.</p>
+<p>To deal with all that complexity, computer engineers use layer upon layer upon
+layer of abstraction: using logic gates to build simple components, then
+using simple components to build more complex systems, working up until we&rsquo;ve
+got a functioning laptop.</p>
+<p>One simple component in the processor is called the &ldquo;adder&rdquo;. It adds. Go figure.
+And it looks something like this:</p>
+<figure>
+    <img src="/images/from-1011-to-laptop/adder.png"
+         alt="Adder"/> <figcaption>
+            <p>Source: me</p>
+        </figcaption>
+</figure>
+
+<p>You take two numbers (in binary), feed them to A and B, and out crunches your
+answer (also in binary).<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> Additional I/O circuitry can be crafted from more
+logic gates to convert familiar numbers into binary, and from binary back
+to familiar numbers, but we don&rsquo;t need them just yet.</p>
+<p>With the adder, you can rope in additional logic gates to perform other operations
+like subtraction and <a href="https://en.wikipedia.org/wiki/Bitwise_operation">bit shifts</a>.
+The end result is called an Arithmetic Logic Unit (ALU).<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> Together with
+additional logic gates to connect it to memory and I/O, the ALU and supporting
+infrastructure makes up the central processing unit.</p>
+<h3 id="memory">Memory</h3>
+<p>Up until this point, we can add and we can subtract. We&rsquo;re basically a calculator.
+The magic ingredient that boosts us into Computerhood is memory.</p>
+<p>The fundamental circuit of memory is called a <a href="https://en.wikipedia.org/wiki/Flip-flop_(electronics)">latch</a>.
+It&rsquo;s made of two NOR gates (like OR, with a NOT gate in front) hooked together
+cleverly so that the circuit &ldquo;remembers&rdquo; the last value inputted. Below is a
+neat graphic stolen from the Wikipedia page illustrating how this works:</p>
+<figure>
+    <img src="/images/from-1011-to-laptop/latch.gif"
+         alt="Flip flop"/> <figcaption>
+            <p>Source: <a href="https://en.wikipedia.org/wiki/Flip-flop_(electronics)">https://en.wikipedia.org/wiki/Flip-flop_(electronics)</a></p>
+        </figcaption>
+</figure>
+
+<p>The weird shapes that look like fishes are the NOR gates, with two inputs
+on the left and one output on the right.</p>
+<p>The circuit stores exactly 1 bit: either a 1 or a 0. It&rsquo;s in the &ldquo;1&rdquo; state when
+the &ldquo;Q&rdquo; output lights up. It&rsquo;s in the &ldquo;0&rdquo; state when the other output, called
+&ldquo;Q bar&rdquo;, lights up. The &ldquo;R&rdquo; stands for &ldquo;reset&rdquo;: triggering it causes the
+circuit to store a &ldquo;0&rdquo; (i.e. Q-bar lights up). The &ldquo;S&rdquo; stands for &ldquo;set&rdquo;. Sending
+a current to this input will tell the circuit to store a &ldquo;1,&rdquo; causing Q to light
+up. When neither input is triggered, the circuit will hold its state &mdash; so if it
+was storing a &ldquo;0&rdquo;, it will continue to store a &ldquo;0&rdquo; until the &ldquo;S&rdquo; gets triggered.
+If both inputs are triggered simultaneously, <strong>kabloosh</strong> the world explodes.</p>
+<p>Just kidding. Formally, when both R and S are triggered, the behavior is
+<a href="http://www.catb.org/jargon/html/N/nasal-demons.html">undefined</a>. In practice,
+that means it&rsquo;ll never happen.</p>
+<p>Using the above circuit, we can store exactly 1 binary digit. If you&rsquo;re reading
+this on a standard laptop, your machine probably has a memory of about 8 gigabytes, or
+over 8 <em>billion</em> bits. 8 billion of those little circuits, clicking on and
+off a bajillion times each second to store your computer data.</p>
+<p>In reality, to make computer memory cheap, it looks a little different than
+pictured, but the principle is the same. Take a bunch of those circuits. Rope
+them into giant chunks. Feed to your CPU for data storage.</p>
+<h3 id="io">I/O</h3>
+<p>I/O gets super complicated super fast, so we&rsquo;ll focus on just one, tiny, specific
+sliver: encoders and decoders.<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></p>
+<p>Remember from earlier, when we were talking about the adder, how it takes input
+as binary and spits out a binary result? For a computer, binary is awesome. For
+a human, WTF. Your TI-84 would be practically useless if all it gave was binary.</p>
+<p>To help computers read and output human-friendly symbols, we use special circuits
+called decoders and encoders.</p>
+<p>A decoder &ldquo;decodes&rdquo; binary into human symbols. It&rsquo;s a box that looks something
+like this:</p>
+<figure>
+    <img src="/images/from-1011-to-laptop/decoder.png"
+         alt="Decoder"/> <figcaption>
+            <p>Source: me</p>
+        </figcaption>
+</figure>
+
+<p>The inner circuitry is a mess of AND and NOT gates, but let&rsquo;s focus on just a clean,
+plain box. Going in is your binary output. Exactly one of the outputs will be
+triggered.</p>
+<p>To make this happen, it manually maps each possible binary input to an output.
+For example, we know the binary &ldquo;101&rdquo; represents the value &ldquo;5&rdquo;. We could
+hook up a decoder such that feeding in the binary &ldquo;101&rdquo; will trigger the
+output that sends electricity to a big sign that says &ldquo;5&rdquo;. Brute-force, but
+that&rsquo;s how your calculator translates &ldquo;101 + 100&rdquo; to &ldquo;9&rdquo;</p>
+<p>Encoders are the reverse. They take something human-readable, and encode it
+into binary. Take a look at your keyboard. How does
+your laptop know that, when you press the key &ldquo;A,&rdquo; it should type the letter
+&ldquo;a&rdquo;? The moment your finger presses the key, the wire underneath picks up the
+signal and brings it to an encoder, where it trickles through a mess of logic
+gates and eventually outputs &ldquo;101111001&hellip;&rdquo; for your CPU to handle.</p>
+<h2 id="programs">Programs</h2>
+<p>Congrats. At this point, you have a legitimate computer: CPU, memory, I/O. Press
+the power button and &mdash; a blank screen.</p>
+<p>What&rsquo;s missing?</p>
+<p>Software.</p>
+<p>Otherwise, all you&rsquo;ve got is a hunk of expensive, intricate metal. We need a
+software soul to bring our digital Frankenstein to life.</p>
+<p>At its most fundamental, software is simply a stream of 1&rsquo;s and 0&rsquo;s. Remember
+a computer can only understand binary. To tell the CPU to
+do anything, you need to give the instructions in binary. Want to print
+&ldquo;Hello World&rdquo; to the screen? It might look like this:</p>
+<pre><code>1101010100101010101010010101100101011111101010`11111100010001001
+0000110101010010101010101001011101010100101010101010011111111111
+0000000000001111111010101001010101010100101011110101010010101010
+1110000000000011111110000000000000000001111111110101010100101111
+1101010111 # ... and thousands more lines ...
+</code></pre><p>In this primitive form, it&rsquo;s called &ldquo;machine code&rdquo;. Imagine trying to
+write a program like that. It&rsquo;s tedious. It&rsquo;s error prone. It&rsquo;s stupid for
+any self-respecting programmer to try.<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></p>
+<p>To make things easier, early coders developed a system called <em>assembly</em>. Instead
+of hand writing 1&rsquo;s and 0&rsquo;s, they used short mnemonics instead. A special
+program called an <em>assembler</em> then converts the mnemonics to machine code. It looks
+something like this:</p>
+<pre><code>addi    $a0, $a0, 4
+addi    $a1, $a1, 4
+jal AddAndVerify
+
+lw      $ra, 12($sp)
+lw      $a0, 8($sp)
+lw      $a1, 4($sp)
+lw      $a2, 0($sp)
+addi    $sp, $sp, 16
+</code></pre><p>Looks better. Still not brilliant.</p>
+<p>The real jump came when computer scientists invented <em>compilers</em>. These are
+special programs that take a human-readable text file, and &ldquo;compiles&rdquo; it into
+machine code or assembly. For example, you might write something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio&gt;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">&#34;Hello world!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><p>It&rsquo;s written in a programming language called &ldquo;C.&rdquo; <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> Feed it to a compiler,
+and we&rsquo;ll get thousands of lines worth of 1&rsquo;s and 0&rsquo;s that will tell our
+laptop to print &ldquo;Hello world!&rdquo;</p>
+<p>If you&rsquo;re familiar with other languages like Java, the principle is the same.
+You take a simple text file written in readable English, then give it to a special
+program that translates the English into the binary a computer can understand.</p>
+<p>Once the software is written, to get it into the machine, the 1&rsquo;s and 0&rsquo;s are
+stored in memory. When a program is run, the CPU pulls the instructions
+line-by-line from memory, and executes whatever the binary tells it to.</p>
+<p>One especially important program is the <em>operating system</em> (OS). It&rsquo;s
+the program that drives your laptop or mobile device. Nearly everything you
+touch depends on the OS. The desktop. The home screen. The file explorer. The
+login system. Even the other programs we rely on &mdash; our Internet browser, word
+processor, messaging apps &mdash; these are programs that run on top of the OS,
+relying on the operating system to function. Common ones you might know include
+Microsoft Windows, macOS, and Linux (the mobile OS &ldquo;Android&rdquo; is a flavor of
+Linux).</p>
+<p>Here&rsquo;s a problem to leave you with: operating systems, like any other programs,
+are written on a computer. A developer turns on their laptop, opens up a text file, types in millions
+of lines of code, saves, compiles, and you have <a href="https://github.com/torvalds/linux">Linux</a>
+(or Windows or macOS). But to use the computer in the first place, you need
+an operating system.</p>
+<p>Huh.</p>
+<p>You need an OS to use the laptop, but you need a laptop to write the OS.</p>
+<p>So which came first?</p>
+<figure>
+    <img src="/images/from-1011-to-laptop/chicken_egg.jpg"
+         alt="chicken and egg"/> <figcaption>
+            <p>Source: <a href="http://signlanguageco.com/the-chicken-and-the-egg-and-the-interpreter/">http://signlanguageco.com/the-chicken-and-the-egg-and-the-interpreter/</a></p>
+        </figcaption>
+</figure>
+
+<h2 id="final-thoughts">Final thoughts</h2>
+<p>And there you have. From logic gates to binary to hardware to software, we&rsquo;ve
+done it. A complete computer.</p>
+<p>I&rsquo;ve touched the high points, but there&rsquo;s a ton I left out. If you&rsquo;re deeply interested
+in the material and want to learn more, I can&rsquo;t recommend enough, <a href="https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319">Code by Charles Petzold</a>. I&rsquo;m not being paid to recommend it. It&rsquo;s simply
+a fantastic tour from absolute fundamentals to a fully-fledged machine. Be
+prepared to have your mind blown.</p>
+<p>If you&rsquo;re even <em>more</em> interested in computers, it&rsquo;s never too late (or too
+early) to consider a career in Computer Science. There are roughly three, broad routes
+you can take:</p>
+<ol>
+<li><strong>High level</strong> (software engineer, UIUX designer): Write code. Have fun.
+Get paid lots. These are the guys writing apps, building websites, doing the
+programming that most often gets associated with CS.</li>
+<li><strong>Low level</strong> (systems programmer, computer engineer, electrical engineer): Most
+of this article covered the low level functions of a computer. If you found it
+wildly interesting, you might enjoy working in the area, designing computers
+from basic circuits and writing code that runs <a href="https://www.quora.com/What-does-it-mean-for-a-programming-language-to-be-closer-to-the-metal">close to the metal</a>.</li>
+<li><strong>Theory</strong> (scientists, researchers): Maybe the true &ldquo;computer scientist,&rdquo; these
+guys push the math and models to figure out even more epic ways of computing.
+Machine Learning is also a hot-spot in this area.</li>
+</ol>
+<p>I&rsquo;m biased when I say this, but there&rsquo;s really endless opportunity in CS. There&rsquo;s
+art. There&rsquo;s engineering. There&rsquo;s fun. Google is an awesome place to <a href="https://www.google.com/search?q=learn+python&amp;oq=learn+python">start</a></p>
+<h2 id="footnotes">Footnotes</h2>
+<p>These footnotes contain information above and beyond the information presented
+in text. They assume a more technical background than the main article, but with
+the power of Google, I&rsquo;m confident anyone can get the gist.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>How did I get these numbers? Let&rsquo;s assume a super basic processor (by 2019
+standards) that trucks along at a mighty 330 thousand instructions per second.
+This number is stolen from the <a href="https://en.wikipedia.org/wiki/Intel_8086">Intel 8086</a>
+microprocessor, the chip driving the original IBM PC and whose design likely graces
+the <code>x86_64</code> architecture of your own laptop&rsquo;s processor. From here, let&rsquo;s
+say it takes a human on average 5 seconds to process a single instruction.
+I&rsquo;m being hand-wavy since an instruction like <code>add</code> might take a human
+many more seconds to crunch, but an instruction like <code>lw</code> (load word) might
+mean instantaneously recalling a particular value. It&rsquo;s an imperfect
+measure, but we&rsquo;ll stick with it as a super rough guess.</p>
+<p>Playing with the numbers, a human would take $33000 \times 5 = 1.65$
+<em>million</em> seconds, or about <strong>460 hours</strong> to crunch through those
+instructions. Assuming no breaks, no food, no sleep, this is equal to about
+<strong>19 days</strong>.</p>
+<p>Also keep in mind the 8086 processor was top-of-the-line &mdash; in 1978. The processor
+in your phone is several orders of magnitude faster. What takes your smartphone one
+second to crunch, might very well take you more than a year. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>In total, there are 7 commonly used logic gates: the three we covered, plus
+NAND, NOR, XOR, and XNOR. All gates with a big &ldquo;N&rdquo; mean they&rsquo;re formed by
+combining the respective gate with a NOT. So a NAND would be an AND gate
+with the output negated by NOT. XOR is short of &ldquo;eXclusive OR&rdquo;. It&rsquo;s the
+exact same thing as an OR gate except two one inputs yields a zero &mdash; that is,
+it triggers only when one input is <em>exclusively</em> turned one.</p>
+<p>But the big three to know are NOT, AND, and OR. Using them, you can build any
+of the other four.</p>
+<p>Bonus fact: using exclusively NAND gates, you can construct a NOT, AND, and
+OR. Same goes for NOR. The implication is that any and all circuits built
+with logic gates can be constructed solely from NAND or NOR gates. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><em>Binary digit</em>: you might have heard of them, the name is sometimes shortened
+to just <em>&ldquo;bits&rdquo;</em> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Our familiar &ldquo;0&rdquo; through &ldquo;9&rdquo; counting system is called <em>decimal</em>. Two other
+common systems to know, especially if you&rsquo;re in computer science, are
+<em>octal</em> (8 digits &ldquo;0&rdquo; through &ldquo;7&rdquo;) and &ldquo;hexadecimal&rdquo; (16 digits &ldquo;0&rdquo; through
+&ldquo;F&rdquo;). Because hexadecimal requires more symbols than our 10-symbol counting
+system can handle, values &ldquo;10&rdquo; through &ldquo;15&rdquo; are represented using the letters
+&ldquo;A&rdquo; through &ldquo;F&rdquo; instead. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Pun very much intended. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>For the sake of space, I&rsquo;ll skip over many of the nitty-gritty details behind
+the systems I&rsquo;ll be describing. If you&rsquo;re super into this stuff, I highly
+recommend <a href="https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319">Code by Charles Petzold</a>. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>How you wire logic gates together to pull off this feat is a little beyond us.
+If your curious, you can learn about those details on <a href="https://en.wikipedia.org/wiki/Adder_(electronics)">Wikipedia</a>.
+If you decide to learn more, you&rsquo;ll notice that I&rsquo;ve also simplified the
+picture of the adder. More correctly, it should include inputs and
+outputs for the carry bits. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>A guy once made an ALU with redstone in Minecraft. Check it out: <a href="https://www.youtube.com/watch?v=LGkkyKZVzug">https://www.youtube.com/watch?v=LGkkyKZVzug</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>In practice, encoders and decoders are fundamental circuits used in far more
+than just I/O. In fact, they feature prominently in your CPU&rsquo;s architecture,
+and are crucial building blocks of computer design. <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Not entirely true. Super-caliber hackers will sometimes write machine code
+to slip an exploit around a security system. <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>C, by the way, is the language that runs the world. Literally. Your phone,
+your laptop, embedded systems you never knew existed, all of it runs on
+software written mostly in C (or it&rsquo;s controversial child, C++). <a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>]]></content>
+		</item>
+		
+		<item>
+			<title>Getting started with Jekyll</title>
+			<link>https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/</link>
+			<pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+			
+			<guid>https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/</guid>
+			<description>&lt;p&gt;A simple guide to setting up a Jekyll installation. Existing documentation left
+some pieces out, so I&amp;rsquo;ve put together this document to guide anyone else (and
+my future self) through the process.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: tech-oriented folks comfortable on the command line&lt;/em&gt;&lt;/p&gt;</description>
+			<content type="html"><![CDATA[<p>A simple guide to setting up a Jekyll installation. Existing documentation left
+some pieces out, so I&rsquo;ve put together this document to guide anyone else (and
+my future self) through the process.</p>
+<p><em>Audience: tech-oriented folks comfortable on the command line</em></p>
+<figure>
+    <img src="/images/getting-started-with-jekyll/jekyll_logo.png"
+         alt="jekyll"/> <figcaption>
+            <p>Source: <a href="https://github.com/jekyll/brand">https://github.com/jekyll/brand</a></p>
+        </figcaption>
+</figure>
+
+<p>Jekyll is a <em>static website generator</em>. It doesn&rsquo;t host. It doesn&rsquo;t create
+content. It&rsquo;s a clean, simple machine that you feed text and out pops magically
+formed HTML. It&rsquo;s &ldquo;blog aware&rdquo;, so it includes clever tools and short-cuts for
+bloggers &mdash; but don&rsquo;t feel limited. You can use it to build portfolios, documentation
+sites, tech showcases, anything you can dream. If you&rsquo;re a tech-friendly blogger
+ready to get your hands dirty with a little web dev, Jekyll is perfect for you.</p>
+<p>First things first, to follow this guide, you&rsquo;ll need a *nix system (Mac, Linux)
+and be okay with command-line stuff. Personally, I run an Arch Linux based
+distribution, so my examples are geared towards my home system. Your mileage
+may vary.</p>
+<p><strong>EDIT:</strong> I no longer use Jekyll and have since switched to
+<a href="https://gohugo.io/">Hugo</a>, a static generator written in Go. It&rsquo;s faster,
+cleaner, the documentation is better, and an all around a pleasure to use.
+Highly recommend. A post about Hugo is upcoming.</p>
+<h2 id="initial-steps">Initial steps</h2>
+<p>Jekyll is written in Ruby. To use it, you&rsquo;ll need a <a href="https://www.ruby-lang.org/en/downloads/">Ruby installation</a>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Me, on Arch Linux</span>
+$ sudo pacman -S ruby
+
+<span class="c1"># Debian, Ubuntu</span>
+$ sudo apt install ruby
+
+<span class="c1"># Mac</span>
+$ brew install ruby
+</code></pre></div><p>To verify your installation, go ahead and check:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ruby --version
+</code></pre></div><p>Next, we&rsquo;ll need Bundler:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ gem install bundler
+</code></pre></div><p>In Ruby, <a href="https://en.wikipedia.org/wiki/RubyGems">gems</a> are packaged pieces of code,
+like .jar files for Java or modules for Python. Bundler is a utility that
+makes managing gems possible with minimum teeth-gnashing and hair loss.</p>
+<p>Bundler itself will have been installed in your gem user installation directory.
+To see where that is, do:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ gem env
+RubyGems Environment:
+  - RUBYGEMS VERSION: 2.7.7
+  - RUBY VERSION: 2.5.3 <span class="o">(</span>2018-10-18 patchlevel 105<span class="o">)</span> <span class="o">[</span>x86_64-linux<span class="o">]</span>
+  - INSTALLATION DIRECTORY: /usr/lib/ruby/gems/2.5.0
+  - USER INSTALLATION DIRECTORY: /home/username/.gem/ruby/2.5.0
+<span class="c1"># ... and lots more</span>
+</code></pre></div><p>And that line at the bottom that says &ldquo;USER INSTALLATION DIRECTORY&rdquo; is your
+ticket. Add that file path to your environment PATH variable to use Bundler
+on the command line.</p>
+<p>For me, in place of [USER INSTALLATION DIRECTORY],
+I&rsquo;d put <code>/home/username/.gem/ruby/2.5.0</code>. Note the <code>/bin</code> appended to the path:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Using bash (note: you do not need an &#34;export&#34;):</span>
+$ <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>/bin
+
+<span class="c1"># Using fish, my preferred shell:</span>
+$ <span class="nb">set</span> -gx PATH <span class="nv">$PATH</span> <span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>/bin
+</code></pre></div><p>To make the change permanent, add that command to your <code>.profile</code> (or <code>.bash_profile</code>),
+<code>config.fish</code>, or whatever you use for setting environment variables. Restart your
+shell to allow the change to take effect.</p>
+<h2 id="installing-jekyll">Installing Jekyll</h2>
+<p>Now, we&rsquo;re in shape for grabbing Jekyll. In preparation, we need to tell Bundler
+to install gems in the same default directory as RubyGem:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle config path <span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>
+</code></pre></div><p>Next, Bundler needs a special file called a <code>Gemfile</code> to begin installing gems.
+Go ahead and make one and copy the following into it:</p>
+<pre><code>source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+</code></pre><p>Then to execute, in the <strong>same directory as the <code>Gemfile</code></strong>, do:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle install
+Fetching gem metadata from https://rubygems.org/............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+<span class="c1"># ... and lots more ...</span>
+</code></pre></div><p>Now sit back and relax. It&rsquo;ll take a few minutes to run, installing Jekyll along
+with a whole hog of useful plugins for the Jekyll + GitHub marriage.</p>
+<p>After installation completes, make a new blog site and <code>cd</code> into it:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle <span class="nb">exec</span> jekyll new myblog
+<span class="c1"># ... output from jekyll ...</span>
+$ <span class="nb">cd</span> myblog
+</code></pre></div><p>Note that we&rsquo;re now in the directory <code>myblog</code>. To test your newly minted blog, do:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle <span class="nb">exec</span> jekyll serve
+</code></pre></div><p>This command will compile your Jekyll files into fully-formed HTML, place them in the
+directory <code>_site</code>, and host these files off a development server. To check
+out the website, open your favorite browser and navigate to <a href="http://localhost:4000">http://localhost:4000</a>.</p>
+<p>Note: remember to prepend <code>bundle exec</code> to every <code>jekyll</code> command you execute.
+Doing so tells <code>jekyll</code> to run using gems installed by Bundler. So when the
+documentation tells you to do <code>jekyll build</code>, you should instead do
+<code>bundle exec jekyll build</code>.</p>
+<h2 id="looking-ahead">Looking ahead</h2>
+<p>And now, you&rsquo;re the proud owner of a beautiful, minimal-functioning blog! But
+it&rsquo;s still a ton of work to get from here to the fabulous work of
+social-media-art your have in mind. On your journey, you will need to:</p>
+<h3 id="learn-how-jekyll-works">Learn how Jekyll works</h3>
+<p>Get your hands dirty in the details of Jekyll with the official
+<a href="https://jekyllrb.com/docs/step-by-step/02-liquid/">step-by-step guide</a>. It
+covers things like the <a href="https://shopify.github.io/liquid/">Liquid</a> template
+language for shnazzing up your HTML, the mechanics of the site generator, and
+deploying to <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+<h3 id="host-on-github-pages">Host on Github pages</h3>
+<p>Speaking of GitHub Pages, when you&rsquo;re ready to show the world your hard work,
+it&rsquo;s time to publish on the Interwebs. Make sure you familiarize yourself with
+the basics of <a href="https://guides.github.com/activities/hello-world/">Github</a> and
+<a href="https://git-scm.com/docs/gittutorial">git version control</a>. Then start a
+<a href="https://pages.github.com/">GitHub Pages</a> repository to host your site. Pick
+a catchy <a href="https://domains.google">domain name</a> to polish.</p>
+<h3 id="play-with-themes">Play with themes</h3>
+<p>The default theme generated by Jekyll is <a href="https://github.com/jekyll/minima">minima</a>.
+I like it. I used it as a starting base for this site. But for those seeking
+a more sublime theme experience, there&rsquo;s <a href="https://jekyllthemes.io/">this beauty</a>,
+plenty more on Google, or dream up your own.</p>
+<p>Happy blogging!</p>]]></content>
+		</item>
+		
+	</channel>
+</rss>

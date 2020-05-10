@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>william lettuce tongmato</title>
+    <link>https://wlt.coffee/</link>
+    <description>Recent content on william lettuce tongmato</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wlt.coffee/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Everything you need to know about webtech</title>
+      <link>https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/</link>
+      <pubDate>Sat, 28 Dec 2019 13:25:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/</guid>
+      <description>&lt;p&gt;React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL,
+ORMs &amp;ndash; webtech is a dizzying world with diverse technologies, wacky lingo, and
+more frameworks than stars in the sky. Looking for a way in? You just found it.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: burgeoning programmers looking for an intro to webtech&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Smile.</title>
+      <link>https://wlt.coffee/posts/2019-08-26-smile/</link>
+      <pubDate>Mon, 26 Aug 2019 12:36:54 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2019-08-26-smile/</guid>
+      <description>&lt;p&gt;Sometimes, it&amp;rsquo;s just been a bad day.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: everyone&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Programming for n00bs: an introduction to our craft</title>
+      <link>https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/</link>
+      <pubDate>Fri, 22 Feb 2019 21:05:54 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve always wanted to learn how to program, but never know where to start,
+you&amp;rsquo;re in the right place. Start here. Today is the first day of your
+glorious programming future.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: curious folks interested in programming&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>From 1011 to Laptop: How to build a computer from binary</title>
+      <link>https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/</guid>
+      <description>&lt;p&gt;How exactly do computers work? How do you go from simple electrical impulses to
+this incredible wonder-box? Tucked beneath our palms, in our pockets, and on our
+desks are veritable miracles of delicate wiring and clever engineering. For the
+next few minutes, I&amp;rsquo;ll take you on a whirlwind tour: from simple 1&amp;rsquo;s and 0&amp;rsquo;s to
+the whole, hulking beast that we call a computer.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: anyone and everyone&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Getting started with Jekyll</title>
+      <link>https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/</guid>
+      <description>&lt;p&gt;A simple guide to setting up a Jekyll installation. Existing documentation left
+some pieces out, so I&amp;rsquo;ve put together this document to guide anyone else (and
+my future self) through the process.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: tech-oriented folks comfortable on the command line&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The &#34;figure&#34; Shortcode</title>
+      <link>https://wlt.coffee/examples/the-figure-shortcode/</link>
+      <pubDate>Mon, 24 Dec 2018 12:29:41 +0800</pubDate>
+      
+      <guid>https://wlt.coffee/examples/the-figure-shortcode/</guid>
+      <description>Hugo has figure shortcode built in, so you can easily add figcaptions or hyperlink rel attributes to images. Documentations can be found here:
+https://gohugo.io/content-management/shortcodes/#figure
+This theme has 3 CSS classes made for figure elements:
+ big: images will break the width limit of main content area. left: images will float to the left. right: images will float to the right.  If a figure has no class set, the image will behave just like a normal markdown image: !</description>
+    </item>
+    
+    <item>
+      <title>Post With Featured Image</title>
+      <link>https://wlt.coffee/examples/post-with-featured-image/</link>
+      <pubDate>Mon, 01 Oct 2018 16:15:09 +0800</pubDate>
+      
+      <guid>https://wlt.coffee/examples/post-with-featured-image/</guid>
+      <description>Just define the image URL in the content’s front matter, the featured image will be displayed as the background.
+For example:
+---images:- https://picsum.photos/1024/768/?random---This is an array, you can set multiple urls, only the first url will be used. These images is also used in Twitter Cards and the Open Graph metadata.</description>
+    </item>
+    
+    <item>
+      <title>Typography</title>
+      <link>https://wlt.coffee/examples/typography/</link>
+      <pubDate>Sat, 29 Sep 2018 11:36:33 +0800</pubDate>
+      
+      <guid>https://wlt.coffee/examples/typography/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ An apple is a sweet, edible fruit produced by an apple tree (Malus pumila).</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://wlt.coffee/examples/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/examples/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Hi, my name is William</title>
+      <link>https://wlt.coffee/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/about/</guid>
+      <description>I&amp;rsquo;m a student at Columbia University, burgeoning software engineer, and freshly-minted blogger. I enjoy reading, running, and plant-based whole foods. I don&amp;rsquo;t enjoy grades, sitting too long, and not-plant-based not-whole (partial?) foods.
+  Christmas 2018
+  About the blog Just doodling my thoughts on a personal stretch of the Interwebs. Because of my background, the themes tend towards the technical, but I hope you&amp;rsquo;ll find a little bit of everything for everyone.</description>
+    </item>
+    
+  </channel>
+</rss>

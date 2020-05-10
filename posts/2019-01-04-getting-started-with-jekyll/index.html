@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Getting started with Jekyll">
+<meta itemprop="description" content="A simple guide to setting up a Jekyll installation. Existing documentation left
+some pieces out, so I&rsquo;ve put together this document to guide anyone else (and
+my future self) through the process.
+Audience: tech-oriented folks comfortable on the command line">
+<meta itemprop="datePublished" content="2019-01-04T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-01-04T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="891">
+
+
+
+<meta itemprop="keywords" content="tech,howto," /><meta property="og:title" content="Getting started with Jekyll" />
+<meta property="og:description" content="A simple guide to setting up a Jekyll installation. Existing documentation left
+some pieces out, so I&rsquo;ve put together this document to guide anyone else (and
+my future self) through the process.
+Audience: tech-oriented folks comfortable on the command line" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/" />
+<meta property="article:published_time" content="2019-01-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-01-04T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Getting started with Jekyll"/>
+<meta name="twitter:description" content="A simple guide to setting up a Jekyll installation. Existing documentation left
+some pieces out, so I&rsquo;ve put together this document to guide anyone else (and
+my future self) through the process.
+Audience: tech-oriented folks comfortable on the command line"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Getting started with Jekyll</title>
+	<link rel="stylesheet" href="https://wlt.coffee/css/style.min.fb12456efc9da682b9aa3a9705d3061031850514eb30bc316247310c134c5754.css" integrity="sha256-+xJFbvydpoK5qjqXBdMGEDGFBRTrMLwxYkcxDBNMV1Q=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInDown faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://wlt.coffee">william lettuce tongmato</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://wlt.coffee/posts/">Posts</a>
+				<a href="https://wlt.coffee/about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<button id="toc-btn" class="hdr-btn desktop-only-ib" title="Table of Contents"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg></button><span class="hdr-social hide-in-mobile"><a href="https://github.com/wtong98" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.linkedin.com/in/william-tong-693632133/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://wlt.coffee/posts/">Posts</a></li>
+			<li><a href="https://wlt.coffee/about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Jan 4, 2019</span></div>
+				<h1>Getting started with Jekyll</h1>
+			</header>
+			<div class="content">
+				<p>A simple guide to setting up a Jekyll installation. Existing documentation left
+some pieces out, so I&rsquo;ve put together this document to guide anyone else (and
+my future self) through the process.</p>
+<p><em>Audience: tech-oriented folks comfortable on the command line</em></p>
+<figure>
+    <img src="/images/getting-started-with-jekyll/jekyll_logo.png"
+         alt="jekyll"/> <figcaption>
+            <p>Source: <a href="https://github.com/jekyll/brand">https://github.com/jekyll/brand</a></p>
+        </figcaption>
+</figure>
+
+<p>Jekyll is a <em>static website generator</em>. It doesn&rsquo;t host. It doesn&rsquo;t create
+content. It&rsquo;s a clean, simple machine that you feed text and out pops magically
+formed HTML. It&rsquo;s &ldquo;blog aware&rdquo;, so it includes clever tools and short-cuts for
+bloggers &mdash; but don&rsquo;t feel limited. You can use it to build portfolios, documentation
+sites, tech showcases, anything you can dream. If you&rsquo;re a tech-friendly blogger
+ready to get your hands dirty with a little web dev, Jekyll is perfect for you.</p>
+<p>First things first, to follow this guide, you&rsquo;ll need a *nix system (Mac, Linux)
+and be okay with command-line stuff. Personally, I run an Arch Linux based
+distribution, so my examples are geared towards my home system. Your mileage
+may vary.</p>
+<p><strong>EDIT:</strong> I no longer use Jekyll and have since switched to
+<a href="https://gohugo.io/">Hugo</a>, a static generator written in Go. It&rsquo;s faster,
+cleaner, the documentation is better, and an all around a pleasure to use.
+Highly recommend. A post about Hugo is upcoming.</p>
+<h2 id="initial-steps">Initial steps<a href="#initial-steps" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Jekyll is written in Ruby. To use it, you&rsquo;ll need a <a href="https://www.ruby-lang.org/en/downloads/">Ruby installation</a>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Me, on Arch Linux</span>
+$ sudo pacman -S ruby
+
+<span class="c1"># Debian, Ubuntu</span>
+$ sudo apt install ruby
+
+<span class="c1"># Mac</span>
+$ brew install ruby
+</code></pre></div><p>To verify your installation, go ahead and check:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ruby --version
+</code></pre></div><p>Next, we&rsquo;ll need Bundler:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ gem install bundler
+</code></pre></div><p>In Ruby, <a href="https://en.wikipedia.org/wiki/RubyGems">gems</a> are packaged pieces of code,
+like .jar files for Java or modules for Python. Bundler is a utility that
+makes managing gems possible with minimum teeth-gnashing and hair loss.</p>
+<p>Bundler itself will have been installed in your gem user installation directory.
+To see where that is, do:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ gem env
+RubyGems Environment:
+  - RUBYGEMS VERSION: 2.7.7
+  - RUBY VERSION: 2.5.3 <span class="o">(</span>2018-10-18 patchlevel 105<span class="o">)</span> <span class="o">[</span>x86_64-linux<span class="o">]</span>
+  - INSTALLATION DIRECTORY: /usr/lib/ruby/gems/2.5.0
+  - USER INSTALLATION DIRECTORY: /home/username/.gem/ruby/2.5.0
+<span class="c1"># ... and lots more</span>
+</code></pre></div><p>And that line at the bottom that says &ldquo;USER INSTALLATION DIRECTORY&rdquo; is your
+ticket. Add that file path to your environment PATH variable to use Bundler
+on the command line.</p>
+<p>For me, in place of [USER INSTALLATION DIRECTORY],
+I&rsquo;d put <code>/home/username/.gem/ruby/2.5.0</code>. Note the <code>/bin</code> appended to the path:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Using bash (note: you do not need an &#34;export&#34;):</span>
+$ <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>/bin
+
+<span class="c1"># Using fish, my preferred shell:</span>
+$ <span class="nb">set</span> -gx PATH <span class="nv">$PATH</span> <span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>/bin
+</code></pre></div><p>To make the change permanent, add that command to your <code>.profile</code> (or <code>.bash_profile</code>),
+<code>config.fish</code>, or whatever you use for setting environment variables. Restart your
+shell to allow the change to take effect.</p>
+<h2 id="installing-jekyll">Installing Jekyll<a href="#installing-jekyll" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Now, we&rsquo;re in shape for grabbing Jekyll. In preparation, we need to tell Bundler
+to install gems in the same default directory as RubyGem:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle config path <span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>
+</code></pre></div><p>Next, Bundler needs a special file called a <code>Gemfile</code> to begin installing gems.
+Go ahead and make one and copy the following into it:</p>
+<pre><code>source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+</code></pre><p>Then to execute, in the <strong>same directory as the <code>Gemfile</code></strong>, do:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle install
+Fetching gem metadata from https://rubygems.org/............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+<span class="c1"># ... and lots more ...</span>
+</code></pre></div><p>Now sit back and relax. It&rsquo;ll take a few minutes to run, installing Jekyll along
+with a whole hog of useful plugins for the Jekyll + GitHub marriage.</p>
+<p>After installation completes, make a new blog site and <code>cd</code> into it:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle <span class="nb">exec</span> jekyll new myblog
+<span class="c1"># ... output from jekyll ...</span>
+$ <span class="nb">cd</span> myblog
+</code></pre></div><p>Note that we&rsquo;re now in the directory <code>myblog</code>. To test your newly minted blog, do:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle <span class="nb">exec</span> jekyll serve
+</code></pre></div><p>This command will compile your Jekyll files into fully-formed HTML, place them in the
+directory <code>_site</code>, and host these files off a development server. To check
+out the website, open your favorite browser and navigate to <a href="http://localhost:4000">http://localhost:4000</a>.</p>
+<p>Note: remember to prepend <code>bundle exec</code> to every <code>jekyll</code> command you execute.
+Doing so tells <code>jekyll</code> to run using gems installed by Bundler. So when the
+documentation tells you to do <code>jekyll build</code>, you should instead do
+<code>bundle exec jekyll build</code>.</p>
+<h2 id="looking-ahead">Looking ahead<a href="#looking-ahead" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>And now, you&rsquo;re the proud owner of a beautiful, minimal-functioning blog! But
+it&rsquo;s still a ton of work to get from here to the fabulous work of
+social-media-art your have in mind. On your journey, you will need to:</p>
+<h3 id="learn-how-jekyll-works">Learn how Jekyll works<a href="#learn-how-jekyll-works" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Get your hands dirty in the details of Jekyll with the official
+<a href="https://jekyllrb.com/docs/step-by-step/02-liquid/">step-by-step guide</a>. It
+covers things like the <a href="https://shopify.github.io/liquid/">Liquid</a> template
+language for shnazzing up your HTML, the mechanics of the site generator, and
+deploying to <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+<h3 id="host-on-github-pages">Host on Github pages<a href="#host-on-github-pages" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Speaking of GitHub Pages, when you&rsquo;re ready to show the world your hard work,
+it&rsquo;s time to publish on the Interwebs. Make sure you familiarize yourself with
+the basics of <a href="https://guides.github.com/activities/hello-world/">Github</a> and
+<a href="https://git-scm.com/docs/gittutorial">git version control</a>. Then start a
+<a href="https://pages.github.com/">GitHub Pages</a> repository to host your site. Pick
+a catchy <a href="https://domains.google">domain name</a> to polish.</p>
+<h3 id="play-with-themes">Play with themes<a href="#play-with-themes" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>The default theme generated by Jekyll is <a href="https://github.com/jekyll/minima">minima</a>.
+I like it. I used it as a starting base for this site. But for those seeking
+a more sublime theme experience, there&rsquo;s <a href="https://jekyllthemes.io/">this beauty</a>,
+plenty more on Google, or dream up your own.</p>
+<p>Happy blogging!</p>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://wlt.coffee/tags/tech">tech</a></span><span class="tag"><a href="https://wlt.coffee/tags/howto">howto</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>891 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-01-03 18:00 -0600</p>
+			</footer>
+		</article>
+		<aside id="toc">
+			<div class="toc-title">Table of Contents</div>
+			<nav id="TableOfContents">
+  <ul>
+    <li><a href="#initial-steps">Initial steps</a></li>
+    <li><a href="#installing-jekyll">Installing Jekyll</a></li>
+    <li><a href="#looking-ahead">Looking ahead</a>
+      <ul>
+        <li><a href="#learn-how-jekyll-works">Learn how Jekyll works</a></li>
+        <li><a href="#host-on-github-pages">Host on Github pages</a></li>
+        <li><a href="#play-with-themes">Play with themes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		</aside>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>From 1011 to Laptop: How to build a computer from binary</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "wlt-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://wlt.coffee">William Lingxiao Tong</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://wlt.coffee/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://wlt.coffee/js/bundle.min.6036353c1f61f03667e101a01b86cba8c16a11e0ed233c4f4a92bab1175cdc7f.js" integrity="sha256-YDY1PB9h8DZn4QGgG4bLqMFqEeDtIzxPSpK6sRdc3H8=" crossorigin="anonymous"></script>
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131763341-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+</body>
+
+</html>

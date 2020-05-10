@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Everything you need to know about webtech">
+<meta itemprop="description" content="React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL,
+ORMs &ndash; webtech is a dizzying world with diverse technologies, wacky lingo, and
+more frameworks than stars in the sky. Looking for a way in? You just found it.
+Audience: burgeoning programmers looking for an intro to webtech">
+<meta itemprop="datePublished" content="2019-12-28T13:25:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-28T13:25:00&#43;00:00" />
+<meta itemprop="wordCount" content="1698">
+
+
+
+<meta itemprop="keywords" content="tech,education," /><meta property="og:title" content="Everything you need to know about webtech" />
+<meta property="og:description" content="React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL,
+ORMs &ndash; webtech is a dizzying world with diverse technologies, wacky lingo, and
+more frameworks than stars in the sky. Looking for a way in? You just found it.
+Audience: burgeoning programmers looking for an intro to webtech" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/" />
+<meta property="article:published_time" content="2019-12-28T13:25:00+00:00" />
+<meta property="article:modified_time" content="2019-12-28T13:25:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Everything you need to know about webtech"/>
+<meta name="twitter:description" content="React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL,
+ORMs &ndash; webtech is a dizzying world with diverse technologies, wacky lingo, and
+more frameworks than stars in the sky. Looking for a way in? You just found it.
+Audience: burgeoning programmers looking for an intro to webtech"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Everything you need to know about webtech</title>
+	<link rel="stylesheet" href="https://wlt.coffee/css/style.min.fb12456efc9da682b9aa3a9705d3061031850514eb30bc316247310c134c5754.css" integrity="sha256-+xJFbvydpoK5qjqXBdMGEDGFBRTrMLwxYkcxDBNMV1Q=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInDown faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://wlt.coffee">william lettuce tongmato</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://wlt.coffee/posts/">Posts</a>
+				<a href="https://wlt.coffee/about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<button id="toc-btn" class="hdr-btn desktop-only-ib" title="Table of Contents"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg></button><span class="hdr-social hide-in-mobile"><a href="https://github.com/wtong98" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.linkedin.com/in/william-tong-693632133/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://wlt.coffee/posts/">Posts</a></li>
+			<li><a href="https://wlt.coffee/about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Dec 28, 2019</span></div>
+				<h1>Everything you need to know about webtech</h1>
+			</header>
+			<div class="content">
+				<p>React, Angular, ES6 Javascript, Typescript, JS-in-CSS, Express, Django, NoSQL,
+ORMs &ndash; webtech is a dizzying world with diverse technologies, wacky lingo, and
+more frameworks than stars in the sky. Looking for a way in? You just found it.</p>
+<p><em>Audience: burgeoning programmers looking for an intro to webtech</em></p>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/internet.jpg"
+         alt="Internet"/> <figcaption>
+            <p>Source: <a href="https://askleo.askleomedia.com/wp-content/uploads/2018/10/internet.jpg">https://askleo.askleomedia.com/wp-content/uploads/2018/10/internet.jpg</a></p>
+        </figcaption>
+</figure>
+
+<hr>
+<p>Webtech<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> is a <em>monster</em>. The barrier to entry is high for a number of reasons:</p>
+<ol>
+<li><strong>Lightning pace</strong>: technologies popular three years ago
+are already becoming obsolete</li>
+<li><strong>Informal training</strong>: teaching something that changes this fast is challenging.
+Most of the education happens on the job or via blog tutorials (like this one!)</li>
+<li><strong>Sheer volume</strong>: the raw number of tools, packages, and frameworks for modern
+web development is overwhelming</li>
+</ol>
+<p>But that&rsquo;s why posts like this exist. Whether you&rsquo;re a casual programmer or
+thinking of a career in web dev, you&rsquo;ve made it to the right place.</p>
+<h2 id="internet">Internet<a href="#internet" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/arpanet.jpg"
+         alt="Arpanet"/> <figcaption>
+            <p>Source: <a href="http://mercury.lcs.mit.edu/~jnc/tech/arpageo.html">http://mercury.lcs.mit.edu/~jnc/tech/arpageo.html</a></p>
+        </figcaption>
+</figure>
+
+<p>Open your favorite browser. Type <code>www.google.com</code>. Hit enter.</p>
+<p>The moment your finger brushes the key, your laptop&rsquo;s wireless card sends a beam
+of light<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> encoding information like <code>www.google.com</code>, <code>1:25 pm</code>, and <code>I am coming from Jane's laptop</code> to a tiny computer in your home/office called a
+router. The router then transmits the information as electrical impulses through
+a tangle of cables to a supercomputer. Depending on where you live and the location
+of the nearest Google servers, these electrical impulses will get rocketed around
+the country, potentially under the ocean, until they arrive at last to routers
+owned by Google. From here, they feed to a Google computer, which interprets
+the information, assembles the Google search page, and sends that data back
+through the routers, tangle of cables, supercomputers, and finally the router
+in your home or office, where it can be beamed back to your laptop as light &ndash;
+and lo! Google search appears on your screen.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>If this whole process sounds immensely cool and complicated, it is. Check out
+<a href="https://www.vox.com/a/internet-maps">this article</a> from Vox with impressive
+graphics about the whole process.</p>
+<p>Most of this process lies in the realm of telecom giants and hardcore engineers.
+For the software geeks, there&rsquo;s only one part that really matters: assembling
+the page. All the hard stuff &ndash; getting the users&rsquo; signals to your computer, sending
+your page out to users &ndash; is handled by the Internet. The real work for us
+is figuring out how to make that page in the first place.</p>
+<h2 id="web-stack">Web stack<a href="#web-stack" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>That page &ndash; which I&rsquo;ll now call a web application &ndash; requires three parts:</p>
+<ol>
+<li>Frontend: what the user sees</li>
+<li>Backend: data and logic powering the web app</li>
+<li>Server: software that glues everything together</li>
+</ol>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/frontend_backend.png"
+         alt="Full stack"/> <figcaption>
+            <p>Source: <a href="https://www.seobility.net/en/wiki/Frontend">https://www.seobility.net/en/wiki/Frontend</a></p>
+        </figcaption>
+</figure>
+
+<p>A world of technology goes into building these three components. Software
+engineers then pick their favorite and assemble them into a <a href="https://whatis.techtarget.com/definition/Web-stack">web stack</a>.
+For example, a traditional choice is to pick <!-- raw HTML omitted -->L<!-- raw HTML omitted -->inux and <!-- raw HTML omitted -->A<!-- raw HTML omitted -->pache for the server,
+<!-- raw HTML omitted -->M<!-- raw HTML omitted -->ySQL and <!-- raw HTML omitted -->P<!-- raw HTML omitted -->HP for the backend, and more PHP for the frontend. The
+<a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a> stack. Let&rsquo;s walk
+through each part in greater detail below:</p>
+<h3 id="frontend">Frontend<a href="#frontend" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Arguably the gnarliest part of the whole stack, the frontend governs everything
+the user sees, touches, and hears. Everything you interact with directly on the
+Internet lies in the realm of frontend.</p>
+<p>Three core technologies to know:</p>
+<ol>
+<li><a href="https://www.w3schools.com/html/">HTML</a></li>
+<li><a href="https://www.w3schools.com/css/">CSS</a></li>
+<li><a href="https://www.w3schools.com/js/">Javascript</a></li>
+</ol>
+<p><strong>HTML</strong> (short for Hypertext Markup Language) describes the structure of a
+webpage. It looks something like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> describes the structure of a webpage.
+    It looks something like this:
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div><p>The funny-looking sections enclosed in angle brackets are called <em>tags</em>. They
+denote sections of an HTML document. For example <code>&lt;p&gt;</code> denotes the beginning
+of a paragraph, and <code>&lt;/p&gt;</code> denotes the end. Closing tags always include the <code>/</code>
+between the brackets. The tag <code>&lt;strong&gt;</code> denotes really important text, which
+should be emphasized. To view the HTML of this webpage, you can right-click
+on the page and select &ldquo;View page source.&rdquo;</p>
+<p><strong>CSS</strong> (short for Cascading Style Sheet) describes how a webpage should look.
+It looks like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>This snippet means that the text color for all paragraphs should be blue. You
+can use CSS to stylize just about any visual element on your webpage, from the
+color to the spacing to the placement, and even animations. Whereas HTML
+gives you content and structure, CSS gives you visuals.</p>
+<p>Just HTML + CSS is enough to build a decent webpage. But for the fancy stuff
+like <a href="http://weavesilk.com/">this</a>, you&rsquo;ll need <strong>JavaScript</strong>.</p>
+<p>JavaScript is a fully-fledged programming language.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> Webpages rely on them
+for animation, logic, interfaces, basically anything a general programming
+language can do. In fact, JavaScript is so powerful that some websites are built
+purely from it. No HTML. No CSS. Pure JavaScript. It&rsquo;s a large topic and
+deserving of its own post.</p>
+<p>JavaScript, by the way, has nothing to do with <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>.
+The name was chosen for hype, back when Java was all the rage. But nowadays
+Java has about as much relation to JavaScript as &ldquo;car&rdquo; to &ldquo;carpet.&rdquo;</p>
+<h3 id="backend">Backend<a href="#backend" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>For a lot of websites (like this one), the frontend is all you need. But if
+you want a higher degree of interaction with your users &ndash; like a
+browser-based video game, web email, online gradebook, basically anything that
+requires you to log on &ndash; you&rsquo;ll also need a backend.</p>
+<p>The primary job of the backend is to host a <strong>database</strong>. A database is a
+collection of structured information. Think Excel, but with multiple spreadsheets
+that connect to each other. Using it, you might store usernames, passwords,
+favorite color, preferred pizza parlor, opinion on bananas vs plantains, virtually
+any data you&rsquo;d like. A popular database is <a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a>,
+and it uses a special querying language called <a href="https://www.w3schools.com/sql/">SQL</a>
+to store and retrieve information.</p>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/database.jpg"
+         alt="Full stack"/> <figcaption>
+            <p>Source: <a href="https://www.seobility.net/en/wiki/Frontend">https://www.seobility.net/en/wiki/Frontend</a></p>
+        </figcaption>
+</figure>
+
+<p>The rest of the backend includes code that connects the database to the rest of
+the website. Suppose your website orders pizza from a user&rsquo;s favorite pizza
+parlor. Then once the user hits &ldquo;Order!&rdquo; your backend might query the database,
+discover that the user likes &ldquo;Pizza Hut,&rdquo; connect to Pizza Hut&rsquo;s online ordering
+system, and submit an order for a large pepperoni with extra cheese.</p>
+<p>The code itself can be written in virtually any popular programming language.
+Traditionally, the choice is <a href="https://www.w3schools.com/php/">PHP</a>, but no
+modern website will touch it. Other common choices include (in my personal
+order of preference) Java, <a href="https://www.djangoproject.com/">Python</a>, and even
+<a href="https://nodejs.org/en/">JavaScript</a> itself. But if you&rsquo;re a hardcore disciple
+of SomeObscureLanguage, chances are, someone somewhere has written a package
+that lets you use it for a backend.</p>
+<h3 id="server">Server<a href="#server" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Often paired with the backend, the server is a piece of software that connects
+users to the actual website.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Its primary job is to direct traffic: when
+a user types <code>google.com</code> and hits enter, servers at Google receive that
+request, give it to the backend to process, and return the assembled
+webpage to the user.</p>
+<p>In practice, the server is not something a web developer touches directly.
+Instead, clever people have already written multitudes of servers ready
+for you to plug-and-play. The traditional go-to has been
+<a href="https://httpd.apache.org/">Apache</a>, though a popular option today is <a href="https://www.nginx.com/">nginx</a>
+(pronounced like &ldquo;engine - X&rdquo;).</p>
+<h2 id="frameworks">Frameworks<a href="#frameworks" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>And that&rsquo;s about it! Those three building blocks &ndash; frontend, backend, server &ndash;
+form the core of any web project. The rest of webtech is an endless elaboration
+on these three themes.</p>
+<p>One last thing to talk about is the <strong>web framework</strong>. Take a look at these
+two websites:</p>
+<p><a href="http://www.taco.com/">TACO</a>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/taco.png"
+         alt="TACO"/> <figcaption>
+            <p>A very old-fashioned, 90s era website. Likely written by hand with traditional HTML and CSS techniques.</p>
+        </figcaption>
+</figure>
+</p>
+<p><a href="http://www.feedmusic.com/">Feed</a>
+<figure>
+    <img src="/images/everything-you-need-to-know-about-webtech/feed.png"
+         alt="Full stack"/> <figcaption>
+            <p>Beautifully animated, sleek, modern website.</p>
+        </figcaption>
+</figure>
+</p>
+<p>Imagine trying to write the website for Feed by hand using plain HTML, CSS, and
+JavaScript. It&rsquo;s doable, but doable in the same sense that building the Great
+Wall of China brick-by-brick is doable.</p>
+<p>To build something beautiful, interactive, and <em>modern</em>, you need a framework.
+These are software packages that in some way make your life easier when
+building a website. Some help structure your project. Others provide starting
+templates. Many blur the line between frontend, backend, and server, providing
+one complete solution that encompasses all parts.</p>
+<p>Each framework is itself the topic of a whole post. Below is a short overview of
+some popular ones, plus my unsolicited opinions:</p>
+<ul>
+<li><a href="https://reactjs.org/">React</a>: frontend framework that helps your write beautiful web apps. It
+does away entirely with HTML (and often CSS) and allows you to code the whole
+thing in JavaScript. The project is headed by Facebook, and <a href="https://facebook.com">facebook.com</a>
+is an excellent example of a website built with React.</li>
+<li><a href="https://angular.io/">Angular</a>: also a frontend framework, it&rsquo;s a primary competitor to React
+made by Google. Personally, I&rsquo;m not a huge fan. It&rsquo;s clunky, finicky, and
+difficult to learn. If you have the choice, I recommend React.</li>
+<li><a href="https://expressjs.com/">Express</a>: backend framework for JavaScript. Often
+you&rsquo;ll find it in a MERN stack: MongoDB (database) + Express + React + Node (JavaScript engine).</li>
+<li><a href="https://www.djangoproject.com/">Django</a>: backend framework for Python.
+It&rsquo;s got a little bit of everything you might need to build an enterprise-grade
+website.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></li>
+<li><a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a>: a competitor to Django.
+Whereas Django gives you everything, including an opinionated way to organize
+your project, Flask takes a leaner, simpler, minimalist approach. They say
+if Django is the Navy, then Flask is the pirates.</li>
+</ul>
+<p>If you&rsquo;re curious, this website is built using <a href="/tech/2019/01/04/getting-started-with-jekyll.html">Jekyll</a>.
+It&rsquo;s a blog-oriented framework that crunches text files containing my posts into
+the web pages you see now.</p>
+<h2 id="footnotes">Footnotes<a href="#footnotes" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Some extra tidbits to color your reading experience:</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>I use the term &ldquo;webtech&rdquo; to broadly cover everything related to building
+a web page or web-based application. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>In fact, it&rsquo;s the same kind of light that your microwave uses on leftovers.
+Check out <a href="https://scienceblogs.com/builtonfacts/2009/09/17/wifi-and-radiation">this interesting article</a>
+for more information. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Remember, all this happens on the order of seconds. And it has to happen
+every time you click on a link, browse to a new page, or generally use
+the Internet. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>For more on programming languages themselves, check out my
+<a href="http://localhost:4000/tech/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html">guide to programming</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Sometimes, people refer to the &ldquo;server&rdquo; as the physical machine that runs
+your backend code. In this article, I refer to &ldquo;server&rdquo; exclusively in
+the software sense. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Except built-in support for asynchronous Python, in which case you&rsquo;ll
+need <a href="http://www.celeryproject.org/">Celery</a> and a message broker like
+<a href="https://www.rabbitmq.com/">RabbitMQ</a>. The extra bulk is why I prefer
+JavaScript, which has async built in. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://wlt.coffee/tags/tech">tech</a></span><span class="tag"><a href="https://wlt.coffee/tags/education">education</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1698 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-12-28 07:25 -0600</p>
+			</footer>
+		</article>
+		<aside id="toc">
+			<div class="toc-title">Table of Contents</div>
+			<nav id="TableOfContents">
+  <ul>
+    <li><a href="#internet">Internet</a></li>
+    <li><a href="#web-stack">Web stack</a>
+      <ul>
+        <li><a href="#frontend">Frontend</a></li>
+        <li><a href="#backend">Backend</a></li>
+        <li><a href="#server">Server</a></li>
+      </ul>
+    </li>
+    <li><a href="#frameworks">Frameworks</a></li>
+    <li><a href="#footnotes">Footnotes</a></li>
+  </ul>
+</nav>
+		</aside>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://wlt.coffee/posts/2019-08-26-smile/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Smile.</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "wlt-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://wlt.coffee">William Lingxiao Tong</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://wlt.coffee/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://wlt.coffee/js/bundle.min.6036353c1f61f03667e101a01b86cba8c16a11e0ed233c4f4a92bab1175cdc7f.js" integrity="sha256-YDY1PB9h8DZn4QGgG4bLqMFqEeDtIzxPSpK6sRdc3H8=" crossorigin="anonymous"></script>
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131763341-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+</body>
+
+</html>

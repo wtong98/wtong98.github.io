@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>howto on william lettuce tongmato</title>
+    <link>https://wlt.coffee/tags/howto/</link>
+    <description>Recent content in howto on william lettuce tongmato</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 04 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wlt.coffee/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting started with Jekyll</title>
+      <link>https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/</guid>
+      <description>&lt;p&gt;A simple guide to setting up a Jekyll installation. Existing documentation left
+some pieces out, so I&amp;rsquo;ve put together this document to guide anyone else (and
+my future self) through the process.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: tech-oriented folks comfortable on the command line&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
