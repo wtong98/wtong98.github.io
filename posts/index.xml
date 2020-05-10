@@ -6,8 +6,79 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sat, 28 Dec 2019 13:25:00 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 10 May 2020 10:42:22 -0500</lastBuildDate>
 		<atom:link href="https://wlt.coffee/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Welcome to the New WLT</title>
+			<link>https://wlt.coffee/posts/2020-05-10-welcome-to-the-new-wlt/</link>
+			<pubDate>Sun, 10 May 2020 10:42:22 -0500</pubDate>
+			
+			<guid>https://wlt.coffee/posts/2020-05-10-welcome-to-the-new-wlt/</guid>
+			<description>&lt;p&gt;Order the new WLT, served with a side of fries and drink of your choice.
+All for &lt;del&gt;$1.99&lt;/del&gt; FREE.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;audience: everyone&lt;/em&gt;&lt;/p&gt;</description>
+			<content type="html"><![CDATA[<p>Order the new WLT, served with a side of fries and drink of your choice.
+All for <del>$1.99</del> FREE.</p>
+<p><em>audience: everyone</em></p>
+<figure class="big">
+    <img src="/images/welcome-to-the-new-wlt/blt.jpg"
+         alt="blt"/> <figcaption>
+            <p>Source: <a href="https://www.dennys.com/food/burgers/spicy-sriracha-burger/">https://www.dennys.com/food/burgers/spicy-sriracha-burger/</a></p>
+        </figcaption>
+</figure>
+
+<p><strong>NOTE:</strong> The domain has migrated to <a href="https://wlt.coffee">https://wlt.coffee</a>.
+Using the old <a href="https://wlt.soy">.soy</a> extension will redirect to the new domain
+until December 2020. After that, I&rsquo;ll cancel the old domain. Readers who
+continue to use the old URL will be sent into Internet oblivion.</p>
+<h2 id="new-features">New Features</h2>
+<p>The old website felt like something circa 2000. I&rsquo;m proud to announce it&rsquo;s
+been updated to about 2010.</p>
+<h3 id="table-of-contents">Table of Contents</h3>
+<figure class="left">
+    <img src="/images/welcome-to-the-new-wlt/toc_icon.svg"
+         alt="table of contents icon"/> <figcaption>
+            <p>Table of Contents icon</p>
+        </figcaption>
+</figure>
+
+<p>Longer posts now feature a table of contents! Clicking on the icon will bring
+up a quick guide linking important sections of the page. <strong>NOTE</strong>: this feature
+only works on desktop.</p>
+<h3 id="featured-image">Featured Image</h3>
+<figure class="left">
+    <img src="/images/welcome-to-the-new-wlt/feat_image_icon.svg"
+         alt="featured image icon"/> <figcaption>
+            <p>Featured Image icon</p>
+        </figcaption>
+</figure>
+
+<p>Particularly epic posts (like this one) now have a &ldquo;featured image.&rdquo; The image
+is watermarked into the background. Clicking on the icon brings it into focus.
+Click the image again to return to the post.</p>
+<h3 id="clickable-tags">Clickable Tags</h3>
+<p>Like what you&rsquo;ve read? Now find more! All tags for a post are included at the
+bottom. Clicking on a tag brings up a page of posts with the same or related
+tags.</p>
+<h3 id="raised-general-level-of-epicness">Raised General Level of Epicness</h3>
+<ul>
+<li>Auto-hide navbar</li>
+<li>Improved mobile friendliness</li>
+<li>Redesigned icon</li>
+<li>Smoother feel</li>
+<li>Cleaner layout</li>
+<li>Switch to Hugo backend</li>
+<li>Enchanted by 9th-level sorcerers</li>
+<li>Imbued with dragon&rsquo;s blood and phoenix tears</li>
+<li>Left out in the sun for too long &mdash; hence the background color</li>
+</ul>
+<h2 id="and-to-all-my-loyal-readers">And to all my loyal readers</h2>
+<p>all (about three) of you, thanks for following along. It&rsquo;s been a pleasure to
+write for you, and I promise many more epic post to come. And as always,
+<a href="https://wlt.coffee/about/#about-the-blog ">let me know what you think</a>. Flame is
+appreciated.</p>]]></content>
+		</item>
 		
 		<item>
 			<title>Everything you need to know about webtech</title>

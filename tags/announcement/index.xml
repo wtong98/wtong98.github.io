@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>personal on william lettuce tongmato</title>
-    <link>https://wlt.coffee/tags/personal/</link>
-    <description>Recent content in personal on william lettuce tongmato</description>
+    <title>announcement on william lettuce tongmato</title>
+    <link>https://wlt.coffee/tags/announcement/</link>
+    <description>Recent content in announcement on william lettuce tongmato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 10 May 2020 10:42:22 -0500</lastBuildDate>
     
-	<atom:link href="https://wlt.coffee/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wlt.coffee/tags/announcement/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,16 +21,6 @@
       <description>&lt;p&gt;Order the new WLT, served with a side of fries and drink of your choice.
 All for &lt;del&gt;$1.99&lt;/del&gt; FREE.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;audience: everyone&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Smile.</title>
-      <link>https://wlt.coffee/posts/2019-08-26-smile/</link>
-      <pubDate>Mon, 26 Aug 2019 12:36:54 +0000</pubDate>
-      
-      <guid>https://wlt.coffee/posts/2019-08-26-smile/</guid>
-      <description>&lt;p&gt;Sometimes, it&amp;rsquo;s just been a bad day.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Audience: everyone&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
