@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: wlt.coffee
-Token: 37ce74c431e048774cba29430cb3a4679ed1174d27f7bd55fda7e8a9b61fa12e
