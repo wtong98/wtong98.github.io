@@ -394,8 +394,8 @@ no one I know who&rsquo;s serious about programming is here for $$$.<sup id="fnr
 genuinely meaningful activity. There&rsquo;s creativity, imagination, a chance
 to sprinkle your thoughts in a text file and watch it spring to life.</p>
 <p>In this two-part guide, I will give you the tools (and ideally the mindset) to
-begin your programming journey. This first part focuses on the basic skills to
-start. The second part dives deeper into the craft.</p>
+begin your programming journey. This first part focuses on the command line and
+other basic skills to start. The second part starts the actual programming.</p>
 <p>Whether you&rsquo;re hoping to pick up a new hobby or gunning for a software
 engineering future, this is the perfect place to begin.</p>
 <h2 id="big-picture-stuff">Big picture stuff</h2>
@@ -407,7 +407,7 @@ goodies you want your spouse to pick up. It&rsquo;s no different than scribbling
 note to your mom, telling her what to get from Subway, or jotting down
 a cooking recipe to remember for later.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <p>But instead of your spouse, Mom, or your future self, the audience for our
-particular instructions are <a href="https://wlt.soy/tech/curio/2019/01/12/from-1011-to-laptop-how-to-build-a-computer-from-binary.html">computers</a>.
+particular instructions are <a href="https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/">computers</a>.
 Computers don&rsquo;t speak English (<a href="https://towardsdatascience.com/an-easy-introduction-to-natural-language-processing-b1e2801291c1">yet</a>)
 so it&rsquo;s up to the programmer to learn their language. That&rsquo;s the easy part,
 and the part we&rsquo;ll focus on in this guide.</p>
@@ -1237,7 +1237,7 @@ may vary.</p>
 <p><strong>EDIT:</strong> I no longer use Jekyll and have since switched to
 <a href="https://gohugo.io/">Hugo</a>, a static generator written in Go. It&rsquo;s faster,
 cleaner, the documentation is better, and an all around a pleasure to use.
-Highly recommend. A post about Hugo is upcoming.</p>
+Highly recommend. For more updates and hype, check out <a href="https://wlt.coffee/posts/2020-05-10-welcome-to-the-new-wlt/">this post</a>.</p>
 <h2 id="initial-steps">Initial steps</h2>
 <p>Jekyll is written in Ruby. To use it, you&rsquo;ll need a <a href="https://www.ruby-lang.org/en/downloads/">Ruby installation</a>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Me, on Arch Linux</span>
