@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 28 Dec 2019 13:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2020 16:25:14 -0500</lastBuildDate>
     
 	<atom:link href="https://wlt.coffee/tags/education/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programming for Noobs II: Charming the Python</title>
+      <link>https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/</link>
+      <pubDate>Sat, 23 May 2020 16:25:14 -0500</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/</guid>
+      <description>&lt;p&gt;The next installment of our programming adventure! In this guide, we&amp;rsquo;ll
+get our hands dirty with actual programming. If you haven&amp;rsquo;t read
+&lt;a href=&#34;https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/&#34;&gt;the first part&lt;/a&gt;,
+not a problem. Feel free to jump in right here, or go back to check out the
+command-line wizardry we covered previously.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;audience: curious folks who may (or may not) have read Part I of this series&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Everything you need to know about webtech</title>

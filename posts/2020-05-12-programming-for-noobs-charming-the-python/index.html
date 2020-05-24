@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Programming for Noobs II: Charming the Python">
+<meta itemprop="description" content="The next installment of our programming adventure! In this guide, we&rsquo;ll
+get our hands dirty with actual programming. If you haven&rsquo;t read
+the first part,
+not a problem. Feel free to jump in right here, or go back to check out the
+command-line wizardry we covered previously.
+audience: curious folks who may (or may not) have read Part I of this series">
+<meta itemprop="datePublished" content="2020-05-23T16:25:14-05:00" />
+<meta itemprop="dateModified" content="2020-05-23T16:25:14-05:00" />
+<meta itemprop="wordCount" content="2933">
+
+
+
+<meta itemprop="keywords" content="tech,education," /><meta property="og:title" content="Programming for Noobs II: Charming the Python" />
+<meta property="og:description" content="The next installment of our programming adventure! In this guide, we&rsquo;ll
+get our hands dirty with actual programming. If you haven&rsquo;t read
+the first part,
+not a problem. Feel free to jump in right here, or go back to check out the
+command-line wizardry we covered previously.
+audience: curious folks who may (or may not) have read Part I of this series" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/" />
+<meta property="article:published_time" content="2020-05-23T16:25:14-05:00" />
+<meta property="article:modified_time" content="2020-05-23T16:25:14-05:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Programming for Noobs II: Charming the Python"/>
+<meta name="twitter:description" content="The next installment of our programming adventure! In this guide, we&rsquo;ll
+get our hands dirty with actual programming. If you haven&rsquo;t read
+the first part,
+not a problem. Feel free to jump in right here, or go back to check out the
+command-line wizardry we covered previously.
+audience: curious folks who may (or may not) have read Part I of this series"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Programming for Noobs II: Charming the Python</title>
+	<link rel="stylesheet" href="https://wlt.coffee/css/style.min.855b1b6519ba75cc922bae14e7f04594ada0e42229ae70f8d34889980bd7df56.css" integrity="sha256-hVsbZRm6dcySK64U5/BFlK2g5CIprnD400iJmAvX31Y=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInDown faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://wlt.coffee">william lettuce tongmato</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://wlt.coffee/posts/">Posts</a>
+				<a href="https://wlt.coffee/about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<button id="toc-btn" class="hdr-btn desktop-only-ib" title="Table of Contents"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg></button><span class="hdr-social hide-in-mobile"><a href="https://github.com/wtong98" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.linkedin.com/in/william-tong-693632133/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://wlt.coffee/posts/">Posts</a></li>
+			<li><a href="https://wlt.coffee/about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>May 23, 2020</span></div>
+				<h1>Programming for Noobs II: Charming the Python</h1>
+			</header>
+			<div class="content">
+				<p>The next installment of our programming adventure! In this guide, we&rsquo;ll
+get our hands dirty with actual programming. If you haven&rsquo;t read
+<a href="https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/">the first part</a>,
+not a problem. Feel free to jump in right here, or go back to check out the
+command-line wizardry we covered previously.</p>
+<p><em>audience: curious folks who may (or may not) have read Part I of this series</em></p>
+<figure class="big">
+    <img src="/images/programming-for-n00bs-ii/matrix_wallpaper_crop.jpg"
+         alt="something programming and epic related"/> <figcaption>
+            <p>Source: desktopwalls.net</p>
+        </figcaption>
+</figure>
+
+<p>There are <a href="https://en.wikipedia.org/wiki/List_of_programming_languages">nearly 1000 programming languages</a>
+in use around the world. Nearly <em>1000</em>. So where do we begin?</p>
+<h2 id="programming-with-python">Programming with Python<a href="#programming-with-python" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>There&rsquo;s no perfect answer, but Python is as good a choice as any. It&rsquo;s</p>
+<ul>
+<li><strong>simple</strong>: you&rsquo;d be hard-pressed to find an easier language to learn</li>
+<li><strong>versatile</strong>: use it for <a href="https://realpython.com/what-can-i-do-with-python/">anything</a></li>
+<li><strong>popular</strong>: as measured by <a href="https://pypl.github.io/PYPL.html">these people</a></li>
+</ul>
+<p>You&rsquo;ll find python everywhere, not just software companies, but websites,
+businesses, Wall Street, research centers<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, governments, <em>everywhere</em>. If
+there&rsquo;s one programming language to learn, it&rsquo;s Python.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> If there&rsquo;s one
+programming language that will land you a job and earn money, it&rsquo;s Python.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>So let&rsquo;s do it.</p>
+<h2 id="setting-up">Setting up<a href="#setting-up" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>As before, everyone&rsquo;s computer will be slightly different. The instructions
+I give here may not work for everyone. If in doubt, Google will be your
+best friend.</p>
+<p>You will need to a terminal. See <a href="https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/#shell">part I</a> if you need a refresher.</p>
+<h3 id="mac--linux">Mac / Linux<a href="#mac--linux" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>If you&rsquo;re running a *nix system like Mac or Linux, setting up is easy. On Mac,
+double check you have the package manager<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> <a href="https://brew.sh/">Homebrew</a>
+installed. If not, open a terminal and copy in:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">/bin/bash -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="k">)</span><span class="s2">&#34;</span>
+</code></pre></div><p>Hit enter, then follow the prompts.</p>
+<p>After the package manager installs, do</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">brew install python3
+</code></pre></div><p>If you&rsquo;re on Linux, the command is</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">apt install python3
+</code></pre></div><p>If you get something that says &ldquo;Permission denied&rdquo;, you may need to add
+a <code>sudo</code><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> in front of the command. Below is a demonstration of what
+your command line will look like &mdash; remember that the &ldquo;$&rdquo; is <strong>not</strong> part
+of the command, but represents the prompt.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ sudo brew install python3 <span class="c1"># Mac</span>
+$ sudo apt install python3 <span class="c1"># Linux</span>
+</code></pre></div><p>To verify that the installation worked, enter the command <code>python3</code> and you
+should see something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ python3
+Python 3.5.3 <span class="o">(</span>default, Sep <span class="m">27</span> 2018, 17:25:39<span class="o">)</span>
+<span class="o">[</span>GCC 6.3.0 20170516<span class="o">]</span> on linux
+Type <span class="s2">&#34;help&#34;</span>, <span class="s2">&#34;copyright&#34;</span>, <span class="s2">&#34;credits&#34;</span> or <span class="s2">&#34;license&#34;</span> <span class="k">for</span> more information.
+&gt;&gt;&gt;
+</code></pre></div><p>Hooray! You did it. The &ldquo;&gt;&gt;&gt;&rdquo; is the Python REPL<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> prompt. Press <code>ctrl-C</code> to quit,
+or type <code>exit()</code> then hit enter.</p>
+<h3 id="windows">Windows<a href="#windows" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Navigate to <a href="https://www.python.org/">Python&rsquo;s website</a>, go to Downloads, then
+find the right installer for your machine, probablyJ<code>Windows x86-64 executable installer</code>.
+Double-check you&rsquo;re installing the latest version. (As of this writing, should
+say 3.something.)</p>
+<p>Download it, run it, follow the prompts to completion. At one point, it may
+ask whether you&rsquo;d like to add Python to your system path. Check yes. Then
+proceed as usual.</p>
+<figure>
+    <img src="/images/programming-for-n00bs-ii/add_python_to_path.png"
+         alt="Select yes for add to path"/> <figcaption>
+            <p>Source: datatofish.com</p>
+        </figcaption>
+</figure>
+
+<p>To test your installation, open <a href="https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/#setting-up">Powershell</a>
+and enter <code>python</code>. You should see:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ python
+Python 3.5.3 <span class="o">(</span>default, Sep <span class="m">27</span> 2018, 17:25:39<span class="o">)</span>
+<span class="o">[</span>GCC 6.3.0 20170516<span class="o">]</span> on linux
+Type <span class="s2">&#34;help&#34;</span>, <span class="s2">&#34;copyright&#34;</span>, <span class="s2">&#34;credits&#34;</span> or <span class="s2">&#34;license&#34;</span> <span class="k">for</span> more information.
+&gt;&gt;&gt;
+</code></pre></div><p>If that doesn&rsquo;t work, look for an app called &ldquo;Python IDLE.&rdquo; Launch it, and
+you should see the &ldquo;&gt;&gt;&gt;&rdquo; prompt as well.</p>
+<figure>
+    <img src="/images/programming-for-n00bs-ii/python_idle.jpg"
+         alt="Python IDLE"/> <figcaption>
+            <p>Source: <a href="http://www.cs.uky.edu">www.cs.uky.edu</a></p>
+        </figcaption>
+</figure>
+
+<h2 id="basics">Basics<a href="#basics" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Now for some action! At the Python prompt, type the following and hit enter</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+</code></pre></div><p>Hopefully you&rsquo;ll see 3. Great.</p>
+<p>There&rsquo;s a host of math operations you can do:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">6</span> <span class="o">/</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>   <span class="c1"># exponential</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span>    <span class="c1"># modulo</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">//</span> <span class="mi">2</span>   <span class="c1"># round down</span>
+<span class="c1"># and much, much more</span>
+</code></pre></div><p>We can store the value of an expression into a variable</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+</code></pre></div><p>The word on the left, &ldquo;value&rdquo;, is the name of our variable. Now if we do</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</code></pre></div><p>we get 3 again. The stuff on the left of <code>=</code> is always the name of the variable.
+The stuff on the right is always the data being stored. The &ldquo;print&rdquo; with
+parentheses is a function. More on that later.</p>
+<p>Variables don&rsquo;t have to hold math expressions. They can also store words:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;charm that Python&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="s1">&#39;charm that Python&#39;</span>
+</code></pre></div><p>In programming jargon, these words are called <em>strings</em>.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> Strings can
+be denoted either with <code>'single quotes'</code> or <code>&quot;double quotes&quot;</code>. They mean
+the exact same thing.</p>
+<p>Strings can be combined using <code>+</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;charm that&#39;</span> <span class="o">+</span> <span class="s1">&#39; Python&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="s1">&#39;charm that Python&#39;</span>
+</code></pre></div><p>Numbers can be converted into strings</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div><p>and vice versa</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>     <span class="c1"># for integers</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;2.5&#39;</span><span class="p">)</span> <span class="c1"># for decimals</span>
+</code></pre></div><p>Putting all this together:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">message</span> <span class="o">=</span> <span class="s2">&#34;value is &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<span class="s1">&#39;value is 3&#39;</span>
+</code></pre></div><p>Variables can also hold <em>booleans</em>, which are true / false values.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="bp">True</span>
+</code></pre></div><p>More on this later.</p>
+<h3 id="common-data-structures">Common Data structures<a href="#common-data-structures" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Data structures are programming constructs that store and organize data. Python
+has a ton of them, but the two most common are lists and dictionaries.</p>
+<h4 id="list">List<a href="#list" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<p>A list is a sequence of values. They can be anything</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">]</span>
+</code></pre></div><p>To access an element in a list, use its <em>index</em></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="s1">&#39;hello&#39;</span>
+</code></pre></div><p>Note that the first element starts at index 0. If you try to access an index
+that&rsquo;s not in the list, you&rsquo;ll get an error</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">100</span><span class="p">])</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s2">&#34;&lt;stdin&gt;&#34;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">IndexError</span><span class="p">:</span> <span class="nb">list</span> <span class="n">assignment</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
+</code></pre></div><p>Other nifty list operations:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>           <span class="c1"># set the first element to 10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_list</span><span class="p">)</span>              <span class="c1"># get the length of the list</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span>  <span class="c1"># add &#39;Python&#39; to the end</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>              <span class="c1"># get all elements from 0 up to (but not including) 2</span>
+</code></pre></div><h4 id="dictionary">Dictionary<a href="#dictionary" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<p>Dictionaries store key-value pairs of data</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a_key&#39;</span><span class="p">:</span> <span class="s1">&#39;a_value&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;another_value&#39;</span><span class="p">,</span> <span class="s1">&#39;third_key&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">}</span>
+</code></pre></div><p>Keys are named to the right of the <code>:</code>, values to the left. Keys and values
+can be just about anything, but the keys need to be unique. Then to
+access values of a dict, we can do</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">a_dict</span><span class="p">[</span><span class="s1">&#39;a_key&#39;</span><span class="p">])</span>
+<span class="s1">&#39;a_value&#39;</span>
+</code></pre></div><p>To add a new key-value pair or set an existing key-value pair, the operation
+is the same:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_dict</span><span class="p">[</span><span class="s1">&#39;new_key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;new_value&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">a_dict</span><span class="p">[</span><span class="s1">&#39;new_key&#39;</span><span class="p">])</span>
+<span class="s1">&#39;new_value&#39;</span>
+</code></pre></div><h3 id="source-files">Source files<a href="#source-files" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Most Python isn&rsquo;t written on a REPL, but in a <em>source file</em>. Use your favorite
+text editor to open a file <code>example.py</code> and enter the following</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s1">&#39;Charm the Python.&#39;</span><span class="p">)</span>
+</code></pre></div><p>Now in your shell:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ python3 example.py
+</code></pre></div><p>and out prints <code>Charm the Python.</code></p>
+<p>The file <code>example.py</code> is called a source file. It contains Python code that
+can be executed with the <code>python3</code><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> (or just <code>python</code> on some machines) command.
+Everything that we&rsquo;ve done previously on the REPL can be written in a source
+file instead. Source files intended to be executed on the command line are
+often called <em>scripts</em>.</p>
+<p>Source files can include <em>comments</em>. These are pieces of text meant for a
+human reader, not the machine. When you run the script on the command line, all
+commented text are ignored. Python has 3 different kinds of comments:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># this is a single line comment</span>
+<span class="n">value</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>   <span class="c1"># it can come after expressions, too</span>
+
+<span class="s1">&#39;&#39;&#39;
+</span><span class="s1">This is a multi-line comment. It can span
+</span><span class="s1">multiple
+</span><span class="s1">lines.
+</span><span class="s1">The start and end are denoted with three quote characters (&#39;).
+</span><span class="s1">&#39;&#39;&#39;</span>
+
+<span class="s2">&#34;&#34;&#34;
+</span><span class="s2">This is a docstring -- short for documentation string. It&#39;s essentially the
+</span><span class="s2">same as the multi-line comment above, but using three quotation mark
+</span><span class="s2">characters (&#34;) is a convention that means this comment is intended to be
+</span><span class="s2">documentation to instruct other developers on how to use the code.
+</span><span class="s2">&#34;&#34;&#34;</span>
+</code></pre></div><p>Large software projects can include many hundreds of source files, with
+many hundreds of thousands of lines of code.</p>
+<h2 id="control-flow">Control Flow<a href="#control-flow" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Not all code has to run from top to bottom. Python includes many utilities that
+help direct the flow of code in a source file. Before we dive in, let&rsquo;s talk
+about booleans.</p>
+<h3 id="booleans">Booleans<a href="#booleans" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Remember from before we can assign the values <code>True</code> and <code>False</code> to a
+variable. There&rsquo;s a few operations we can do with booleans, manipulating
+their value. For example</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="ow">not</span> <span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="bp">False</span>
+</code></pre></div><p>The <code>not</code> operator flips the value of the boolean. We also have <code>and</code> and
+<code>or</code> operators:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="bp">True</span> <span class="ow">and</span> <span class="bp">False</span>
+<span class="bp">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="bp">True</span> <span class="ow">or</span> <span class="bp">False</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="bp">True</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">False</span>
+<span class="bp">True</span>
+</code></pre></div><p>For more details about boolean operators, check out <a href="https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/#on-and-off">this post</a>.</p>
+<p>Other operators return booleans:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">2</span>   <span class="c1"># True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">2</span>   <span class="c1"># False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&gt;=</span> <span class="mi">2</span>  <span class="c1"># &#34;greater than or equal to&#34;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&lt;=</span> <span class="mi">2</span>  <span class="c1"># &#34;less than or equal to&#34;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">3</span>  <span class="c1"># equality</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Python&#39;</span> <span class="o">==</span> <span class="s1">&#39;Python&#39;</span>   <span class="c1"># works with strings, too</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="bp">True</span> <span class="o">==</span> <span class="bp">True</span>   <span class="c1"># and of course with booleans, also</span>
+</code></pre></div><p>If you&rsquo;re curious to learn more, check out the Wikipedia page on <a href="https://en.wikipedia.org/wiki/Boolean_algebra">boolean
+algebra</a>.</p>
+<h3 id="conditionals">Conditionals<a href="#conditionals" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Booleans can tell us which segments of code should or shouldn&rsquo;t be run. One way we
+can do this is through <code>if</code> statements:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="c1"># run this code</span>
+    <span class="c1"># indentation is important</span>
+    <span class="c1"># everything indented to this level is run</span>
+
+<span class="k">if</span> <span class="bp">False</span><span class="p">:</span>
+    <span class="c1"># this code does not run</span>
+
+<span class="n">value</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="c1"># does this code run?</span>
+    <span class="c1"># Yes! It absolutely does</span>
+</code></pre></div><p>We can add an <code>else</code> statement after the <code>if</code> to run an alternative block of
+code:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="bp">False</span><span class="p">:</span>
+    <span class="c1"># this code does not run</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># but this code does run</span>
+</code></pre></div><p>If we can also insert zero or more <code>elif</code> (short for &ldquo;else if&rdquo;) statements between
+the first <code>if</code> and the final <code>else</code> statements:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="bp">False</span><span class="p">:</span>
+    <span class="c1"># this code does not run</span>
+<span class="k">elif</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="c1"># this code does run</span>
+    <span class="c1"># elif is like an else followed by an if</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># this code no longer runs</span>
+    <span class="c1"># because the above elif clause is triggered</span>
+</code></pre></div><p>Conditionals can occur anywhere in your code. There can be code that
+precedes it, and code that follows it. For example, here&rsquo;s a simple
+password checker you can try:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="s2">&#34;&#34;&#34;
+</span><span class="s2">A simple script to check the password.
+</span><span class="s2">Copy and paste this into a file called `password.py`
+</span><span class="s2">&#34;&#34;&#34;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&#34;python&#34;</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Type the password:&#39;</span><span class="p">)</span>
+<span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Wrong!&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;All done&#39;</span><span class="p">)</span>
+</code></pre></div><p>The function <code>input()</code> pauses the program until the user types in a string and
+hits enter.</p>
+<p>One important note, empty lines don&rsquo;t matter. There can be as many empty
+lines as you&rsquo;d like between one chunk of code and the next. But indents
+<em>do</em> matter:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>        <span class="c1"># WRONG!!!</span>
+
+<span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>    <span class="c1"># Correct</span>
+</code></pre></div><p>The indent defines a <em>code block</em>. All adjacent lines indented to the same level
+are in the same block. Python uses this to tell which lines of code to run
+in a conditional</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;This also runs&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Wrong!&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;This is part of the same block&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;This will always print&#39;</span><span class="p">)</span>
+</code></pre></div><p>Running with the correct password then prints</p>
+<pre><code>Correct!
+This also runs
+This will always print
+</code></pre><h3 id="loops">Loops<a href="#loops" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Another common way to control which blocks of code run is with loops. As the
+name suggests, loops repeat the same block of code. There are two major
+kinds: <code>for</code> and <code>while</code> loops.</p>
+<h4 id="for-loops">For loops<a href="#for-loops" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<p>For loops look like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;charm&#39;</span><span class="p">,</span> <span class="s1">&#39;the&#39;</span><span class="p">,</span> <span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="bp">False</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">a_list</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+</code></pre></div><p>Running the code yields:</p>
+<pre><code>charm
+the
+python
+2
+False
+</code></pre><p>The variable <code>element</code> gets assigned to each value in <code>a_list</code>, and executes
+the code below per each value. The variable names don&rsquo;t matter, you could&rsquo;ve
+done <code>for banana in mangoes</code> and that would&rsquo;ve worked equally well. Commonly,
+you might see something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div><p>which will print</p>
+<pre><code>0
+1
+2
+3
+4
+</code></pre><p>You can think of the <code>range(5)</code> part generating something like a list <code>[0, 1, 2, 3, 4]</code>.</p>
+<h4 id="while-loops">While loops<a href="#while-loops" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<p>While loops look like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">while</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;one iteration!&#39;</span><span class="p">)</span>
+</code></pre></div><p>So long as <code>condition</code> is <code>True</code>, the code below will be repeated.</p>
+<p>While and for loops are not unique. Every for loop can be written as a while
+loop. For example, a while loop that mimics the for loop from before:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_list</span><span class="p">):</span>
+    <span class="n">element</span> <span class="o">=</span> <span class="n">a_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div><p>Question for you: can every while loop be written as a for loop?</p>
+<p>While loops open the possibility for infinite loops. For example</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;This loop will never stop!&#39;</span><span class="p">)</span>
+</code></pre></div><p>So it&rsquo;s always important to be careful and check that your loops terminate.
+Otherwise empires may rise and fall, the sun darken, the Universe approach
+absolute heat death, before your program terminates. If you do fall into an
+infinite for loop, press <code>ctrl-C</code> to force Python to die.</p>
+<h2 id="functions">Functions<a href="#functions" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Functions are the bread and butter of programming. They define named chunks
+of code that carry out certain, well, <em>functions</em>. We&rsquo;ve seen a few
+already:</p>
+<ul>
+<li><code>print()</code>: prints a value to the screen</li>
+<li><code>len()</code>: gets the length of a list</li>
+<li><code>input()</code>: takes keyboard input from the user</li>
+<li><code>range()</code>: generates a list-like object of numbers</li>
+</ul>
+<p>A programmer&rsquo;s function is somewhat like a mathematician&rsquo;s function. From math
+class, you might remember seeing something like:</p>
+<p>$$ f(x) = x + 2$$</p>
+<p>Then we can say, for example, that \(f(3) = 5\). You put in a 3, out pops a 5.
+We can do something similar in Python:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">x</span>
+</code></pre></div><p>Let&rsquo;s tear it apart:</p>
+<ul>
+<li><code>def</code> marks the beginning of a function declaration</li>
+<li><code>f</code> is the name of the function</li>
+<li><code>x</code> is an argument</li>
+<li>the indented block of code is the function body, and carries out the actual
+work</li>
+<li><code>return</code> spits out the final value</li>
+</ul>
+<p>Then we can use it just like the math function:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>     <span class="c1"># evaluates to 5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># now the variable y has the value 5</span>
+</code></pre></div><p>But a programmer&rsquo;s function can be far more powerful than anything from math
+class. Inside the function body, we can put any kind of Python code we
+like &mdash; conditionals, loops, other function calls, and Python trick
+we&rsquo;ve learned so far can be part of a function. So if we wanted to
+do something a little fancier, say:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">assign_grade</span><span class="p">(</span><span class="n">raw_score</span><span class="p">):</span>
+    <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;NA&#39;</span>
+    <span class="k">if</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">90</span><span class="p">:</span>
+        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+    <span class="k">elif</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">80</span><span class="p">:</span>
+        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
+    <span class="k">elif</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">70</span><span class="p">:</span>
+        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span>
+    <span class="k">elif</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
+        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;F&#39;</span>
+
+    <span class="k">return</span> <span class="n">grade</span>
+</code></pre></div><p>Now we have a nifty function that can convert a raw score into a letter
+grade. Whenever we need it, we can call something like <code>assign_grade(93)</code>
+and out comes <code>A</code>.</p>
+<p>In this way, functions are pieces of reusable code. If you need some kind of
+functionality over and over again &mdash; like converting a raw score into a letter
+grade &mdash; it&rsquo;s better to write a function and call it, rather than copy-pasting
+the same code continually.</p>
+<p>Functions are also an excellent way to organize code. They attach a name,
+like <code>assign_grade</code>, to an important chunk of code. When you use the same
+code somewhere else, someone doesn&rsquo;t have to guess what all those
+if-else statements are doing. They can see the name, and know instantly
+that it must be assigning grades.</p>
+<h2 id="looking-ahead">Looking ahead<a href="#looking-ahead" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Congrats! You now have the basic skills to write Python code. But there&rsquo;s still
+plenty we haven&rsquo;t touched. More advanced skills to look into include:</p>
+<ul>
+<li><strong>Object Oriented Programming</strong>: a style of organizing code that can make it
+easier to reason about certain kinds of programming logic</li>
+<li><strong>Modules</strong>: how Python organizes source code</li>
+<li><strong>Clean code</strong>: writing your code such that it&rsquo;s easy to update and easy for
+others to understand</li>
+<li><strong>File I/O</strong></li>
+<li><strong>Regular Expressions</strong></li>
+<li><strong>Graphics</strong></li>
+<li><strong>Scientific Python</strong></li>
+<li><strong>and much, much more&hellip;</strong></li>
+</ul>
+<p>An excellent resource for further learning: Al Sweigart&rsquo;s
+<a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a>.
+Sweigart covers all the essentials, plus more, and teaches how you can
+use Python practically to simplify the everyday and humdrum. The whole book
+is available online at the link.</p>
+<p>There&rsquo;s never truly a stopping point when it comes to programming. This is
+applies to seasoned developers, too &mdash; there&rsquo;s always something more to
+learn, another tool to understand. You&rsquo;ve taken the first few steps into
+your glorious programming future! And there&rsquo;s many more to go.</p>
+<h2 id="footnotes">Footnotes<a href="#footnotes" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Especially in machine learning. As of this writing, Python is the defacto
+default language for machine learning applications and research. That clever
+face-recognition app on your phone? Probably started in Python. If you&rsquo;re
+curious, check out <a href="https://www.tensorflow.org/">Tensorflow</a> and <a href="https://pytorch.org/">PyTorch</a>, two popular Python
+frameworks for ML <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Python is my favorite, goto language, so I&rsquo;m biased in this direction. But that
+doesn&rsquo;t make it any less true. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>If you&rsquo;re leaning in the direction of a software career, also consider
+<a href="https://javascript.info/">Javascript</a>. It&rsquo;s the language of the web, and
+a must-have for any aspiring web developer. Check out <a href="https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/">this post</a>
+for more info. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Package managers are utilities that help install software. They&rsquo;re not as
+common on Windows, but for *nix systems, they&rsquo;re super convient. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p><code>sudo</code> (pronounced like Sue Doe) is short for &ldquo;super do.&rdquo; It&rsquo;s a nifty
+command that elevates whatever command that follows to the highest
+permission, enabling access to sensitive corners of your computer. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>REPL stands for Read-Evaluate-Print-Loop. It&rsquo;s a standard fixture in many
+programming languages, and let&rsquo;s you execute code on-the-fly at a prompt. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>They&rsquo;re called &ldquo;strings&rdquo; because they&rsquo;re a string of characters. For more
+tidbits, check out <a href="https://dhhumanist.org/Archives/Virginia/v05/0863.html">this thread</a>. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>The extra &ldquo;3&rdquo; means that we&rsquo;re using Python version 3. Just calling
+<code>python</code> usually means version 2. For any new project, you should almost
+never use Python 2. Stick with the latest and greatest. <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://wlt.coffee/tags/tech">tech</a></span><span class="tag"><a href="https://wlt.coffee/tags/education">education</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2933 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-05-23 16:25 -0500</p>
+			</footer>
+		</article>
+		<aside id="toc">
+			<div class="toc-title">Table of Contents</div>
+			<nav id="TableOfContents">
+  <ul>
+    <li><a href="#programming-with-python">Programming with Python</a></li>
+    <li><a href="#setting-up">Setting up</a>
+      <ul>
+        <li><a href="#mac--linux">Mac / Linux</a></li>
+        <li><a href="#windows">Windows</a></li>
+      </ul>
+    </li>
+    <li><a href="#basics">Basics</a>
+      <ul>
+        <li><a href="#common-data-structures">Common Data structures</a></li>
+        <li><a href="#source-files">Source files</a></li>
+      </ul>
+    </li>
+    <li><a href="#control-flow">Control Flow</a>
+      <ul>
+        <li><a href="#booleans">Booleans</a></li>
+        <li><a href="#conditionals">Conditionals</a></li>
+        <li><a href="#loops">Loops</a></li>
+      </ul>
+    </li>
+    <li><a href="#functions">Functions</a></li>
+    <li><a href="#looking-ahead">Looking ahead</a></li>
+    <li><a href="#footnotes">Footnotes</a></li>
+  </ul>
+</nav>
+		</aside>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://wlt.coffee/posts/2020-05-10-welcome-to-the-new-wlt/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Welcome to the New WLT</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "wlt-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://wlt.coffee">William Lingxiao Tong</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; <a href=https://wlt.coffee/support-me>Support me!</a> &#183; <a href="https://wlt.coffee/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://wlt.coffee/js/bundle.min.6036353c1f61f03667e101a01b86cba8c16a11e0ed233c4f4a92bab1175cdc7f.js" integrity="sha256-YDY1PB9h8DZn4QGgG4bLqMFqEeDtIzxPSpK6sRdc3H8=" crossorigin="anonymous"></script>
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131763341-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+</body>
+
+</html>

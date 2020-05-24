@@ -13,6 +13,20 @@
     
     
     <item>
+      <title>Programming for Noobs II: Charming the Python</title>
+      <link>https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/</link>
+      <pubDate>Sat, 23 May 2020 16:25:14 -0500</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/</guid>
+      <description>&lt;p&gt;The next installment of our programming adventure! In this guide, we&amp;rsquo;ll
+get our hands dirty with actual programming. If you haven&amp;rsquo;t read
+&lt;a href=&#34;https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/&#34;&gt;the first part&lt;/a&gt;,
+not a problem. Feel free to jump in right here, or go back to check out the
+command-line wizardry we covered previously.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;audience: curious folks who may (or may not) have read Part I of this series&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Support Me with Cryptocurrency</title>
       <link>https://wlt.coffee/support-me/</link>
       <pubDate>Mon, 11 May 2020 10:41:51 -0500</pubDate>
@@ -115,16 +129,6 @@ This theme has 3 CSS classes made for figure elements:
       <description>Just define the image URL in the content’s front matter, the featured image will be displayed as the background.
 For example:
 ---images:- https://picsum.photos/1024/768/?random---This is an array, you can set multiple urls, only the first url will be used. These images is also used in Twitter Cards and the Open Graph metadata.</description>
-    </item>
-    
-    <item>
-      <title>Typography</title>
-      <link>https://wlt.coffee/examples/typography/</link>
-      <pubDate>Sat, 29 Sep 2018 11:36:33 +0800</pubDate>
-      
-      <guid>https://wlt.coffee/examples/typography/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- An apple is a sweet, edible fruit produced by an apple tree (Malus pumila).</description>
     </item>
     
   </channel>

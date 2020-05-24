@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 10 May 2020 10:42:22 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2020 16:25:14 -0500</lastBuildDate>
     
 	<atom:link href="https://wlt.coffee/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>education</title>
+      <link>https://wlt.coffee/tags/education/</link>
+      <pubDate>Sat, 23 May 2020 16:25:14 -0500</pubDate>
+      
+      <guid>https://wlt.coffee/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://wlt.coffee/tags/tech/</link>
+      <pubDate>Sat, 23 May 2020 16:25:14 -0500</pubDate>
+      
+      <guid>https://wlt.coffee/tags/tech/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>announcement</title>
@@ -27,24 +45,6 @@
       <pubDate>Sun, 10 May 2020 10:42:22 -0500</pubDate>
       
       <guid>https://wlt.coffee/tags/personal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>education</title>
-      <link>https://wlt.coffee/tags/education/</link>
-      <pubDate>Sat, 28 Dec 2019 13:25:00 +0000</pubDate>
-      
-      <guid>https://wlt.coffee/tags/education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tech</title>
-      <link>https://wlt.coffee/tags/tech/</link>
-      <pubDate>Sat, 28 Dec 2019 13:25:00 +0000</pubDate>
-      
-      <guid>https://wlt.coffee/tags/tech/</guid>
       <description></description>
     </item>
     
