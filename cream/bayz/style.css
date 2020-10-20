@@ -1,0 +1,25 @@
+.content {
+    text-align: center;
+    margin-top: 15%;
+}
+
+#start {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes vibe {
+    0% {background-color: white;}
+    50% {background-color: #aae1f3;}
+    100% {background-color: white;}
+  }

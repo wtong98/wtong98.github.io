@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>project on william lettuce tongmato</title>
+    <link>https://wlt.coffee/tags/project/</link>
+    <description>Recent content in project on william lettuce tongmato</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 19 Oct 2020 20:54:57 -0500</lastBuildDate>
+    
+	<atom:link href="https://wlt.coffee/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>bayz: live coding &#43; bayesian program learning</title>
+      <link>https://wlt.coffee/posts/2020-10-19-bayz-live-coding/</link>
+      <pubDate>Mon, 19 Oct 2020 20:54:57 -0500</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2020-10-19-bayz-live-coding/</guid>
+      <description>&lt;p&gt;Introducing bayz: a live coding platform that combines the latest and greatest
+in Bayesian machine learning with &lt;del&gt;uber nerd&lt;/del&gt; avant-garde performative music.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;audience: Professor Mark, and anyone else who stumbles here&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

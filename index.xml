@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>bayz: live coding &#43; bayesian program learning</title>
+      <link>https://wlt.coffee/posts/2020-10-19-bayz-live-coding/</link>
+      <pubDate>Mon, 19 Oct 2020 20:54:57 -0500</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2020-10-19-bayz-live-coding/</guid>
+      <description>&lt;p&gt;Introducing bayz: a live coding platform that combines the latest and greatest
+in Bayesian machine learning with &lt;del&gt;uber nerd&lt;/del&gt; avant-garde performative music.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;audience: Professor Mark, and anyone else who stumbles here&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Programming for Noobs II: Charming the Python</title>
       <link>https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/</link>
       <pubDate>Sat, 23 May 2020 16:25:14 -0500</pubDate>
@@ -118,17 +129,6 @@ my future self) through the process.&lt;/p&gt;
 https://gohugo.io/content-management/shortcodes/#figure
 This theme has 3 CSS classes made for figure elements:
  big: images will break the width limit of main content area. left: images will float to the left. right: images will float to the right.  If a figure has no class set, the image will behave just like a normal markdown image: !</description>
-    </item>
-    
-    <item>
-      <title>Post With Featured Image</title>
-      <link>https://wlt.coffee/examples/post-with-featured-image/</link>
-      <pubDate>Mon, 01 Oct 2018 16:15:09 +0800</pubDate>
-      
-      <guid>https://wlt.coffee/examples/post-with-featured-image/</guid>
-      <description>Just define the image URL in the content’s front matter, the featured image will be displayed as the background.
-For example:
----images:- https://picsum.photos/1024/768/?random---This is an array, you can set multiple urls, only the first url will be used. These images is also used in Twitter Cards and the Open Graph metadata.</description>
     </item>
     
   </channel>

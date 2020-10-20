@@ -6,8 +6,189 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sat, 23 May 2020 16:25:14 -0500</lastBuildDate>
+		<lastBuildDate>Mon, 19 Oct 2020 20:54:57 -0500</lastBuildDate>
 		<atom:link href="https://wlt.coffee/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>bayz: live coding &#43; bayesian program learning</title>
+			<link>https://wlt.coffee/posts/2020-10-19-bayz-live-coding/</link>
+			<pubDate>Mon, 19 Oct 2020 20:54:57 -0500</pubDate>
+			
+			<guid>https://wlt.coffee/posts/2020-10-19-bayz-live-coding/</guid>
+			<description>&lt;p&gt;Introducing bayz: a live coding platform that combines the latest and greatest
+in Bayesian machine learning with &lt;del&gt;uber nerd&lt;/del&gt; avant-garde performative music.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;audience: Professor Mark, and anyone else who stumbles here&lt;/em&gt;&lt;/p&gt;</description>
+			<content type="html"><![CDATA[<p>Introducing bayz: a live coding platform that combines the latest and greatest
+in Bayesian machine learning with <del>uber nerd</del> avant-garde performative music.</p>
+<p><em>audience: Professor Mark, and anyone else who stumbles here</em></p>
+<figure class="big">
+    <img src="/images/bayz/bayz_band.png"
+         alt="something programming and epic related"/> <figcaption>
+            <p>bayz band interface in vscode</p>
+        </figcaption>
+</figure>
+
+<h2 id="for-the-impatient">For the impatient</h2>
+<ul>
+<li>A GitHub repo with everything you need to get started: <a href="https://github.com/wtong98/bayz">wtong98/bayz</a></li>
+<li>A publicly hosted bayz beat client: <a href="/cream/bayz">bayz-beat</a>
+<ul>
+<li>this client connects to <code>localhost:42700</code>, the default port for a bayz server instance</li>
+</ul>
+</li>
+</ul>
+<h2 id="background">Background</h2>
+<p>bayz is the child of two very different fields: Baysian Progream Learning (BPL)
+and live coding.</p>
+<p>BPL is a relatively recent<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> development in machine learning that seeks to
+capture high-level aspects of human cognition. Its authors hypothesize that
+human cognition stems from three basic ingredients:</p>
+<ol>
+<li><strong>Causality</strong>: we perceive things in cause-and-effect relationships</li>
+<li><strong>Compositionality</strong>: larger concepts are composed of smaller, more basic concepts</li>
+<li><strong>Learning-to-learn</strong>: as we learn, we learn how to get better at learning</li>
+</ol>
+<figure>
+    <img src="/images/bayz/bpl.jpg"
+         alt="something programming and epic related"/> <figcaption>
+            <p>Figure from the original paper that highlights the core cognitive process modeled in BPL. From the paper: &ldquo;A single example of a new concept (red boxes) can be enough information to support the (i) classification of new examples, (ii) generation of new examples, (iii) parsing an object into parts and relations (parts segmented by color), and (iv) generation of new concepts from related concepts.&rdquo; By using the three aspects above, humans have a remarkable ability to learn novel concepts from one or few examples. BPL tries to do the same. (Source: <em>Lake et. al 2015</em>)</p>
+        </figcaption>
+</figure>
+
+<p>They took these three ingredients and smooshed them into one grand machine
+learning framework: Bayesian Program Learning. The <a href="https://science.sciencemag.org/content/350/6266/1332">original paper</a>
+applied the framework to character recognition, but it generalizes naturally
+to other contexts &mdash; like music composition. So a friend and I got together,
+hashed out a way make BPL do music, and coded up <a href="https://github.com/wtong98/4772-Project">BayesClef</a>.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p><a href="https://www.youtube.com/watch?v=ENfyOndcvP0">Live coding</a> is a form of
+performative music that turns programming into an instrument. It involves, well,
+coding live. Performers will often project their code on a screen as they
+write it, improvising algorithms that generate music. It&rsquo;s a unique blend of
+technology and creativity, taking very literally the notion that software is
+art.</p>
+<p>So what if we took all the music-compositional-awesomeness of BPL, and brought
+it to a live-coding platform? Instead of improvising tunes on the spot, a
+performer could rely on the machine to generate perfect notes for them. Instead
+of worrying about the nitty-gritty details of the music, the performer can work
+on the broad-strokes, shaping the music at a higher level. The live coder
+becomes a live conductor, directing the efforts of a virtual, artificially
+intelligent orchestra.</p>
+<h2 id="bayz">bayz</h2>
+<p>bayz<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> is a live coding platform that brings BPL to live coding. The platform
+is implemented in Python<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, and the full details for getting started can
+be found on the <a href="https://github.com/wtong98/bayz">GitHub repo</a>.</p>
+<h3 id="architecture">Architecture</h3>
+<p>bayz is composed of three parts:</p>
+<ol>
+<li><strong>bayz band</strong>: live coding interface</li>
+<li><strong>bayz beat</strong>: WebAudio client, for producing sound</li>
+<li><strong>bayz server</strong>: server that connects the two pieces above</li>
+</ol>
+<p>bayz band is a simple <a href="https://jupyter.org/">jupyter notebook</a> interface that allows a live coder to
+input instructions and produce sound. The example notebook included in the repo
+additionally sets up a server instance, which passes messages between bayz band
+and bayz beat.</p>
+<p>bayz beat is a client that uses WebAudio to produce the actual
+sounds. The relevant html for bayz beat is included in the GitHub, but for
+convenience the website is also hosted <a href="/cream/bayz">here</a>. Ensure you have
+a bayz server instance running locally and listening on port 42700 (the default),
+hit start, and you&rsquo;re good to go!</p>
+<figure>
+    <img src="/images/bayz/bayz_beat.png"
+         alt="something programming and epic related"/> <figcaption>
+            <p>Hit start!</p>
+        </figcaption>
+</figure>
+
+<h3 id="making-music-with-bayz-band">Making music with bayz band</h3>
+<p>bayz band is organized around the concept of a Band. In the spirit of the
+algorithm-as-musician, you the live coder become the &ldquo;conductor&rdquo; of this
+Band.</p>
+<p>The example jupyter notebook starts by initializing a Band</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span> <span class="o">=</span> <span class="n">Band</span><span class="p">(</span><span class="n">pre_gen</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div><p>the argument <code>pre_gen</code> tells the Band to go ahead and sample three pieces of
+music from the BPL model and prepare them to be played. Ideally, sampling
+would happen in real time, but given the limitations of a Python
+implementation, it doesn&rsquo;t quite happen fast enough. So instead, will sample
+a few pieces ahead of time, and play them when the time comes.</p>
+<p>Once that finishes (it may take a few moments), go ahead and try adding
+a player to your Band</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+</code></pre></div><p>Hit <code>&lt;ctrl&gt;-&lt;enter&gt;</code> to execute the notebook cell and viola! We have music!</p>
+<p>Add as many players as you like</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+<span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+<span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+<span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+<span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+<span class="c1"># ...</span>
+</code></pre></div><p>but be warned, if you add more than the number in <code>pre_gen</code>, any extras will
+need to first sample music from the BPL model, which will slow down your flow
+considerably.</p>
+<p>If you feel the need to take a more direct hand in your music, you can also
+add a custom line of music</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">])</span>
+</code></pre></div><p>which will play an arpeggiated minor C chord. The integers refer to midi values.</p>
+<p>If you&rsquo;d like to vary the rhythm, you can also specify a rhythm list:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</code></pre></div><p>which gives the relative duration of each note. Hence, <code>60</code> will be played half
+as long as <code>63</code>, and a third as long as <code>67</code>. The length of the rhythm list
+doesn&rsquo;t have to match the length of the notes list</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+</code></pre></div><p>In this case, the rhythms cycle back, so <code>60</code> has length 1, <code>63</code> has length 2,
+and <code>67</code> has length one again.</p>
+<p>If you&rsquo;re tired of the default sound, you can try a new instrument:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">instrument</span><span class="o">=</span><span class="s1">&#39;bell&#39;</span><span class="p">)</span>
+</code></pre></div><p>which will produce a church-bell-esque sound, or</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">instrument</span><span class="o">=</span><span class="s1">&#39;warble&#39;</span><span class="p">)</span>
+</code></pre></div><p>which will give you a somewhat haunting vibrato.</p>
+<p>Both the <code>rhythm</code> and <code>instrument</code> keywords also work with <code>add_player()</code>.</p>
+<p>Remember to re-execute the cell every time you make a change. Give a moment for
+the changes to propagate, sync, then before long, you have new music!</p>
+<h2 id="looking-ahead">Looking ahead</h2>
+<p>bayz is still extremely new, highly experimental software (like pre-pre-pre
+alpha v0.0.0.0.1), so there&rsquo;s still plenty of work to do before it&rsquo;s ready for
+the <a href="https://en.wikipedia.org/wiki/Algorave">algoraves</a>. Some nice-to-haves
+for a future iteration might include a</p>
+<ul>
+<li>C implementation of the BPL model, so we can achieve realtime sampling</li>
+<li>model of interactions between players</li>
+<li>additional genres of music in the training data<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></li>
+<li>bayz beat visuals that sync with the music</li>
+<li>anything else that sounds awesome!</li>
+</ul>
+<p>Please enjoy, make it your own, and send me a PR if you find something buggy
+(inevitable) or come up with something new (very much appreciated).</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Circa 2015, which I guess depending on your point of view, is either
+<em>blindingly</em> recent measured in academia years, or eons ago measured in ML
+years. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>If you&rsquo;re curious about the specifics, our original writeup is linked
+<a href="https://drive.google.com/file/d/1-qiL9f9q0C35HLltZ0pOTgOAutBq8K63/view?usp=sharing">here</a> and music samples
+can be found <a href="https://drive.google.com/drive/folders/1YnEc5bMvp6mEuBeyaldk5hdHaiaz0zAG?usp=sharing">here</a>. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>For the record, &ldquo;bayz&rdquo; should be spelled all lowercase. Not &ldquo;Bayz,&rdquo;
+&ldquo;BAYZ,&rdquo; &ldquo;BayZ,&rdquo; and definitely not &ldquo;bAYz.&rdquo; <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Need a brush up on some Python? Forget the difference between
+lists and tuples? Worry not! <a href="https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/">I&rsquo;ve got you covered</a>. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>The current BPL model is trained on a corpus of about 360 pieces by Bach.
+Why him? It was the most accessible corpus in the format I needed. Plus,
+Bach sounds surprisingly good in an electronic music context. If he were
+alive today, I have full faith he would be an electronica artist. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>]]></content>
+		</item>
 		
 		<item>
 			<title>Programming for Noobs II: Charming the Python</title>
