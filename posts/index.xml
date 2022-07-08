@@ -21,9 +21,8 @@ in Bayesian machine learning with &lt;del&gt;uber nerd&lt;/del&gt; avant-garde p
 			<content type="html"><![CDATA[<p>Introducing bayz: a live coding platform that combines the latest and greatest
 in Bayesian machine learning with <del>uber nerd</del> avant-garde performative music.</p>
 <p><em>audience: Professor Mark, and anyone else who stumbles here</em></p>
-<figure class="big">
-    <img src="/images/bayz/bayz_band.png"
-         alt="something programming and epic related"/> <figcaption>
+<figure class="big"><img src="/images/bayz/bayz_band.png"
+         alt="something programming and epic related"/><figcaption>
             <p>bayz band interface in vscode</p>
         </figcaption>
 </figure>
@@ -48,9 +47,8 @@ human cognition stems from three basic ingredients:</p>
 <li><strong>Compositionality</strong>: larger concepts are composed of smaller, more basic concepts</li>
 <li><strong>Learning-to-learn</strong>: as we learn, we learn how to get better at learning</li>
 </ol>
-<figure>
-    <img src="/images/bayz/bpl.jpg"
-         alt="something programming and epic related"/> <figcaption>
+<figure><img src="/images/bayz/bpl.jpg"
+         alt="something programming and epic related"/><figcaption>
             <p>Figure from the original paper that highlights the core cognitive process modeled in BPL. From the paper: &ldquo;A single example of a new concept (red boxes) can be enough information to support the (i) classification of new examples, (ii) generation of new examples, (iii) parsing an object into parts and relations (parts segmented by color), and (iv) generation of new concepts from related concepts.&rdquo; By using the three aspects above, humans have a remarkable ability to learn novel concepts from one or few examples. BPL tries to do the same. (Source: <em>Lake et. al 2015</em>)</p>
         </figcaption>
 </figure>
@@ -93,9 +91,8 @@ sounds. The relevant html for bayz beat is included in the GitHub, but for
 convenience the website is also hosted <a href="/cream/bayz">here</a>. Ensure you have
 a bayz server instance running locally and listening on port 42700 (the default),
 hit start, and you&rsquo;re good to go!</p>
-<figure>
-    <img src="/images/bayz/bayz_beat.png"
-         alt="something programming and epic related"/> <figcaption>
+<figure><img src="/images/bayz/bayz_beat.png"
+         alt="something programming and epic related"/><figcaption>
             <p>Hit start!</p>
         </figcaption>
 </figure>
@@ -105,43 +102,43 @@ hit start, and you&rsquo;re good to go!</p>
 algorithm-as-musician, you the live coder become the &ldquo;conductor&rdquo; of this
 Band.</p>
 <p>The example jupyter notebook starts by initializing a Band</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span> <span class="o">=</span> <span class="n">Band</span><span class="p">(</span><span class="n">pre_gen</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-</code></pre></div><p>the argument <code>pre_gen</code> tells the Band to go ahead and sample three pieces of
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">Band</span><span class="p">(</span><span class="n">pre_gen</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span></span></code></pre></div><p>the argument <code>pre_gen</code> tells the Band to go ahead and sample three pieces of
 music from the BPL model and prepare them to be played. Ideally, sampling
 would happen in real time, but given the limitations of a Python
 implementation, it doesn&rsquo;t quite happen fast enough. So instead, will sample
 a few pieces ahead of time, and play them when the time comes.</p>
 <p>Once that finishes (it may take a few moments), go ahead and try adding
 a player to your Band</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
-</code></pre></div><p>Hit <code>&lt;ctrl&gt;-&lt;enter&gt;</code> to execute the notebook cell and viola! We have music!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+</span></span></code></pre></div><p>Hit <code>&lt;ctrl&gt;-&lt;enter&gt;</code> to execute the notebook cell and viola! We have music!</p>
 <p>Add as many players as you like</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
-<span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
-<span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
-<span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
-<span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
-<span class="c1"># ...</span>
-</code></pre></div><p>but be warned, if you add more than the number in <code>pre_gen</code>, any extras will
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_player</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ...</span>
+</span></span></code></pre></div><p>but be warned, if you add more than the number in <code>pre_gen</code>, any extras will
 need to first sample music from the BPL model, which will slow down your flow
 considerably.</p>
 <p>If you feel the need to take a more direct hand in your music, you can also
 add a custom line of music</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">])</span>
-</code></pre></div><p>which will play an arpeggiated minor C chord. The integers refer to midi values.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">])</span>
+</span></span></code></pre></div><p>which will play an arpeggiated minor C chord. The integers refer to midi values.</p>
 <p>If you&rsquo;d like to vary the rhythm, you can also specify a rhythm list:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-</code></pre></div><p>which gives the relative duration of each note. Hence, <code>60</code> will be played half
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</span></span></code></pre></div><p>which gives the relative duration of each note. Hence, <code>60</code> will be played half
 as long as <code>63</code>, and a third as long as <code>67</code>. The length of the rhythm list
 doesn&rsquo;t have to match the length of the notes list</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
-</code></pre></div><p>In this case, the rhythms cycle back, so <code>60</code> has length 1, <code>63</code> has length 2,
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+</span></span></code></pre></div><p>In this case, the rhythms cycle back, so <code>60</code> has length 1, <code>63</code> has length 2,
 and <code>67</code> has length one again.</p>
 <p>If you&rsquo;re tired of the default sound, you can try a new instrument:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">instrument</span><span class="o">=</span><span class="s1">&#39;bell&#39;</span><span class="p">)</span>
-</code></pre></div><p>which will produce a church-bell-esque sound, or</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">instrument</span><span class="o">=</span><span class="s1">&#39;warble&#39;</span><span class="p">)</span>
-</code></pre></div><p>which will give you a somewhat haunting vibrato.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">instrument</span><span class="o">=</span><span class="s1">&#39;bell&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>which will produce a church-bell-esque sound, or</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span><span class="o">.</span><span class="n">add_line</span><span class="p">([</span><span class="mi">60</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">67</span><span class="p">],</span> <span class="n">rhythm</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">instrument</span><span class="o">=</span><span class="s1">&#39;warble&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>which will give you a somewhat haunting vibrato.</p>
 <p>Both the <code>rhythm</code> and <code>instrument</code> keywords also work with <code>add_player()</code>.</p>
 <p>Remember to re-execute the cell every time you make a change. Give a moment for
 the changes to propagate, sync, then before long, you have new music!</p>
@@ -159,35 +156,35 @@ for a future iteration might include a</p>
 </ul>
 <p>Please enjoy, make it your own, and send me a PR if you find something buggy
 (inevitable) or come up with something new (very much appreciated).</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>Circa 2015, which I guess depending on your point of view, is either
 <em>blindingly</em> recent measured in academia years, or eons ago measured in ML
-years. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+years.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>If you&rsquo;re curious about the specifics, our original writeup is linked
 <a href="https://drive.google.com/file/d/1-qiL9f9q0C35HLltZ0pOTgOAutBq8K63/view?usp=sharing">here</a> and music samples
-can be found <a href="https://drive.google.com/drive/folders/1YnEc5bMvp6mEuBeyaldk5hdHaiaz0zAG?usp=sharing">here</a>. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+can be found <a href="https://drive.google.com/drive/folders/1YnEc5bMvp6mEuBeyaldk5hdHaiaz0zAG?usp=sharing">here</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>For the record, &ldquo;bayz&rdquo; should be spelled all lowercase. Not &ldquo;Bayz,&rdquo;
-&ldquo;BAYZ,&rdquo; &ldquo;BayZ,&rdquo; and definitely not &ldquo;bAYz.&rdquo; <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+&ldquo;BAYZ,&rdquo; &ldquo;BayZ,&rdquo; and definitely not &ldquo;bAYz.&rdquo;&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>Need a brush up on some Python? Forget the difference between
-lists and tuples? Worry not! <a href="https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/">I&rsquo;ve got you covered</a>. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+lists and tuples? Worry not! <a href="https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/">I&rsquo;ve got you covered</a>.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>The current BPL model is trained on a corpus of about 360 pieces by Bach.
 Why him? It was the most accessible corpus in the format I needed. Plus,
 Bach sounds surprisingly good in an electronic music context. If he were
-alive today, I have full faith he would be an electronica artist. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+alive today, I have full faith he would be an electronica artist.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>]]></content>
+</div>]]></content>
 		</item>
 		
 		<item>
@@ -208,9 +205,8 @@ get our hands dirty with actual programming. If you haven&rsquo;t read
 not a problem. Feel free to jump in right here, or go back to check out the
 command-line wizardry we covered previously.</p>
 <p><em>audience: curious folks who may (or may not) have read Part I of this series</em></p>
-<figure class="big">
-    <img src="/images/programming-for-n00bs-ii/matrix_wallpaper_crop.jpg"
-         alt="something programming and epic related"/> <figcaption>
+<figure class="big"><img src="/images/programming-for-n00bs-ii/matrix_wallpaper_crop.jpg"
+         alt="something programming and epic related"/><figcaption>
             <p>Source: desktopwalls.net</p>
         </figcaption>
 </figure>
@@ -238,26 +234,26 @@ best friend.</p>
 <p>If you&rsquo;re running a *nix system like Mac or Linux, setting up is easy. On Mac,
 double check you have the package manager<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> <a href="https://brew.sh/">Homebrew</a>
 installed. If not, open a terminal and copy in:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">/bin/bash -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="k">)</span><span class="s2">&#34;</span>
-</code></pre></div><p>Hit enter, then follow the prompts.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">/bin/bash -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="k">)</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><p>Hit enter, then follow the prompts.</p>
 <p>After the package manager installs, do</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">brew install python3
-</code></pre></div><p>If you&rsquo;re on Linux, the command is</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">apt install python3
-</code></pre></div><p>If you get something that says &ldquo;Permission denied&rdquo;, you may need to add
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">brew install python3
+</span></span></code></pre></div><p>If you&rsquo;re on Linux, the command is</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">apt install python3
+</span></span></code></pre></div><p>If you get something that says &ldquo;Permission denied&rdquo;, you may need to add
 a <code>sudo</code><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> in front of the command. Below is a demonstration of what
 your command line will look like &mdash; remember that the &ldquo;$&rdquo; is <strong>not</strong> part
 of the command, but represents the prompt.</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ sudo brew install python3 <span class="c1"># Mac</span>
-$ sudo apt install python3 <span class="c1"># Linux</span>
-</code></pre></div><p>To verify that the installation worked, enter the command <code>python3</code> and you
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ sudo brew install python3 <span class="c1"># Mac</span>
+</span></span><span class="line"><span class="cl">$ sudo apt install python3 <span class="c1"># Linux</span>
+</span></span></code></pre></div><p>To verify that the installation worked, enter the command <code>python3</code> and you
 should see something like:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ python3
-Python 3.5.3 <span class="o">(</span>default, Sep <span class="m">27</span> 2018, 17:25:39<span class="o">)</span>
-<span class="o">[</span>GCC 6.3.0 20170516<span class="o">]</span> on linux
-Type <span class="s2">&#34;help&#34;</span>, <span class="s2">&#34;copyright&#34;</span>, <span class="s2">&#34;credits&#34;</span> or <span class="s2">&#34;license&#34;</span> <span class="k">for</span> more information.
-&gt;&gt;&gt;
-</code></pre></div><p>Hooray! You did it. The &ldquo;&gt;&gt;&gt;&rdquo; is the Python REPL<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> prompt. Press <code>ctrl-C</code> to quit,
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ python3
+</span></span><span class="line"><span class="cl">Python 3.5.3 <span class="o">(</span>default, Sep <span class="m">27</span> 2018, 17:25:39<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>GCC 6.3.0 20170516<span class="o">]</span> on linux
+</span></span><span class="line"><span class="cl">Type <span class="s2">&#34;help&#34;</span>, <span class="s2">&#34;copyright&#34;</span>, <span class="s2">&#34;credits&#34;</span> or <span class="s2">&#34;license&#34;</span> <span class="k">for</span> more information.
+</span></span><span class="line"><span class="cl">&gt;&gt;&gt;
+</span></span></code></pre></div><p>Hooray! You did it. The &ldquo;&gt;&gt;&gt;&rdquo; is the Python REPL<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> prompt. Press <code>ctrl-C</code> to quit,
 or type <code>exit()</code> then hit enter.</p>
 <h3 id="windows">Windows</h3>
 <p>Navigate to <a href="https://www.python.org/">Python&rsquo;s website</a>, go to Downloads, then
@@ -267,117 +263,115 @@ say 3.something.)</p>
 <p>Download it, run it, follow the prompts to completion. At one point, it may
 ask whether you&rsquo;d like to add Python to your system path. Check yes. Then
 proceed as usual.</p>
-<figure>
-    <img src="/images/programming-for-n00bs-ii/add_python_to_path.png"
-         alt="Select yes for add to path"/> <figcaption>
+<figure><img src="/images/programming-for-n00bs-ii/add_python_to_path.png"
+         alt="Select yes for add to path"/><figcaption>
             <p>Source: datatofish.com</p>
         </figcaption>
 </figure>
 
 <p>To test your installation, open <a href="https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/#setting-up">Powershell</a>
 and enter <code>python</code>. You should see:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ python
-Python 3.5.3 <span class="o">(</span>default, Sep <span class="m">27</span> 2018, 17:25:39<span class="o">)</span>
-<span class="o">[</span>GCC 6.3.0 20170516<span class="o">]</span> on linux
-Type <span class="s2">&#34;help&#34;</span>, <span class="s2">&#34;copyright&#34;</span>, <span class="s2">&#34;credits&#34;</span> or <span class="s2">&#34;license&#34;</span> <span class="k">for</span> more information.
-&gt;&gt;&gt;
-</code></pre></div><p>If that doesn&rsquo;t work, look for an app called &ldquo;Python IDLE.&rdquo; Launch it, and
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ python
+</span></span><span class="line"><span class="cl">Python 3.5.3 <span class="o">(</span>default, Sep <span class="m">27</span> 2018, 17:25:39<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>GCC 6.3.0 20170516<span class="o">]</span> on linux
+</span></span><span class="line"><span class="cl">Type <span class="s2">&#34;help&#34;</span>, <span class="s2">&#34;copyright&#34;</span>, <span class="s2">&#34;credits&#34;</span> or <span class="s2">&#34;license&#34;</span> <span class="k">for</span> more information.
+</span></span><span class="line"><span class="cl">&gt;&gt;&gt;
+</span></span></code></pre></div><p>If that doesn&rsquo;t work, look for an app called &ldquo;Python IDLE.&rdquo; Launch it, and
 you should see the &ldquo;&gt;&gt;&gt;&rdquo; prompt as well.</p>
-<figure>
-    <img src="/images/programming-for-n00bs-ii/python_idle.jpg"
-         alt="Python IDLE"/> <figcaption>
-            <p>Source: <a href="http://www.cs.uky.edu">www.cs.uky.edu</a></p>
+<figure><img src="/images/programming-for-n00bs-ii/python_idle.jpg"
+         alt="Python IDLE"/><figcaption>
+            <p>Source: <a href="https://www.cs.uky.edu">www.cs.uky.edu</a></p>
         </figcaption>
 </figure>
 
 <h2 id="basics">Basics</h2>
 <p>Now for some action! At the Python prompt, type the following and hit enter</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-</code></pre></div><p>Hopefully you&rsquo;ll see 3. Great.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+</span></span></code></pre></div><p>Hopefully you&rsquo;ll see 3. Great.</p>
 <p>There&rsquo;s a host of math operations you can do:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">3</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">2</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">6</span> <span class="o">/</span> <span class="mi">3</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>   <span class="c1"># exponential</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span>    <span class="c1"># modulo</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">//</span> <span class="mi">2</span>   <span class="c1"># round down</span>
-<span class="c1"># and much, much more</span>
-</code></pre></div><p>We can store the value of an expression into a variable</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-</code></pre></div><p>The word on the left, &ldquo;value&rdquo;, is the name of our variable. Now if we do</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-</code></pre></div><p>we get 3 again. The stuff on the left of <code>=</code> is always the name of the variable.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">6</span> <span class="o">/</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>   <span class="c1"># exponential</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span>    <span class="c1"># modulo</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">//</span> <span class="mi">2</span>   <span class="c1"># round down</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># and much, much more</span>
+</span></span></code></pre></div><p>We can store the value of an expression into a variable</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+</span></span></code></pre></div><p>The word on the left, &ldquo;value&rdquo;, is the name of our variable. Now if we do</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></span></code></pre></div><p>we get 3 again. The stuff on the left of <code>=</code> is always the name of the variable.
 The stuff on the right is always the data being stored. The &ldquo;print&rdquo; with
 parentheses is a function. More on that later.</p>
 <p>Variables don&rsquo;t have to hold math expressions. They can also store words:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;charm that Python&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-<span class="s1">&#39;charm that Python&#39;</span>
-</code></pre></div><p>In programming jargon, these words are called <em>strings</em>.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> Strings can
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;charm that Python&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;charm that Python&#39;</span>
+</span></span></code></pre></div><p>In programming jargon, these words are called <em>strings</em>.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> Strings can
 be denoted either with <code>'single quotes'</code> or <code>&quot;double quotes&quot;</code>. They mean
 the exact same thing.</p>
 <p>Strings can be combined using <code>+</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;charm that&#39;</span> <span class="o">+</span> <span class="s1">&#39; Python&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-<span class="s1">&#39;charm that Python&#39;</span>
-</code></pre></div><p>Numbers can be converted into strings</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><p>and vice versa</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>     <span class="c1"># for integers</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;2.5&#39;</span><span class="p">)</span> <span class="c1"># for decimals</span>
-</code></pre></div><p>Putting all this together:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">message</span> <span class="o">=</span> <span class="s2">&#34;value is &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-<span class="s1">&#39;value is 3&#39;</span>
-</code></pre></div><p>Variables can also hold <em>booleans</em>, which are true / false values.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-<span class="bp">True</span>
-</code></pre></div><p>More on this later.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;charm that&#39;</span> <span class="o">+</span> <span class="s1">&#39; Python&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;charm that Python&#39;</span>
+</span></span></code></pre></div><p>Numbers can be converted into strings</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><p>and vice versa</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>     <span class="c1"># for integers</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;2.5&#39;</span><span class="p">)</span> <span class="c1"># for decimals</span>
+</span></span></code></pre></div><p>Putting all this together:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">message</span> <span class="o">=</span> <span class="s2">&#34;value is &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;value is 3&#39;</span>
+</span></span></code></pre></div><p>Variables can also hold <em>booleans</em>, which are true / false values.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kc">True</span>
+</span></span></code></pre></div><p>More on this later.</p>
 <h3 id="common-data-structures">Common Data structures</h3>
 <p>Data structures are programming constructs that store and organize data. Python
 has a ton of them, but the two most common are lists and dictionaries.</p>
 <h4 id="list">List</h4>
 <p>A list is a sequence of values. They can be anything</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">]</span>
-</code></pre></div><p>To access an element in a list, use its <em>index</em></p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="mi">1</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-<span class="s1">&#39;hello&#39;</span>
-</code></pre></div><p>Note that the first element starts at index 0. If you try to access an index
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
+</span></span></code></pre></div><p>To access an element in a list, use its <em>index</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;hello&#39;</span>
+</span></span></code></pre></div><p>Note that the first element starts at index 0. If you try to access an index
 that&rsquo;s not in the list, you&rsquo;ll get an error</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">100</span><span class="p">])</span>
-<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-  <span class="n">File</span> <span class="s2">&#34;&lt;stdin&gt;&#34;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">IndexError</span><span class="p">:</span> <span class="nb">list</span> <span class="n">assignment</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
-</code></pre></div><p>Other nifty list operations:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>           <span class="c1"># set the first element to 10</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_list</span><span class="p">)</span>              <span class="c1"># get the length of the list</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span>  <span class="c1"># add &#39;Python&#39; to the end</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>              <span class="c1"># get all elements from 0 up to (but not including) 2</span>
-</code></pre></div><h4 id="dictionary">Dictionary</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">100</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">  <span class="n">File</span> <span class="s2">&#34;&lt;stdin&gt;&#34;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="ne">IndexError</span><span class="p">:</span> <span class="nb">list</span> <span class="n">assignment</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
+</span></span></code></pre></div><p>Other nifty list operations:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>           <span class="c1"># set the first element to 10</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_list</span><span class="p">)</span>              <span class="c1"># get the length of the list</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span>  <span class="c1"># add &#39;Python&#39; to the end</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>              <span class="c1"># get all elements from 0 up to (but not including) 2</span>
+</span></span></code></pre></div><h4 id="dictionary">Dictionary</h4>
 <p>Dictionaries store key-value pairs of data</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a_key&#39;</span><span class="p">:</span> <span class="s1">&#39;a_value&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;another_value&#39;</span><span class="p">,</span> <span class="s1">&#39;third_key&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">}</span>
-</code></pre></div><p>Keys are named to the right of the <code>:</code>, values to the left. Keys and values
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a_key&#39;</span><span class="p">:</span> <span class="s1">&#39;a_value&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;another_value&#39;</span><span class="p">,</span> <span class="s1">&#39;third_key&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+</span></span></code></pre></div><p>Keys are named to the right of the <code>:</code>, values to the left. Keys and values
 can be just about anything, but the keys need to be unique. Then to
 access values of a dict, we can do</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">a_dict</span><span class="p">[</span><span class="s1">&#39;a_key&#39;</span><span class="p">])</span>
-<span class="s1">&#39;a_value&#39;</span>
-</code></pre></div><p>To add a new key-value pair or set an existing key-value pair, the operation
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">a_dict</span><span class="p">[</span><span class="s1">&#39;a_key&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;a_value&#39;</span>
+</span></span></code></pre></div><p>To add a new key-value pair or set an existing key-value pair, the operation
 is the same:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_dict</span><span class="p">[</span><span class="s1">&#39;new_key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;new_value&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">a_dict</span><span class="p">[</span><span class="s1">&#39;new_key&#39;</span><span class="p">])</span>
-<span class="s1">&#39;new_value&#39;</span>
-</code></pre></div><h3 id="source-files">Source files</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_dict</span><span class="p">[</span><span class="s1">&#39;new_key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;new_value&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">a_dict</span><span class="p">[</span><span class="s1">&#39;new_key&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;new_value&#39;</span>
+</span></span></code></pre></div><h3 id="source-files">Source files</h3>
 <p>Most Python isn&rsquo;t written on a REPL, but in a <em>source file</em>. Use your favorite
 text editor to open a file <code>example.py</code> and enter the following</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s1">&#39;Charm the Python.&#39;</span><span class="p">)</span>
-</code></pre></div><p>Now in your shell:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ python3 example.py
-</code></pre></div><p>and out prints <code>Charm the Python.</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Charm the Python.&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Now in your shell:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ python3 example.py
+</span></span></code></pre></div><p>and out prints <code>Charm the Python.</code></p>
 <p>The file <code>example.py</code> is called a source file. It contains Python code that
 can be executed with the <code>python3</code><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> (or just <code>python</code> on some machines) command.
 Everything that we&rsquo;ve done previously on the REPL can be written in a source
@@ -386,23 +380,23 @@ often called <em>scripts</em>.</p>
 <p>Source files can include <em>comments</em>. These are pieces of text meant for a
 human reader, not the machine. When you run the script on the command line, all
 commented text are ignored. Python has 3 different kinds of comments:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># this is a single line comment</span>
-<span class="n">value</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>   <span class="c1"># it can come after expressions, too</span>
-
-<span class="s1">&#39;&#39;&#39;
-</span><span class="s1">This is a multi-line comment. It can span
-</span><span class="s1">multiple
-</span><span class="s1">lines.
-</span><span class="s1">The start and end are denoted with three quote characters (&#39;).
-</span><span class="s1">&#39;&#39;&#39;</span>
-
-<span class="s2">&#34;&#34;&#34;
-</span><span class="s2">This is a docstring -- short for documentation string. It&#39;s essentially the
-</span><span class="s2">same as the multi-line comment above, but using three quotation mark
-</span><span class="s2">characters (&#34;) is a convention that means this comment is intended to be
-</span><span class="s2">documentation to instruct other developers on how to use the code.
-</span><span class="s2">&#34;&#34;&#34;</span>
-</code></pre></div><p>Large software projects can include many hundreds of source files, with
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># this is a single line comment</span>
+</span></span><span class="line"><span class="cl"><span class="n">value</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>   <span class="c1"># it can come after expressions, too</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">This is a multi-line comment. It can span
+</span></span></span><span class="line"><span class="cl"><span class="s1">multiple
+</span></span></span><span class="line"><span class="cl"><span class="s1">lines.
+</span></span></span><span class="line"><span class="cl"><span class="s1">The start and end are denoted with three quote characters (&#39;).
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">This is a docstring -- short for documentation string. It&#39;s essentially the
+</span></span></span><span class="line"><span class="cl"><span class="s2">same as the multi-line comment above, but using three quotation mark
+</span></span></span><span class="line"><span class="cl"><span class="s2">characters (&#34;) is a convention that means this comment is intended to be
+</span></span></span><span class="line"><span class="cl"><span class="s2">documentation to instruct other developers on how to use the code.
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span></code></pre></div><p>Large software projects can include many hundreds of source files, with
 many hundreds of thousands of lines of code.</p>
 <h2 id="control-flow">Control Flow</h2>
 <p>Not all code has to run from top to bottom. Python includes many utilities that
@@ -412,100 +406,100 @@ about booleans.</p>
 <p>Remember from before we can assign the values <code>True</code> and <code>False</code> to a
 variable. There&rsquo;s a few operations we can do with booleans, manipulating
 their value. For example</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="ow">not</span> <span class="bp">True</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-<span class="bp">False</span>
-</code></pre></div><p>The <code>not</code> operator flips the value of the boolean. We also have <code>and</code> and
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">value</span> <span class="o">=</span> <span class="ow">not</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kc">False</span>
+</span></span></code></pre></div><p>The <code>not</code> operator flips the value of the boolean. We also have <code>and</code> and
 <code>or</code> operators:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="bp">True</span> <span class="ow">and</span> <span class="bp">False</span>
-<span class="bp">False</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="bp">True</span> <span class="ow">or</span> <span class="bp">False</span>
-<span class="bp">True</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="bp">True</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">False</span>
-<span class="bp">True</span>
-</code></pre></div><p>For more details about boolean operators, check out <a href="https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/#on-and-off">this post</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="kc">True</span> <span class="ow">and</span> <span class="ow">not</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="kc">True</span>
+</span></span></code></pre></div><p>For more details about boolean operators, check out <a href="https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/#on-and-off">this post</a>.</p>
 <p>Other operators return booleans:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">2</span>   <span class="c1"># True</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">2</span>   <span class="c1"># False</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&gt;=</span> <span class="mi">2</span>  <span class="c1"># &#34;greater than or equal to&#34;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&lt;=</span> <span class="mi">2</span>  <span class="c1"># &#34;less than or equal to&#34;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">3</span>  <span class="c1"># equality</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Python&#39;</span> <span class="o">==</span> <span class="s1">&#39;Python&#39;</span>   <span class="c1"># works with strings, too</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="bp">True</span> <span class="o">==</span> <span class="bp">True</span>   <span class="c1"># and of course with booleans, also</span>
-</code></pre></div><p>If you&rsquo;re curious to learn more, check out the Wikipedia page on <a href="https://en.wikipedia.org/wiki/Boolean_algebra">boolean
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">2</span>   <span class="c1"># True</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">2</span>   <span class="c1"># False</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&gt;=</span> <span class="mi">2</span>  <span class="c1"># &#34;greater than or equal to&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&lt;=</span> <span class="mi">2</span>  <span class="c1"># &#34;less than or equal to&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">3</span>  <span class="c1"># equality</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Python&#39;</span> <span class="o">==</span> <span class="s1">&#39;Python&#39;</span>   <span class="c1"># works with strings, too</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="kc">True</span> <span class="o">==</span> <span class="kc">True</span>   <span class="c1"># and of course with booleans, also</span>
+</span></span></code></pre></div><p>If you&rsquo;re curious to learn more, check out the Wikipedia page on <a href="https://en.wikipedia.org/wiki/Boolean_algebra">boolean
 algebra</a>.</p>
 <h3 id="conditionals">Conditionals</h3>
 <p>Booleans can tell us which segments of code should or shouldn&rsquo;t be run. One way we
 can do this is through <code>if</code> statements:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="c1"># run this code</span>
-    <span class="c1"># indentation is important</span>
-    <span class="c1"># everything indented to this level is run</span>
-
-<span class="k">if</span> <span class="bp">False</span><span class="p">:</span>
-    <span class="c1"># this code does not run</span>
-
-<span class="n">value</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
-    <span class="c1"># does this code run?</span>
-    <span class="c1"># Yes! It absolutely does</span>
-</code></pre></div><p>We can add an <code>else</code> statement after the <code>if</code> to run an alternative block of
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># run this code</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># indentation is important</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># everything indented to this level is run</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># this code does not run</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">value</span> <span class="o">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># does this code run?</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Yes! It absolutely does</span>
+</span></span></code></pre></div><p>We can add an <code>else</code> statement after the <code>if</code> to run an alternative block of
 code:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="bp">False</span><span class="p">:</span>
-    <span class="c1"># this code does not run</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="c1"># but this code does run</span>
-</code></pre></div><p>If we can also insert zero or more <code>elif</code> (short for &ldquo;else if&rdquo;) statements between
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># this code does not run</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># but this code does run</span>
+</span></span></code></pre></div><p>If we can also insert zero or more <code>elif</code> (short for &ldquo;else if&rdquo;) statements between
 the first <code>if</code> and the final <code>else</code> statements:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="bp">False</span><span class="p">:</span>
-    <span class="c1"># this code does not run</span>
-<span class="k">elif</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="c1"># this code does run</span>
-    <span class="c1"># elif is like an else followed by an if</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="c1"># this code no longer runs</span>
-    <span class="c1"># because the above elif clause is triggered</span>
-</code></pre></div><p>Conditionals can occur anywhere in your code. There can be code that
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># this code does not run</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># this code does run</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># elif is like an else followed by an if</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># this code no longer runs</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># because the above elif clause is triggered</span>
+</span></span></code></pre></div><p>Conditionals can occur anywhere in your code. There can be code that
 precedes it, and code that follows it. For example, here&rsquo;s a simple
 password checker you can try:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="s2">&#34;&#34;&#34;
-</span><span class="s2">A simple script to check the password.
-</span><span class="s2">Copy and paste this into a file called `password.py`
-</span><span class="s2">&#34;&#34;&#34;</span>
-<span class="n">password</span> <span class="o">=</span> <span class="s2">&#34;python&#34;</span>
-
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Type the password:&#39;</span><span class="p">)</span>
-<span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-
-<span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Wrong!&#39;</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;All done&#39;</span><span class="p">)</span>
-</code></pre></div><p>The function <code>input()</code> pauses the program until the user types in a string and
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">A simple script to check the password.
+</span></span></span><span class="line"><span class="cl"><span class="s2">Copy and paste this into a file called `password.py`
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">password</span> <span class="o">=</span> <span class="s2">&#34;python&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Type the password:&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Wrong!&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;All done&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>The function <code>input()</code> pauses the program until the user types in a string and
 hits enter.</p>
 <p>One important note, empty lines don&rsquo;t matter. There can be as many empty
 lines as you&rsquo;d like between one chunk of code and the next. But indents
 <em>do</em> matter:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>        <span class="c1"># WRONG!!!</span>
-
-<span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>    <span class="c1"># Correct</span>
-</code></pre></div><p>The indent defines a <em>code block</em>. All adjacent lines indented to the same level
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>        <span class="c1"># WRONG!!!</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>    <span class="c1"># Correct</span>
+</span></span></code></pre></div><p>The indent defines a <em>code block</em>. All adjacent lines indented to the same level
 are in the same block. Python uses this to tell which lines of code to run
 in a conditional</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;This also runs&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Wrong!&#39;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;This is part of the same block&#39;</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;This will always print&#39;</span><span class="p">)</span>
-</code></pre></div><p>Running with the correct password then prints</p>
-<pre><code>Correct!
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="n">user_input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Correct!&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This also runs&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Wrong!&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This is part of the same block&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This will always print&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Running with the correct password then prints</p>
+<pre tabindex="0"><code>Correct!
 This also runs
 This will always print
 </code></pre><h3 id="loops">Loops</h3>
@@ -514,12 +508,12 @@ name suggests, loops repeat the same block of code. There are two major
 kinds: <code>for</code> and <code>while</code> loops.</p>
 <h4 id="for-loops">For loops</h4>
 <p>For loops look like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;charm&#39;</span><span class="p">,</span> <span class="s1">&#39;the&#39;</span><span class="p">,</span> <span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="bp">False</span><span class="p">]</span>
-
-<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">a_list</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
-</code></pre></div><p>Running the code yields:</p>
-<pre><code>charm
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;charm&#39;</span><span class="p">,</span> <span class="s1">&#39;the&#39;</span><span class="p">,</span> <span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">a_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+</span></span></code></pre></div><p>Running the code yields:</p>
+<pre tabindex="0"><code>charm
 the
 python
 2
@@ -528,10 +522,10 @@ False
 the code below per each value. The variable names don&rsquo;t matter, you could&rsquo;ve
 done <code>for banana in mangoes</code> and that would&rsquo;ve worked equally well. Commonly,
 you might see something like:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div><p>which will print</p>
-<pre><code>0
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span></code></pre></div><p>which will print</p>
+<pre tabindex="0"><code>0
 1
 2
 3
@@ -539,21 +533,21 @@ you might see something like:</p>
 </code></pre><p>You can think of the <code>range(5)</code> part generating something like a list <code>[0, 1, 2, 3, 4]</code>.</p>
 <h4 id="while-loops">While loops</h4>
 <p>While loops look like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">while</span> <span class="n">condition</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;one iteration!&#39;</span><span class="p">)</span>
-</code></pre></div><p>So long as <code>condition</code> is <code>True</code>, the code below will be repeated.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">while</span> <span class="n">condition</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;one iteration!&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>So long as <code>condition</code> is <code>True</code>, the code below will be repeated.</p>
 <p>While and for loops are not unique. Every for loop can be written as a while
 loop. For example, a while loop that mimics the for loop from before:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_list</span><span class="p">):</span>
-    <span class="n">element</span> <span class="o">=</span> <span class="n">a_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
-</code></pre></div><p>Question for you: can every while loop be written as a for loop?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_list</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">element</span> <span class="o">=</span> <span class="n">a_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span></code></pre></div><p>Question for you: can every while loop be written as a for loop?</p>
 <p>While loops open the possibility for infinite loops. For example</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;This loop will never stop!&#39;</span><span class="p">)</span>
-</code></pre></div><p>So it&rsquo;s always important to be careful and check that your loops terminate.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This loop will never stop!&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>So it&rsquo;s always important to be careful and check that your loops terminate.
 Otherwise empires may rise and fall, the sun darken, the Universe approach
 absolute heat death, before your program terminates. If you do fall into an
 infinite for loop, press <code>ctrl-C</code> to force Python to die.</p>
@@ -572,10 +566,10 @@ class, you might remember seeing something like:</p>
 <p>$$ f(x) = x + 2$$</p>
 <p>Then we can say, for example, that \(f(3) = 5\). You put in a 3, out pops a 5.
 We can do something similar in Python:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
-    <span class="k">return</span> <span class="n">x</span>
-</code></pre></div><p>Let&rsquo;s tear it apart:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span>
+</span></span></code></pre></div><p>Let&rsquo;s tear it apart:</p>
 <ul>
 <li><code>def</code> marks the beginning of a function declaration</li>
 <li><code>f</code> is the name of the function</li>
@@ -585,28 +579,28 @@ work</li>
 <li><code>return</code> spits out the final value</li>
 </ul>
 <p>Then we can use it just like the math function:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>     <span class="c1"># evaluates to 5</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># now the variable y has the value 5</span>
-</code></pre></div><p>But a programmer&rsquo;s function can be far more powerful than anything from math
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>     <span class="c1"># evaluates to 5</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># now the variable y has the value 5</span>
+</span></span></code></pre></div><p>But a programmer&rsquo;s function can be far more powerful than anything from math
 class. Inside the function body, we can put any kind of Python code we
 like &mdash; conditionals, loops, other function calls, and Python trick
 we&rsquo;ve learned so far can be part of a function. So if we wanted to
 do something a little fancier, say:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">assign_grade</span><span class="p">(</span><span class="n">raw_score</span><span class="p">):</span>
-    <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;NA&#39;</span>
-    <span class="k">if</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">90</span><span class="p">:</span>
-        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
-    <span class="k">elif</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">80</span><span class="p">:</span>
-        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
-    <span class="k">elif</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">70</span><span class="p">:</span>
-        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span>
-    <span class="k">elif</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
-        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;F&#39;</span>
-
-    <span class="k">return</span> <span class="n">grade</span>
-</code></pre></div><p>Now we have a nifty function that can convert a raw score into a letter
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">assign_grade</span><span class="p">(</span><span class="n">raw_score</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;NA&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">90</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">80</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">70</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">raw_score</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;F&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">grade</span>
+</span></span></code></pre></div><p>Now we have a nifty function that can convert a raw score into a letter
 grade. Whenever we need it, we can call something like <code>assign_grade(93)</code>
 and out comes <code>A</code>.</p>
 <p>In this way, functions are pieces of reusable code. If you need some kind of
@@ -643,121 +637,50 @@ applies to seasoned developers, too &mdash; there&rsquo;s always something more 
 learn, another tool to understand. You&rsquo;ve taken the first few steps into
 your glorious programming future! And there&rsquo;s many more to go.</p>
 <h2 id="footnotes">Footnotes</h2>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>Especially in machine learning. As of this writing, Python is the defacto
 default language for machine learning applications and research. That clever
 face-recognition app on your phone? Probably started in Python. If you&rsquo;re
 curious, check out <a href="https://www.tensorflow.org/">Tensorflow</a> and <a href="https://pytorch.org/">PyTorch</a>, two popular Python
-frameworks for ML <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+frameworks for ML&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>Python is my favorite, goto language, so I&rsquo;m biased in this direction. But that
-doesn&rsquo;t make it any less true. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+doesn&rsquo;t make it any less true.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>If you&rsquo;re leaning in the direction of a software career, also consider
 <a href="https://javascript.info/">Javascript</a>. It&rsquo;s the language of the web, and
 a must-have for any aspiring web developer. Check out <a href="https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/">this post</a>
-for more info. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+for more info.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>Package managers are utilities that help install software. They&rsquo;re not as
-common on Windows, but for *nix systems, they&rsquo;re super convient. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+common on Windows, but for *nix systems, they&rsquo;re super convient.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p><code>sudo</code> (pronounced like Sue Doe) is short for &ldquo;super do.&rdquo; It&rsquo;s a nifty
 command that elevates whatever command that follows to the highest
-permission, enabling access to sensitive corners of your computer. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+permission, enabling access to sensitive corners of your computer.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>REPL stands for Read-Evaluate-Print-Loop. It&rsquo;s a standard fixture in many
-programming languages, and let&rsquo;s you execute code on-the-fly at a prompt. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+programming languages, and let&rsquo;s you execute code on-the-fly at a prompt.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:7" role="doc-endnote">
+<li id="fn:7">
 <p>They&rsquo;re called &ldquo;strings&rdquo; because they&rsquo;re a string of characters. For more
-tidbits, check out <a href="https://dhhumanist.org/Archives/Virginia/v05/0863.html">this thread</a>. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+tidbits, check out <a href="https://dhhumanist.org/Archives/Virginia/v05/0863.html">this thread</a>.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:8" role="doc-endnote">
+<li id="fn:8">
 <p>The extra &ldquo;3&rdquo; means that we&rsquo;re using Python version 3. Just calling
 <code>python</code> usually means version 2. For any new project, you should almost
-never use Python 2. Stick with the latest and greatest. <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+never use Python 2. Stick with the latest and greatest.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>]]></content>
-		</item>
-		
-		<item>
-			<title>Welcome to the New WLT</title>
-			<link>https://wlt.coffee/posts/2020-05-10-welcome-to-the-new-wlt/</link>
-			<pubDate>Sun, 10 May 2020 10:42:22 -0500</pubDate>
-			
-			<guid>https://wlt.coffee/posts/2020-05-10-welcome-to-the-new-wlt/</guid>
-			<description>&lt;p&gt;Order the new WLT, served with a side of fries and drink of your choice.
-All for &lt;del&gt;$1.99&lt;/del&gt; FREE.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;audience: everyone&lt;/em&gt;&lt;/p&gt;</description>
-			<content type="html"><![CDATA[<p>Order the new WLT, served with a side of fries and drink of your choice.
-All for <del>$1.99</del> FREE.</p>
-<p><em>audience: everyone</em></p>
-<figure class="big">
-    <img src="/images/welcome-to-the-new-wlt/blt.jpg"
-         alt="blt"/> <figcaption>
-            <p>Source: <a href="https://www.dennys.com/food/burgers/spicy-sriracha-burger/">https://www.dennys.com/food/burgers/spicy-sriracha-burger/</a></p>
-        </figcaption>
-</figure>
-
-<p><strong>NOTE:</strong> The domain has migrated to <a href="https://wlt.coffee">https://wlt.coffee</a>.
-Using the old <a href="https://wlt.soy">.soy</a> extension will redirect to the new domain
-until December 2020. After that, I&rsquo;ll cancel the old domain. Readers who
-continue to use the old URL will be sent into Internet oblivion.</p>
-<h2 id="new-features">New Features</h2>
-<p>The old website felt like something circa 2000. I&rsquo;m proud to announce it&rsquo;s
-been updated to about 2010.</p>
-<h3 id="table-of-contents">Table of Contents</h3>
-<figure class="left">
-    <img src="/images/welcome-to-the-new-wlt/toc_icon.svg"
-         alt="table of contents icon"/> <figcaption>
-            <p>Table of Contents icon</p>
-        </figcaption>
-</figure>
-
-<p>Longer posts now feature a table of contents! Clicking on the icon will bring
-up a quick guide linking important sections of the page. <strong>NOTE</strong>: this feature
-only works on desktop.</p>
-<h3 id="featured-image">Featured Image</h3>
-<figure class="left">
-    <img src="/images/welcome-to-the-new-wlt/feat_image_icon.svg"
-         alt="featured image icon"/> <figcaption>
-            <p>Featured Image icon</p>
-        </figcaption>
-</figure>
-
-<p>Particularly epic posts (like this one) now have a &ldquo;featured image.&rdquo; The image
-is watermarked into the background. Clicking on the icon brings it into focus.
-Click the image again to return to the post.</p>
-<h3 id="clickable-tags">Clickable Tags</h3>
-<p>Like what you&rsquo;ve read? Now find more! All tags for a post are included at the
-bottom. Clicking on a tag brings up a page of posts with the same or related
-tags.</p>
-<h3 id="raised-general-level-of-epicness">Raised General Level of Epicness</h3>
-<ul>
-<li>Auto-hide navbar</li>
-<li>Improved mobile friendliness</li>
-<li>Redesigned icon</li>
-<li>Smoother feel</li>
-<li>Cleaner layout</li>
-<li>Switch to Hugo backend</li>
-<li>Enchanted by 9th-level sorcerers</li>
-<li>Imbued with dragon&rsquo;s blood and phoenix tears</li>
-<li>Left out in the sun for too long &mdash; hence the background color</li>
-</ul>
-<h2 id="and-to-all-my-loyal-readers">And to all my loyal readers</h2>
-<p>all (about three) of you, thanks for following along. It&rsquo;s been a pleasure to
-write for you, and I promise many more epic post to come. And as always,
-<a href="https://wlt.coffee/about/#about-the-blog ">let me know what you think</a>. Flame is
-appreciated.</p>]]></content>
+</div>]]></content>
 		</item>
 		
 		<item>
@@ -774,9 +697,8 @@ more frameworks than stars in the sky. Looking for a way in? You just found it.&
 ORMs &ndash; webtech is a dizzying world with diverse technologies, wacky lingo, and
 more frameworks than stars in the sky. Looking for a way in? You just found it.</p>
 <p><em>Audience: burgeoning programmers looking for an intro to webtech</em></p>
-<figure>
-    <img src="/images/everything-you-need-to-know-about-webtech/internet.jpg"
-         alt="Internet"/> <figcaption>
+<figure><img src="/images/everything-you-need-to-know-about-webtech/internet.jpg"
+         alt="Internet"/><figcaption>
             <p>Source: <a href="https://askleo.askleomedia.com/wp-content/uploads/2018/10/internet.jpg">https://askleo.askleomedia.com/wp-content/uploads/2018/10/internet.jpg</a></p>
         </figcaption>
 </figure>
@@ -794,9 +716,8 @@ web development is overwhelming</li>
 <p>But that&rsquo;s why posts like this exist. Whether you&rsquo;re a casual programmer or
 thinking of a career in web dev, you&rsquo;ve made it to the right place.</p>
 <h2 id="internet">Internet</h2>
-<figure>
-    <img src="/images/everything-you-need-to-know-about-webtech/arpanet.jpg"
-         alt="Arpanet"/> <figcaption>
+<figure><img src="/images/everything-you-need-to-know-about-webtech/arpanet.jpg"
+         alt="Arpanet"/><figcaption>
             <p>Source: <a href="http://mercury.lcs.mit.edu/~jnc/tech/arpageo.html">http://mercury.lcs.mit.edu/~jnc/tech/arpageo.html</a></p>
         </figcaption>
 </figure>
@@ -828,9 +749,8 @@ is figuring out how to make that page in the first place.</p>
 <li>Backend: data and logic powering the web app</li>
 <li>Server: software that glues everything together</li>
 </ol>
-<figure>
-    <img src="/images/everything-you-need-to-know-about-webtech/frontend_backend.png"
-         alt="Full stack"/> <figcaption>
+<figure><img src="/images/everything-you-need-to-know-about-webtech/frontend_backend.png"
+         alt="Full stack"/><figcaption>
             <p>Source: <a href="https://www.seobility.net/en/wiki/Frontend">https://www.seobility.net/en/wiki/Frontend</a></p>
         </figcaption>
 </figure>
@@ -853,11 +773,11 @@ Internet lies in the realm of frontend.</p>
 </ol>
 <p><strong>HTML</strong> (short for Hypertext Markup Language) describes the structure of a
 webpage. It looks something like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> describes the structure of a webpage.
-    It looks something like this:
-<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div><p>The funny-looking sections enclosed in angle brackets are called <em>tags</em>. They
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> describes the structure of a webpage.
+</span></span><span class="line"><span class="cl">    It looks something like this:
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>The funny-looking sections enclosed in angle brackets are called <em>tags</em>. They
 denote sections of an HTML document. For example <code>&lt;p&gt;</code> denotes the beginning
 of a paragraph, and <code>&lt;/p&gt;</code> denotes the end. Closing tags always include the <code>/</code>
 between the brackets. The tag <code>&lt;strong&gt;</code> denotes really important text, which
@@ -865,10 +785,10 @@ should be emphasized. To view the HTML of this webpage, you can right-click
 on the page and select &ldquo;View page source.&rdquo;</p>
 <p><strong>CSS</strong> (short for Cascading Style Sheet) describes how a webpage should look.
 It looks like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
-    <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>This snippet means that the text color for all paragraphs should be blue. You
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">p</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This snippet means that the text color for all paragraphs should be blue. You
 can use CSS to stylize just about any visual element on your webpage, from the
 color to the spacing to the placement, and even animations. Whereas HTML
 gives you content and structure, CSS gives you visuals.</p>
@@ -894,9 +814,8 @@ favorite color, preferred pizza parlor, opinion on bananas vs plantains, virtual
 any data you&rsquo;d like. A popular database is <a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a>,
 and it uses a special querying language called <a href="https://www.w3schools.com/sql/">SQL</a>
 to store and retrieve information.</p>
-<figure>
-    <img src="/images/everything-you-need-to-know-about-webtech/database.jpg"
-         alt="Full stack"/> <figcaption>
+<figure><img src="/images/everything-you-need-to-know-about-webtech/database.jpg"
+         alt="Full stack"/><figcaption>
             <p>Source: <a href="https://www.seobility.net/en/wiki/Frontend">https://www.seobility.net/en/wiki/Frontend</a></p>
         </figcaption>
 </figure>
@@ -931,17 +850,15 @@ on these three themes.</p>
 <p>One last thing to talk about is the <strong>web framework</strong>. Take a look at these
 two websites:</p>
 <p><a href="http://www.taco.com/">TACO</a>
-<figure>
-    <img src="/images/everything-you-need-to-know-about-webtech/taco.png"
-         alt="TACO"/> <figcaption>
+<figure><img src="/images/everything-you-need-to-know-about-webtech/taco.png"
+         alt="TACO"/><figcaption>
             <p>A very old-fashioned, 90s era website. Likely written by hand with traditional HTML and CSS techniques.</p>
         </figcaption>
 </figure>
 </p>
 <p><a href="http://www.feedmusic.com/">Feed</a>
-<figure>
-    <img src="/images/everything-you-need-to-know-about-webtech/feed.png"
-         alt="Full stack"/> <figcaption>
+<figure><img src="/images/everything-you-need-to-know-about-webtech/feed.png"
+         alt="Full stack"/><figcaption>
             <p>Beautifully animated, sleek, modern website.</p>
         </figcaption>
 </figure>
@@ -979,66 +896,40 @@ It&rsquo;s a blog-oriented framework that crunches text files containing my post
 the web pages you see now.</p>
 <h2 id="footnotes">Footnotes</h2>
 <p>Some extra tidbits to color your reading experience:</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>I use the term &ldquo;webtech&rdquo; to broadly cover everything related to building
-a web page or web-based application. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+a web page or web-based application.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>In fact, it&rsquo;s the same kind of light that your microwave uses on leftovers.
 Check out <a href="https://scienceblogs.com/builtonfacts/2009/09/17/wifi-and-radiation">this interesting article</a>
-for more information. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+for more information.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>Remember, all this happens on the order of seconds. And it has to happen
 every time you click on a link, browse to a new page, or generally use
-the Internet. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+the Internet.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>For more on programming languages themselves, check out my
-<a href="http://localhost:4000/tech/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html">guide to programming</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="http://localhost:4000/tech/2019/02/22/programming-for-n00bs-an-introduction-to-our-craft.html">guide to programming</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>Sometimes, people refer to the &ldquo;server&rdquo; as the physical machine that runs
 your backend code. In this article, I refer to &ldquo;server&rdquo; exclusively in
-the software sense. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+the software sense.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>Except built-in support for asynchronous Python, in which case you&rsquo;ll
 need <a href="http://www.celeryproject.org/">Celery</a> and a message broker like
 <a href="https://www.rabbitmq.com/">RabbitMQ</a>. The extra bulk is why I prefer
-JavaScript, which has async built in. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+JavaScript, which has async built in.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>]]></content>
-		</item>
-		
-		<item>
-			<title>Smile.</title>
-			<link>https://wlt.coffee/posts/2019-08-26-smile/</link>
-			<pubDate>Mon, 26 Aug 2019 12:36:54 +0000</pubDate>
-			
-			<guid>https://wlt.coffee/posts/2019-08-26-smile/</guid>
-			<description>&lt;p&gt;Sometimes, it&amp;rsquo;s just been a bad day.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Audience: everyone&lt;/em&gt;&lt;/p&gt;</description>
-			<content type="html"><![CDATA[<p>Sometimes, it&rsquo;s just been a bad day.</p>
-<p><em>Audience: everyone</em></p>
-<figure>
-    <img src="/images/smile/dark_forest.jpg"
-         alt="Dark forest"/> <figcaption>
-            <p>Source: <a href="https://www.pinterest.com/pin/94364554676402286/">https://www.pinterest.com/pin/94364554676402286/</a></p>
-        </figcaption>
-</figure>
-
-<p>Smile.</p>
-<p>Go ahead, do it. Right here. Right now.</p>
-<p>Feel the corners of your mouth rise, your cheeks tighten, your eyes crinkle.
-Maybe flash a little teeth, if you&rsquo;re feeling good.</p>
-<p>Hold it for a few seconds.</p>
-<p>Deep breath.</p>
-<p>And relax, but see if you can keep a small smile resting on your lips.</p>]]></content>
+</div>]]></content>
 		</item>
 		
 		<item>
@@ -1055,9 +946,8 @@ glorious programming future.&lt;/p&gt;
 you&rsquo;re in the right place. Start here. Today is the first day of your
 glorious programming future.</p>
 <p><em>Audience: curious folks interested in programming</em></p>
-<figure>
-    <img src="/images/programming-for-n00bs/intro_to_programming.jpg"
-         alt="Programming for n00bs"/> <figcaption>
+<figure><img src="/images/programming-for-n00bs/intro_to_programming.jpg"
+         alt="Programming for n00bs"/><figcaption>
             <p>Source: <a href="https://www.lynda.com/Programming-Foundations-tutorials">https://www.lynda.com/Programming-Foundations-tutorials</a></p>
         </figcaption>
 </figure>
@@ -1122,9 +1012,8 @@ different depending on your operating system.</p>
 </ol>
 <p>The first two come with Windows. Open up your applications menu or search box,
 and you&rsquo;ll find them.</p>
-<figure class="left">
-    <img src="/images/programming-for-n00bs/powershell.webp"
-         alt="Powershell"/> <figcaption>
+<figure class="left"><img src="/images/programming-for-n00bs/powershell.webp"
+         alt="Powershell"/><figcaption>
             <p>Source: <a href="https://www.digitalcitizen.life/ways-launch-powershell-windows-admin">https://www.digitalcitizen.life/ways-launch-powershell-windows-admin</a></p>
         </figcaption>
 </figure>
@@ -1152,9 +1041,8 @@ And I&rsquo;m using it right now to write this post.</p>
 <a href="https://www.sublimetext.com/">Sublime</a>. It&rsquo;s an industry favorite, but comes
 with a hefty price tag. Why pay when Atom is just as excellent, and free?</p>
 <p>And for the hard-core, there&rsquo;s <a href="https://www.vim.org/">Vim</a>.</p>
-<figure class="right">
-    <img src="/images/programming-for-n00bs/vim_curve.jpg"
-         alt="Vim curve"/> <figcaption>
+<figure class="right"><img src="/images/programming-for-n00bs/vim_curve.jpg"
+         alt="Vim curve"/><figcaption>
             <p>Source: <a href="https://stackoverflow.com/questions/10942008/what-does-emacs-learning-curve-actually-look-like">https://stackoverflow.com/questions/10942008/what-does-emacs-learning-curve-actually-look-like</a></p>
         </figcaption>
 </figure>
@@ -1184,9 +1072,8 @@ here on out, when I use the word &ldquo;shell,&rdquo; I&rsquo;m referring to the
 versions.</p>
 <p>PowerShell and Mac&rsquo;s Terminal are terminals that run these text-based shells.
 Open one right now, and here&rsquo;s what you might see:</p>
-<figure>
-    <img src="/images/programming-for-n00bs/my_terminal.png"
-         alt="terminal"/> <figcaption>
+<figure><img src="/images/programming-for-n00bs/my_terminal.png"
+         alt="terminal"/><figcaption>
             <p>Source: me</p>
         </figcaption>
 </figure>
@@ -1194,18 +1081,17 @@ Open one right now, and here&rsquo;s what you might see:</p>
 <p>Yours will likely look a little different, but the basic gist should be the
 same: a blinking cursor in front of a prompt. Try typing <code>ls</code> and hit
 enter. Mine looks like this:</p>
-<figure>
-    <img src="/images/programming-for-n00bs/my_terminal_ls.png"
-         alt="ls"/> <figcaption>
+<figure><img src="/images/programming-for-n00bs/my_terminal_ls.png"
+         alt="ls"/><figcaption>
             <p>Source: me</p>
         </figcaption>
 </figure>
 
 <p>Yours will differ, depending on the files in your system. To save myself some
 space, I can also use a convention to write the output like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ls
-a_directory/    another_directory/  file.txt    also_a_file.txt
-</code></pre></div><p>The &ldquo;$&rdquo; represents the prompt. A line without &ldquo;$&rdquo; signifies output.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ ls
+</span></span><span class="line"><span class="cl">a_directory/    another_directory/  file.txt    also_a_file.txt
+</span></span></code></pre></div><p>The &ldquo;$&rdquo; represents the prompt. A line without &ldquo;$&rdquo; signifies output.</p>
 <p>So what just happened?</p>
 <p>Unlike a graphical shell, where we can double-click an icon
 to launch a program, to launch a program in our text-based shell, we need to
@@ -1219,9 +1105,8 @@ by the way, is another word for &ldquo;folder.&rdquo; CS folks just prefer &ldqu
 reasons of taste and style.</p>
 <p>If you open your file explorer, you&rsquo;ll see a bunch of them. Here&rsquo;s what I
 see:</p>
-<figure>
-    <img src="/images/programming-for-n00bs/nautilus.png"
-         alt="nautilus"/> <figcaption>
+<figure><img src="/images/programming-for-n00bs/nautilus.png"
+         alt="nautilus"/><figcaption>
             <p>Source: me</p>
         </figcaption>
 </figure>
@@ -1249,17 +1134,17 @@ root directory on Windows is <code>C:\</code>. Instead of forward slashes <code>
 backslashes <code>\</code> to separate directory names. Our example on Windows would look
 like <code>C:\home\wlt\sample.txt</code>.</p>
 <p>Return to your terminal, type <code>pwd</code>, and hit enter. I get:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">pwd</span>
-/home/wlt/example
-</code></pre></div><p><code>pwd</code> stands for &ldquo;print working directory.&rdquo; Your terminal squats in a directory
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">/home/wlt/example
+</span></span></code></pre></div><p><code>pwd</code> stands for &ldquo;print working directory.&rdquo; Your terminal squats in a directory
 when executing commands, and <code>pwd</code> prints the path to this directory. In this
 case, we&rsquo;re sitting in a directory called &ldquo;example&rdquo; that&rsquo;s nested within <code>wlt</code>,
 which in turn is nested within <code>home</code>, which is located in the root directory.</p>
 <p>Remember from before, the command <code>ls</code>? When it executes, it lists the files
 in your current working directory. So when I did:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ls
-a_directory/    another_directory/  file.txt    also_a_file.txt
-</code></pre></div><p>I&rsquo;m listing files in <code>example</code>. The path to the directory <code>a_directory</code> would be
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ ls
+</span></span><span class="line"><span class="cl">a_directory/    another_directory/  file.txt    also_a_file.txt
+</span></span></code></pre></div><p>I&rsquo;m listing files in <code>example</code>. The path to the directory <code>a_directory</code> would be
 <code>/home/wlt/example/a_directory</code>.</p>
 <p>A note on terminology, when talking about paths, we were really talking about
 <em>absolute paths</em>. An absolute path is one that describes the chain of
@@ -1276,68 +1161,68 @@ commands with the terminal.</p>
 <p>Remember that a command is nothing more than a simple program, like Microsoft
 Word or your Internet browser. To execute a program in a shell, you simply have
 to type its name and hit enter. Try it:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ notepad
-</code></pre></div><p>If you&rsquo;re on Windows, that command should have launched your Notepad text
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ notepad
+</span></span></code></pre></div><p>If you&rsquo;re on Windows, that command should have launched your Notepad text
 editor. If you&rsquo;re on Mac or Linux, try this instead:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ vi
-</code></pre></div><p>This command launches the Vim text editor (or it&rsquo;s predecessor, vi) To exit,
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ vi
+</span></span></code></pre></div><p>This command launches the Vim text editor (or it&rsquo;s predecessor, vi) To exit,
 type <code>:q</code>.</p>
 <p>To customize how a command behaves, you can add additional <em>options</em>. These
 are basically extra words or letters we can tag to the end of commands for
 bonus functionality. For example, recall from before we can use <code>ls</code> to list the
 contents of our current working directory.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ls
-a_directory/    another_directory/  file.txt    also_a_file.txt
-</code></pre></div><p>If I wanted a little more information about each file, I can do:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ls -l
-drwxr-xr-x <span class="m">2</span> wlt wlt <span class="m">4096</span> Feb  <span class="m">3</span>  5:58  a_directory/
-drwxr-xr-x <span class="m">2</span> wlt wlt <span class="m">4096</span> Feb  <span class="m">2</span>  19:40 another_directory/
--rw-r--r-- <span class="m">1</span> wlt wlt  <span class="m">156</span> Jan <span class="m">30</span>  8:01  also_a_file.txt
--rw-r--r-- <span class="m">1</span> wlt wlt   <span class="m">38</span> Feb  <span class="m">1</span>  12:52 file.txt
-</code></pre></div><p>The <code>-l</code> option stands for &ldquo;long,&rdquo; and it tells <code>ls</code> to list extra details about
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ ls
+</span></span><span class="line"><span class="cl">a_directory/    another_directory/  file.txt    also_a_file.txt
+</span></span></code></pre></div><p>If I wanted a little more information about each file, I can do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ ls -l
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> wlt wlt <span class="m">4096</span> Feb  <span class="m">3</span>  5:58  a_directory/
+</span></span><span class="line"><span class="cl">drwxr-xr-x <span class="m">2</span> wlt wlt <span class="m">4096</span> Feb  <span class="m">2</span>  19:40 another_directory/
+</span></span><span class="line"><span class="cl">-rw-r--r-- <span class="m">1</span> wlt wlt  <span class="m">156</span> Jan <span class="m">30</span>  8:01  also_a_file.txt
+</span></span><span class="line"><span class="cl">-rw-r--r-- <span class="m">1</span> wlt wlt   <span class="m">38</span> Feb  <span class="m">1</span>  12:52 file.txt
+</span></span></code></pre></div><p>The <code>-l</code> option stands for &ldquo;long,&rdquo; and it tells <code>ls</code> to list extra details about
 each file. Options will usually be preceded by a dash <code>-</code> or sometimes two
 if the option is in &ldquo;long form,&rdquo; i.e. typed out as in something like <code>--color</code>.</p>
 <p>Related to options, many commands take <em>arguments</em>. These are targets that a
 command acts on, and are often appended to the very end of a command. For
 example, <code>ls</code> can take an argument that specifies what file exactly to list:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ls -l a_directory
--rw-r--r-- <span class="m">1</span> wlt wlt  <span class="m">5</span> Feb  <span class="m">5</span> 20:07 deep_magic.txt
--rw-r--r-- <span class="m">1</span> wlt wlt <span class="m">12</span> Feb  <span class="m">5</span> 20:07 stuff.txt
-</code></pre></div><p>Note that I&rsquo;ve used the option <code>-l</code> again, giving us the long form of the data.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ ls -l a_directory
+</span></span><span class="line"><span class="cl">-rw-r--r-- <span class="m">1</span> wlt wlt  <span class="m">5</span> Feb  <span class="m">5</span> 20:07 deep_magic.txt
+</span></span><span class="line"><span class="cl">-rw-r--r-- <span class="m">1</span> wlt wlt <span class="m">12</span> Feb  <span class="m">5</span> 20:07 stuff.txt
+</span></span></code></pre></div><p>Note that I&rsquo;ve used the option <code>-l</code> again, giving us the long form of the data.</p>
 <p>It&rsquo;s also nifty to note that most terminals offer tab-completion. It allows you
 to type a partial name, then press tab to quickly fill out the rest. In typing the
 above command, for example, I simply typed <code>ls -l a_dir</code> then pressed tab. Magic!</p>
-<p>Another nifty command to learn is <code>cd</code>, which stands for &ldquo;change directory.&quot;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>
+<p>Another nifty command to learn is <code>cd</code>, which stands for &ldquo;change directory.&rdquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>
 It changes your current working directory to a different one. To use it,
 you specify your target directory as an argument. So if I do:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> a_directory
-</code></pre></div><p>I&rsquo;m now located in the directory <code>a_directory</code>. I could&rsquo;ve also specified
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ <span class="nb">cd</span> a_directory
+</span></span></code></pre></div><p>I&rsquo;m now located in the directory <code>a_directory</code>. I could&rsquo;ve also specified
 absolute paths:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># with an absolute path:</span>
-$ <span class="nb">cd</span> /home/wlt/example/a_directory
-
-<span class="c1"># with a relative path:</span>
-$ <span class="nb">cd</span> a_directory
-</code></pre></div><p>There&rsquo;s a special file called <code>..</code> (two periods) in every single directory
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># with an absolute path:</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> /home/wlt/example/a_directory
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># with a relative path:</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> a_directory
+</span></span></code></pre></div><p>There&rsquo;s a special file called <code>..</code> (two periods) in every single directory
 that links to the directory above. If I <code>cd</code> into it, I change my current
 directory to the one above. For example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> a_directory
-$ <span class="nb">cd</span> ..
-<span class="c1"># I&#39;m back where I started!</span>
-</code></pre></div><p>You can chain together <code>..</code>'s to rise multiple levels up the hierarchy at once:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">pwd</span>
-/home/wlt/example
-$ <span class="nb">cd</span> ../..
-$ <span class="nb">pwd</span>
-/home
-</code></pre></div><p>There&rsquo;s another special symbol called a tilde <code>~</code>. It should be on the
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ <span class="nb">cd</span> a_directory
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> ..
+</span></span><span class="line"><span class="cl"><span class="c1"># I&#39;m back where I started!</span>
+</span></span></code></pre></div><p>You can chain together <code>..</code>&rsquo;s to rise multiple levels up the hierarchy at once:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">/home/wlt/example
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> ../..
+</span></span><span class="line"><span class="cl">$ <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">/home
+</span></span></code></pre></div><p>There&rsquo;s another special symbol called a tilde <code>~</code>. It should be on the
 upper left-hand side of your keyboard. The tilde represents your <em>home directory</em>,
 a special directory set aside just for you that contains all your personal
 files. To get there, do</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> ~
-</code></pre></div><p>Like with other files, you can chain the tilde into paths:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> ~/a_directory
-</code></pre></div><p>Play around with <code>cd</code>, <code>ls</code>, and <code>pwd</code> in your shell until you get comfortable
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ <span class="nb">cd</span> ~
+</span></span></code></pre></div><p>Like with other files, you can chain the tilde into paths:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ <span class="nb">cd</span> ~/a_directory
+</span></span></code></pre></div><p>Play around with <code>cd</code>, <code>ls</code>, and <code>pwd</code> in your shell until you get comfortable
 using them. They will be the bread and butter of your workflow, allowing you to
 swim smoothly through your filesystem with minimal effort. It may feel awkward
 now, but soon you&rsquo;ll be faster with your terminal than the graphical
@@ -1345,46 +1230,46 @@ file explorers you&rsquo;re used to.</p>
 <h2 id="other-useful-commands">Other useful commands</h2>
 <p>A few last ones to know before we wrap up:</p>
 <p>Moving files: <code>mv</code>. It takes two arguments: a source and a destination.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ mv file.txt a_directory
-</code></pre></div><p><code>file.txt</code> is now located in <code>a_directory</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ mv file.txt a_directory
+</span></span></code></pre></div><p><code>file.txt</code> is now located in <code>a_directory</code>.</p>
 <p><code>mv</code> is also the most common way to rename files.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ mv file.txt awesome.txt
-</code></pre></div><p>Because <code>awesome.txt</code> did not exist, <code>mv</code> went ahead and created a new file
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ mv file.txt awesome.txt
+</span></span></code></pre></div><p>Because <code>awesome.txt</code> did not exist, <code>mv</code> went ahead and created a new file
 called <code>awesome.txt</code> and transferred the contents of <code>file.txt</code> over,
 effectively renaming the file.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <p>Copying files: <code>cp</code>. It also takes two arguments: a source and a destination.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ cp file.txt a_directory
-</code></pre></div><p>There is now a copy of <code>file.txt</code> in <code>a_directory</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ cp file.txt a_directory
+</span></span></code></pre></div><p>There is now a copy of <code>file.txt</code> in <code>a_directory</code>.</p>
 <p>If I want to copy an entire directory, I have to specify an extra option
 <code>-r</code>, which stands for &ldquo;recursive.&rdquo;</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ cp -r a_directory another_directory
-</code></pre></div><p>If I wanted to copy a file or directory into my current working directory, I
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ cp -r a_directory another_directory
+</span></span></code></pre></div><p>If I wanted to copy a file or directory into my current working directory, I
 can use the special symbol <code>.</code> <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ cp /some/distant/file.txt .
-</code></pre></div><p>Making directories: <code>mkdir</code>. It takes one argument: the name of the new directory.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ mkdir new_directory
-</code></pre></div><p>There&rsquo;s is now a fresh <code>new_directory</code> in our workspace.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ cp /some/distant/file.txt .
+</span></span></code></pre></div><p>Making directories: <code>mkdir</code>. It takes one argument: the name of the new directory.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ mkdir new_directory
+</span></span></code></pre></div><p>There&rsquo;s is now a fresh <code>new_directory</code> in our workspace.</p>
 <p>Removing files: <code>rm</code>. It takes one argument: the name of the file to be removed.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ rm file.txt
-</code></pre></div><p><code>file.txt</code> has now been consigned to the void.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ rm file.txt
+</span></span></code></pre></div><p><code>file.txt</code> has now been consigned to the void.</p>
 <p>To remove directories, you&rsquo;ll again need to specify a <code>-r</code> to perform the operation
 recursively.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ rm -r a_directory
-</code></pre></div><p>And that&rsquo;s probably <em>the most dangerous</em> command I&rsquo;ve taught you. One careless
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ rm -r a_directory
+</span></span></code></pre></div><p>And that&rsquo;s probably <em>the most dangerous</em> command I&rsquo;ve taught you. One careless
 keystroke and your project is lost forever (<a href="https://en.wikipedia.org/wiki/File_carving">almost</a>).
 A much safer alternative is <code>rmdir</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ rmdir a_directory
-</code></pre></div><p>but the directory in question must be empty in order for the command to operate.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ rmdir a_directory
+</span></span></code></pre></div><p>but the directory in question must be empty in order for the command to operate.
 It&rsquo;s an extra safety-precaution to ensure you don&rsquo;t do anything stupid, and I
 wholeheartedly advocate its use. But I get lazy too, and sometimes it&rsquo;s just
 easier to <code>rm -r</code> things into oblivion.</p>
 <p>And finally, probably the most useful command you will ever use, <code>man</code>. It&rsquo;s
 short for &ldquo;manual&rdquo; and gives you a help page on any command. Forget how to use
 <code>ls</code>? No problem:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ man ls
-</code></pre></div><p>Wanna learn more about <code>man</code> itself? It&rsquo;s got you covered:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ man man
-</code></pre></div><p>These basic commands will probably be about 75 percent of everything you do
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ man ls
+</span></span></code></pre></div><p>Wanna learn more about <code>man</code> itself? It&rsquo;s got you covered:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ man man
+</span></span></code></pre></div><p>These basic commands will probably be about 75 percent of everything you do
 on a terminal. Again, things will feel awkward and slow at first, but give it
 time. Before you know it, you&rsquo;ll be a blazing wizard at the command line.</p>
 <p>If you&rsquo;re interested in learning more, there&rsquo;s tons of great resources out
@@ -1409,43 +1294,43 @@ the post below as soon as it&rsquo;s written.<sup id="fnref:7"><a href="#fn:7" c
 <h2 id="footnotes">Footnotes</h2>
 <p>Here are some stray thoughts that didn&rsquo;t make it into the normal flow of prose.
 These are completely optional, but may add color to your reading.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>That&rsquo;s actually a half-lie. I got to school in New York. There&rsquo;s plenty of
 Financial Engineering majors on campus learning CS for Wall Street, but of
-the dedicated, hard-core software folks I know, we&rsquo;re all in it for the love. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+the dedicated, hard-core software folks I know, we&rsquo;re all in it for the love.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>In fact, there&rsquo;s a programming language out there that looks exactly like
-writing a recipe. It&rsquo;s called <a href="http://www.dangermouse.net/esoteric/chef.html">chef</a>. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+writing a recipe. It&rsquo;s called <a href="http://www.dangermouse.net/esoteric/chef.html">chef</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>I had a teacher once that used Vim for <em>everything</em>. Lecture notes. Exams.
 Homework. Love letters to his wife. You name it, he used Vim to write it.</p>
-<p>Maybe not actually the love letters, but everything else, I promise. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Maybe not actually the love letters, but everything else, I promise.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>The commands I&rsquo;ll outlining are with a shell called Bash. It&rsquo;s popular on
 Linux and macOS. If you&rsquo;re using Windows&rsquo; PowerShell, the commands should
-still work, but you can find their proper equivalents <a href="http://ilovepowershell.com/2011/11/03/list-of-top-powershell-alias/">here</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+still work, but you can find their proper equivalents <a href="http://ilovepowershell.com/2011/11/03/list-of-top-powershell-alias/">here</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>BE CAREFUL THOUGH! If <code>awesome.txt</code> really did exist before, I would have
-overwritten its original content with that of <code>file.txt</code>. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+overwritten its original content with that of <code>file.txt</code>.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>In summary, there are 3 special symbols we talked about: <code>..</code>, <code>~</code>, and <code>.</code>.
 Each of them are like a shorthand for a path. <code>..</code> represents the directory
 above. <code>~</code> represents the home directory, and <code>.</code> represents the current
-working directory. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+working directory.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:7" role="doc-endnote">
-<p>Still on its way, I promise! <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:7">
+<p>Still on its way, I promise!&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>]]></content>
+</div>]]></content>
 		</item>
 		
 		<item>
@@ -1466,9 +1351,8 @@ desks are veritable miracles of delicate wiring and clever engineering. For the
 next few minutes, I&rsquo;ll take you on a whirlwind tour: from simple 1&rsquo;s and 0&rsquo;s to
 the whole, hulking beast that we call a computer.</p>
 <p><em>Audience: anyone and everyone</em></p>
-<p><figure>
-    <img src="/images/from-1011-to-laptop/iconic_computer.png"
-         alt="Iconic computer"/> <figcaption>
+<p><figure><img src="/images/from-1011-to-laptop/iconic_computer.png"
+         alt="Iconic computer"/><figcaption>
             <p>Source: <a href="https://en.wikipedia.org/wiki/Desktop_computer">https://en.wikipedia.org/wiki/Desktop_computer</a></p>
         </figcaption>
 </figure>
@@ -1482,7 +1366,7 @@ of electricity, performing calculations that might take you a month &mdash; in <
 <h2 id="on-and-off">On and off</h2>
 <p>Consider the modern household light-switch. Flick it up. Light! Flick it down.
 Dark! Profound stuff, I know. Let&rsquo;s put it in at table:</p>
-<pre><code>                            switch  |  light
+<pre tabindex="0"><code>                            switch  |  light
                             --------|---------
                             up      |  on
                             down    |  off
@@ -1490,21 +1374,21 @@ Dark! Profound stuff, I know. Let&rsquo;s put it in at table:</p>
 up, it turns the light <strong>off</strong>. When you flick it down, it turns the light <strong>on</strong>.
 Basically the reverse of our original light switch. Let&rsquo;s call it a <em>&ldquo;NOT switch&rdquo;</em>,
 because it does the opposite of our original. It&rsquo;s table looks like this:</p>
-<pre><code>                            switch  |  light
+<pre tabindex="0"><code>                            switch  |  light
                             --------|---------
                             up      |  off
                             down    |  on
 </code></pre><p>My hands are getting a little tired typing &ldquo;up&rdquo; and &ldquo;off&rdquo;. Why don&rsquo;t we use a
 shorthand: let&rsquo;s say &ldquo;1&rdquo; means &ldquo;up&rdquo; or &ldquo;on,&rdquo; and &ldquo;0&rdquo; means &ldquo;down&rdquo; or &ldquo;off&rdquo;? Our
 NOT switch table might look like this:</p>
-<pre><code>                            switch  |  light
+<pre tabindex="0"><code>                            switch  |  light
                             --------|---------
                             1       |  0
                             0       |  1
 </code></pre><p>Let&rsquo;s do something fancier. Say we have two switches connected to a single
 light-bulb: switch A and B. When A <strong>and</strong> B are flicked up, the light turns
 on. Otherwise, the light stays off. Let&rsquo;s call it an <em>&ldquo;AND switch&rdquo;</em>:</p>
-<pre><code>                            A | B |  light
+<pre tabindex="0"><code>                            A | B |  light
                             --|---|---------
                             0 | 0 |   0
                             0 | 1 |   0
@@ -1513,7 +1397,7 @@ on. Otherwise, the light stays off. Let&rsquo;s call it an <em>&ldquo;AND switch
 </code></pre><p>Now what if we have the opposite? If A <strong>or</strong> B (or both) are flicked up, the
 light turns on. Otherwise, when neither switch is up, the light stays off. Why
 don&rsquo;t we call this one an <em>&ldquo;OR switch&rdquo;</em>:</p>
-<pre><code>                            A | B |  light
+<pre tabindex="0"><code>                            A | B |  light
                             --|---|---------
                             0 | 0 |   0
                             0 | 1 |   1
@@ -1537,12 +1421,12 @@ what can we actually do with just 1&rsquo;s and 0&rsquo;s? What about letters? W
 Images?</p>
 <p>Let&rsquo;s start easy and look at just numbers. We have 0. We have 1. What about the
 other 8 digits? I have a clever idea. Check this out:</p>
-<pre><code>0 | 1 | 2 | 3  |  4  |  5  |  6  |  7  |  8   |  9   |  10
+<pre tabindex="0"><code>0 | 1 | 2 | 3  |  4  |  5  |  6  |  7  |  8   |  9   |  10
 0 | 1 | 10| 11 | 100 | 101 | 110 | 111 | 1000 | 1001 | 1010
 </code></pre><p>0 matches 0 and 1 matches 1. So far so good. But 2 = 10???</p>
 <p>The key is to dissect the value &ldquo;10&rdquo; into component pieces. The number itself
 is composed of two digits, a 1 on the right and a 0 on the left. Imagine that
-the &ldquo;1&rdquo; on the right gets associated with $2^1$, and the &ldquo;0&rdquo;&rdquo; on the left
+the &ldquo;1&rdquo; on the right gets associated with $2^1$, and the &ldquo;0&quot;&rdquo; on the left
 gets associated with $2^0$. Then let&rsquo;s compute:</p>
 <p>$$\mathbf{1} \times 2^1 + \mathbf{0} \times 2^0 = \mathbf{2}$$</p>
 <p>The bolded values on the left are smooshed together to form our representation
@@ -1586,9 +1470,8 @@ is to assign 3 numbers to each pixel, where the numbers represent the
 therefore also with binary). I&rsquo;ll leave it up to Google to show you how.</p>
 <h2 id="components">Components</h2>
 <p>We have logic gates. We have binary. We&rsquo;re now ready to build the actual beast.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
-<figure>
-    <img src="/images/from-1011-to-laptop/von_neumann.png"
-         alt="Von neumann"/> <figcaption>
+<figure><img src="/images/from-1011-to-laptop/von_neumann.png"
+         alt="Von neumann"/><figcaption>
             <p>Source: <a href="https://en.wikipedia.org/wiki/Von_Neumann_architecture">https://en.wikipedia.org/wiki/Von_Neumann_architecture</a></p>
         </figcaption>
 </figure>
@@ -1602,9 +1485,8 @@ touch on it a little, but will save the meat for a future post.</p>
 <h3 id="processor">Processor</h3>
 <p>The CPU (and memory) can be expressed as one, giant, virtually-unimaginably
 complex web of AND, OR, and NOT logic gates. Check it out:</p>
-<figure>
-    <img src="/images/from-1011-to-laptop/complicated_schematic.png"
-         alt="Schematic"/> <figcaption>
+<figure><img src="/images/from-1011-to-laptop/complicated_schematic.png"
+         alt="Schematic"/><figcaption>
             <p>Source: <a href="http://www.sciencegeek.net/Biology/Presentations/Respiration/">http://www.sciencegeek.net/Biology/Presentations/Respiration/</a></p>
         </figcaption>
 </figure>
@@ -1618,9 +1500,8 @@ using simple components to build more complex systems, working up until we&rsquo
 got a functioning laptop.</p>
 <p>One simple component in the processor is called the &ldquo;adder&rdquo;. It adds. Go figure.
 And it looks something like this:</p>
-<figure>
-    <img src="/images/from-1011-to-laptop/adder.png"
-         alt="Adder"/> <figcaption>
+<figure><img src="/images/from-1011-to-laptop/adder.png"
+         alt="Adder"/><figcaption>
             <p>Source: me</p>
         </figcaption>
 </figure>
@@ -1641,9 +1522,8 @@ The magic ingredient that boosts us into Computerhood is memory.</p>
 It&rsquo;s made of two NOR gates (like OR, with a NOT gate in front) hooked together
 cleverly so that the circuit &ldquo;remembers&rdquo; the last value inputted. Below is a
 neat graphic stolen from the Wikipedia page illustrating how this works:</p>
-<figure>
-    <img src="/images/from-1011-to-laptop/latch.gif"
-         alt="Flip flop"/> <figcaption>
+<figure><img src="/images/from-1011-to-laptop/latch.gif"
+         alt="Flip flop"/><figcaption>
             <p>Source: <a href="https://en.wikipedia.org/wiki/Flip-flop_(electronics)">https://en.wikipedia.org/wiki/Flip-flop_(electronics)</a></p>
         </figcaption>
 </figure>
@@ -1678,9 +1558,8 @@ a human, WTF. Your TI-84 would be practically useless if all it gave was binary.
 called decoders and encoders.</p>
 <p>A decoder &ldquo;decodes&rdquo; binary into human symbols. It&rsquo;s a box that looks something
 like this:</p>
-<figure>
-    <img src="/images/from-1011-to-laptop/decoder.png"
-         alt="Decoder"/> <figcaption>
+<figure><img src="/images/from-1011-to-laptop/decoder.png"
+         alt="Decoder"/><figcaption>
             <p>Source: me</p>
         </figcaption>
 </figure>
@@ -1710,7 +1589,7 @@ software soul to bring our digital Frankenstein to life.</p>
 a computer can only understand binary. To tell the CPU to
 do anything, you need to give the instructions in binary. Want to print
 &ldquo;Hello World&rdquo; to the screen? It might look like this:</p>
-<pre><code>1101010100101010101010010101100101011111101010`11111100010001001
+<pre tabindex="0"><code>1101010100101010101010010101100101011111101010`11111100010001001
 0000110101010010101010101001011101010100101010101010011111111111
 0000000000001111111010101001010101010100101011110101010010101010
 1110000000000011111110000000000000000001111111110101010100101111
@@ -1722,7 +1601,7 @@ any self-respecting programmer to try.<sup id="fnref:10"><a href="#fn:10" class=
 of hand writing 1&rsquo;s and 0&rsquo;s, they used short mnemonics instead. A special
 program called an <em>assembler</em> then converts the mnemonics to machine code. It looks
 something like this:</p>
-<pre><code>addi    $a0, $a0, 4
+<pre tabindex="0"><code>addi    $a0, $a0, 4
 addi    $a1, $a1, 4
 jal AddAndVerify
 
@@ -1735,12 +1614,12 @@ addi    $sp, $sp, 16
 <p>The real jump came when computer scientists invented <em>compilers</em>. These are
 special programs that take a human-readable text file, and &ldquo;compiles&rdquo; it into
 machine code or assembly. For example, you might write something like:</p>
-<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio&gt;</span><span class="cp">
-</span><span class="cp"></span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">print</span><span class="p">(</span><span class="s">&#34;Hello world!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div><p>It&rsquo;s written in a programming language called &ldquo;C.&rdquo; <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> Feed it to a compiler,
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">print</span><span class="p">(</span><span class="s">&#34;Hello world!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>It&rsquo;s written in a programming language called &ldquo;C.&rdquo; <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> Feed it to a compiler,
 and we&rsquo;ll get thousands of lines worth of 1&rsquo;s and 0&rsquo;s that will tell our
 laptop to print &ldquo;Hello world!&rdquo;</p>
 <p>If you&rsquo;re familiar with other languages like Java, the principle is the same.
@@ -1765,9 +1644,8 @@ an operating system.</p>
 <p>Huh.</p>
 <p>You need an OS to use the laptop, but you need a laptop to write the OS.</p>
 <p>So which came first?</p>
-<figure>
-    <img src="/images/from-1011-to-laptop/chicken_egg.jpg"
-         alt="chicken and egg"/> <figcaption>
+<figure><img src="/images/from-1011-to-laptop/chicken_egg.jpg"
+         alt="chicken and egg"/><figcaption>
             <p>Source: <a href="http://signlanguageco.com/the-chicken-and-the-egg-and-the-interpreter/">http://signlanguageco.com/the-chicken-and-the-egg-and-the-interpreter/</a></p>
         </figcaption>
 </figure>
@@ -1800,10 +1678,10 @@ art. There&rsquo;s engineering. There&rsquo;s fun. Google is an awesome place to
 <p>These footnotes contain information above and beyond the information presented
 in text. They assume a more technical background than the main article, but with
 the power of Google, I&rsquo;m confident anyone can get the gist.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>How did I get these numbers? Let&rsquo;s assume a super basic processor (by 2019
 standards) that trucks along at a mighty 330 thousand instructions per second.
 This number is stolen from the <a href="https://en.wikipedia.org/wiki/Intel_8086">Intel 8086</a>
@@ -1820,9 +1698,9 @@ instructions. Assuming no breaks, no food, no sleep, this is equal to about
 <strong>19 days</strong>.</p>
 <p>Also keep in mind the 8086 processor was top-of-the-line &mdash; in 1978. The processor
 in your phone is several orders of magnitude faster. What takes your smartphone one
-second to crunch, might very well take you more than a year. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+second to crunch, might very well take you more than a year.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>In total, there are 7 commonly used logic gates: the three we covered, plus
 NAND, NOR, XOR, and XNOR. All gates with a big &ldquo;N&rdquo; mean they&rsquo;re formed by
 combining the respective gate with a NOT. So a NAND would be an AND gate
@@ -1833,54 +1711,54 @@ it triggers only when one input is <em>exclusively</em> turned one.</p>
 of the other four.</p>
 <p>Bonus fact: using exclusively NAND gates, you can construct a NOT, AND, and
 OR. Same goes for NOR. The implication is that any and all circuits built
-with logic gates can be constructed solely from NAND or NOR gates. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+with logic gates can be constructed solely from NAND or NOR gates.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p><em>Binary digit</em>: you might have heard of them, the name is sometimes shortened
-to just <em>&ldquo;bits&rdquo;</em> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+to just <em>&ldquo;bits&rdquo;</em>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>Our familiar &ldquo;0&rdquo; through &ldquo;9&rdquo; counting system is called <em>decimal</em>. Two other
 common systems to know, especially if you&rsquo;re in computer science, are
 <em>octal</em> (8 digits &ldquo;0&rdquo; through &ldquo;7&rdquo;) and &ldquo;hexadecimal&rdquo; (16 digits &ldquo;0&rdquo; through
 &ldquo;F&rdquo;). Because hexadecimal requires more symbols than our 10-symbol counting
 system can handle, values &ldquo;10&rdquo; through &ldquo;15&rdquo; are represented using the letters
-&ldquo;A&rdquo; through &ldquo;F&rdquo; instead. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+&ldquo;A&rdquo; through &ldquo;F&rdquo; instead.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
-<p>Pun very much intended. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:5">
+<p>Pun very much intended.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>For the sake of space, I&rsquo;ll skip over many of the nitty-gritty details behind
 the systems I&rsquo;ll be describing. If you&rsquo;re super into this stuff, I highly
-recommend <a href="https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319">Code by Charles Petzold</a>. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+recommend <a href="https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319">Code by Charles Petzold</a>.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:7" role="doc-endnote">
+<li id="fn:7">
 <p>How you wire logic gates together to pull off this feat is a little beyond us.
 If your curious, you can learn about those details on <a href="https://en.wikipedia.org/wiki/Adder_(electronics)">Wikipedia</a>.
 If you decide to learn more, you&rsquo;ll notice that I&rsquo;ve also simplified the
 picture of the adder. More correctly, it should include inputs and
-outputs for the carry bits. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+outputs for the carry bits.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:8" role="doc-endnote">
-<p>A guy once made an ALU with redstone in Minecraft. Check it out: <a href="https://www.youtube.com/watch?v=LGkkyKZVzug">https://www.youtube.com/watch?v=LGkkyKZVzug</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:8">
+<p>A guy once made an ALU with redstone in Minecraft. Check it out: <a href="https://www.youtube.com/watch?v=LGkkyKZVzug">https://www.youtube.com/watch?v=LGkkyKZVzug</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:9" role="doc-endnote">
+<li id="fn:9">
 <p>In practice, encoders and decoders are fundamental circuits used in far more
 than just I/O. In fact, they feature prominently in your CPU&rsquo;s architecture,
-and are crucial building blocks of computer design. <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+and are crucial building blocks of computer design.&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:10" role="doc-endnote">
+<li id="fn:10">
 <p>Not entirely true. Super-caliber hackers will sometimes write machine code
-to slip an exploit around a security system. <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+to slip an exploit around a security system.&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:11" role="doc-endnote">
+<li id="fn:11">
 <p>C, by the way, is the language that runs the world. Literally. Your phone,
 your laptop, embedded systems you never knew existed, all of it runs on
-software written mostly in C (or it&rsquo;s controversial child, C++). <a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+software written mostly in C (or it&rsquo;s controversial child, C++).&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>]]></content>
+</div>]]></content>
 		</item>
 		
 		<item>
@@ -1897,9 +1775,8 @@ my future self) through the process.&lt;/p&gt;
 some pieces out, so I&rsquo;ve put together this document to guide anyone else (and
 my future self) through the process.</p>
 <p><em>Audience: tech-oriented folks comfortable on the command line</em></p>
-<figure>
-    <img src="/images/getting-started-with-jekyll/jekyll_logo.png"
-         alt="jekyll"/> <figcaption>
+<figure><img src="/images/getting-started-with-jekyll/jekyll_logo.png"
+         alt="jekyll"/><figcaption>
             <p>Source: <a href="https://github.com/jekyll/brand">https://github.com/jekyll/brand</a></p>
         </figcaption>
 </figure>
@@ -1917,70 +1794,70 @@ may vary.</p>
 <p><strong>EDIT:</strong> I no longer use Jekyll and have since switched to
 <a href="https://gohugo.io/">Hugo</a>, a static generator written in Go. It&rsquo;s faster,
 cleaner, the documentation is better, and an all around a pleasure to use.
-Highly recommend. For more updates and hype, check out <a href="https://wlt.coffee/posts/2020-05-10-welcome-to-the-new-wlt/">this post</a>.</p>
+Highly recommend. For more updates and hype, check out <a href="https://wlt.coffee/archive/2020-05-10-welcome-to-the-new-wlt/">this post</a>.</p>
 <h2 id="initial-steps">Initial steps</h2>
 <p>Jekyll is written in Ruby. To use it, you&rsquo;ll need a <a href="https://www.ruby-lang.org/en/downloads/">Ruby installation</a>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Me, on Arch Linux</span>
-$ sudo pacman -S ruby
-
-<span class="c1"># Debian, Ubuntu</span>
-$ sudo apt install ruby
-
-<span class="c1"># Mac</span>
-$ brew install ruby
-</code></pre></div><p>To verify your installation, go ahead and check:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ ruby --version
-</code></pre></div><p>Next, we&rsquo;ll need Bundler:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ gem install bundler
-</code></pre></div><p>In Ruby, <a href="https://en.wikipedia.org/wiki/RubyGems">gems</a> are packaged pieces of code,
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># Me, on Arch Linux</span>
+</span></span><span class="line"><span class="cl">$ sudo pacman -S ruby
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Debian, Ubuntu</span>
+</span></span><span class="line"><span class="cl">$ sudo apt install ruby
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Mac</span>
+</span></span><span class="line"><span class="cl">$ brew install ruby
+</span></span></code></pre></div><p>To verify your installation, go ahead and check:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ ruby --version
+</span></span></code></pre></div><p>Next, we&rsquo;ll need Bundler:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ gem install bundler
+</span></span></code></pre></div><p>In Ruby, <a href="https://en.wikipedia.org/wiki/RubyGems">gems</a> are packaged pieces of code,
 like .jar files for Java or modules for Python. Bundler is a utility that
 makes managing gems possible with minimum teeth-gnashing and hair loss.</p>
 <p>Bundler itself will have been installed in your gem user installation directory.
 To see where that is, do:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ gem env
-RubyGems Environment:
-  - RUBYGEMS VERSION: 2.7.7
-  - RUBY VERSION: 2.5.3 <span class="o">(</span>2018-10-18 patchlevel 105<span class="o">)</span> <span class="o">[</span>x86_64-linux<span class="o">]</span>
-  - INSTALLATION DIRECTORY: /usr/lib/ruby/gems/2.5.0
-  - USER INSTALLATION DIRECTORY: /home/username/.gem/ruby/2.5.0
-<span class="c1"># ... and lots more</span>
-</code></pre></div><p>And that line at the bottom that says &ldquo;USER INSTALLATION DIRECTORY&rdquo; is your
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ gem env
+</span></span><span class="line"><span class="cl">RubyGems Environment:
+</span></span><span class="line"><span class="cl">  - RUBYGEMS VERSION: 2.7.7
+</span></span><span class="line"><span class="cl">  - RUBY VERSION: 2.5.3 <span class="o">(</span>2018-10-18 patchlevel 105<span class="o">)</span> <span class="o">[</span>x86_64-linux<span class="o">]</span>
+</span></span><span class="line"><span class="cl">  - INSTALLATION DIRECTORY: /usr/lib/ruby/gems/2.5.0
+</span></span><span class="line"><span class="cl">  - USER INSTALLATION DIRECTORY: /home/username/.gem/ruby/2.5.0
+</span></span><span class="line"><span class="cl"><span class="c1"># ... and lots more</span>
+</span></span></code></pre></div><p>And that line at the bottom that says &ldquo;USER INSTALLATION DIRECTORY&rdquo; is your
 ticket. Add that file path to your environment PATH variable to use Bundler
 on the command line.</p>
 <p>For me, in place of [USER INSTALLATION DIRECTORY],
 I&rsquo;d put <code>/home/username/.gem/ruby/2.5.0</code>. Note the <code>/bin</code> appended to the path:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Using bash (note: you do not need an &#34;export&#34;):</span>
-$ <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>/bin
-
-<span class="c1"># Using fish, my preferred shell:</span>
-$ <span class="nb">set</span> -gx PATH <span class="nv">$PATH</span> <span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>/bin
-</code></pre></div><p>To make the change permanent, add that command to your <code>.profile</code> (or <code>.bash_profile</code>),
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># Using bash (note: you do not need an &#34;export&#34;):</span>
+</span></span><span class="line"><span class="cl">$ <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>/bin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Using fish, my preferred shell:</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">set</span> -gx PATH <span class="nv">$PATH</span> <span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>/bin
+</span></span></code></pre></div><p>To make the change permanent, add that command to your <code>.profile</code> (or <code>.bash_profile</code>),
 <code>config.fish</code>, or whatever you use for setting environment variables. Restart your
 shell to allow the change to take effect.</p>
 <h2 id="installing-jekyll">Installing Jekyll</h2>
 <p>Now, we&rsquo;re in shape for grabbing Jekyll. In preparation, we need to tell Bundler
 to install gems in the same default directory as RubyGem:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle config path <span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>
-</code></pre></div><p>Next, Bundler needs a special file called a <code>Gemfile</code> to begin installing gems.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ bundle config path <span class="o">[</span>USER INSTALLATION DIRECTORY<span class="o">]</span>
+</span></span></code></pre></div><p>Next, Bundler needs a special file called a <code>Gemfile</code> to begin installing gems.
 Go ahead and make one and copy the following into it:</p>
-<pre><code>source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
+<pre tabindex="0"><code>source &#39;https://rubygems.org&#39;
+gem &#39;github-pages&#39;, group: :jekyll_plugins
 </code></pre><p>Then to execute, in the <strong>same directory as the <code>Gemfile</code></strong>, do:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle install
-Fetching gem metadata from https://rubygems.org/............
-Fetching version metadata from https://rubygems.org/...
-Fetching dependency metadata from https://rubygems.org/..
-Resolving dependencies...
-<span class="c1"># ... and lots more ...</span>
-</code></pre></div><p>Now sit back and relax. It&rsquo;ll take a few minutes to run, installing Jekyll along
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ bundle install
+</span></span><span class="line"><span class="cl">Fetching gem metadata from https://rubygems.org/............
+</span></span><span class="line"><span class="cl">Fetching version metadata from https://rubygems.org/...
+</span></span><span class="line"><span class="cl">Fetching dependency metadata from https://rubygems.org/..
+</span></span><span class="line"><span class="cl">Resolving dependencies...
+</span></span><span class="line"><span class="cl"><span class="c1"># ... and lots more ...</span>
+</span></span></code></pre></div><p>Now sit back and relax. It&rsquo;ll take a few minutes to run, installing Jekyll along
 with a whole hog of useful plugins for the Jekyll + GitHub marriage.</p>
 <p>After installation completes, make a new blog site and <code>cd</code> into it:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle <span class="nb">exec</span> jekyll new myblog
-<span class="c1"># ... output from jekyll ...</span>
-$ <span class="nb">cd</span> myblog
-</code></pre></div><p>Note that we&rsquo;re now in the directory <code>myblog</code>. To test your newly minted blog, do:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ bundle <span class="nb">exec</span> jekyll serve
-</code></pre></div><p>This command will compile your Jekyll files into fully-formed HTML, place them in the
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ bundle <span class="nb">exec</span> jekyll new myblog
+</span></span><span class="line"><span class="cl"><span class="c1"># ... output from jekyll ...</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> myblog
+</span></span></code></pre></div><p>Note that we&rsquo;re now in the directory <code>myblog</code>. To test your newly minted blog, do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ bundle <span class="nb">exec</span> jekyll serve
+</span></span></code></pre></div><p>This command will compile your Jekyll files into fully-formed HTML, place them in the
 directory <code>_site</code>, and host these files off a development server. To check
 out the website, open your favorite browser and navigate to <a href="http://localhost:4000">http://localhost:4000</a>.</p>
 <p>Note: remember to prepend <code>bundle exec</code> to every <code>jekyll</code> command you execute.

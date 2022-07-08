@@ -1,195 +1,122 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://wlt.coffee/posts/2020-10-19-bayz-live-coding/</loc>
-    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/music/</loc>
-    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/posts/</loc>
-    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/project/</loc>
-    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/</loc>
-    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/education/</loc>
-    <lastmod>2020-05-23T16:25:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/</loc>
-    <lastmod>2020-05-23T16:25:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/tech/</loc>
-    <lastmod>2020-05-23T16:25:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/support-me/</loc>
-    <lastmod>2020-05-11T10:41:51-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/</loc>
-    <lastmod>2020-05-11T10:41:51-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/announcement/</loc>
-    <lastmod>2020-05-10T10:42:22-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/personal/</loc>
-    <lastmod>2020-05-10T10:42:22-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/posts/2020-05-10-welcome-to-the-new-wlt/</loc>
-    <lastmod>2020-05-10T10:42:22-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/</loc>
-    <lastmod>2019-12-28T13:25:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/curio/</loc>
-    <lastmod>2019-08-26T12:36:54+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/posts/2019-08-26-smile/</loc>
-    <lastmod>2019-08-26T12:36:54+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/</loc>
-    <lastmod>2019-02-22T21:05:54+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/</loc>
-    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/</loc>
-    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/howto/</loc>
-    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/demo/</loc>
-    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/examples/</loc>
-    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/image/</loc>
-    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/examples/the-figure-shortcode/</loc>
-    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/examples/post-with-featured-image/</loc>
-    <lastmod>2018-10-01T16:15:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/tags/typography/</loc>
-    <lastmod>2018-09-29T11:36:33+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/examples/typography/</loc>
-    <lastmod>2018-09-29T11:36:33+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wlt.coffee/examples/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://wlt.coffee/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/posts/2020-10-19-bayz-live-coding/</loc>
+    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/music/</loc>
+    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/posts/</loc>
+    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/project/</loc>
+    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/</loc>
+    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/</loc>
+    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/education/</loc>
+    <lastmod>2020-05-23T16:25:14-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/</loc>
+    <lastmod>2020-05-23T16:25:14-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/tech/</loc>
+    <lastmod>2020-05-23T16:25:14-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/support-me/</loc>
+    <lastmod>2020-05-11T10:41:51-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/announcement/</loc>
+    <lastmod>2020-05-10T10:42:22-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/archive/</loc>
+    <lastmod>2020-05-10T10:42:22-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/personal/</loc>
+    <lastmod>2020-05-10T10:42:22-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/archive/2020-05-10-welcome-to-the-new-wlt/</loc>
+    <lastmod>2020-05-10T10:42:22-05:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/posts/2019-12-28-everything-you-need-to-know-about-webtech/</loc>
+    <lastmod>2019-12-28T13:25:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/curio/</loc>
+    <lastmod>2019-08-26T12:36:54+00:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/archive/2019-08-26-smile/</loc>
+    <lastmod>2019-08-26T12:36:54+00:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/posts/2019-02-22-programming-for-n00bs-an-introduction-to-our-craft/</loc>
+    <lastmod>2019-02-22T21:05:54+00:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/posts/2019-01-12-from-1011-to-laptop-how-to-build-a-computer-from-binary/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/</loc>
+    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/howto/</loc>
+    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/demo/</loc>
+    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/examples/</loc>
+    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/image/</loc>
+    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/examples/the-figure-shortcode/</loc>
+    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/examples/post-with-featured-image/</loc>
+    <lastmod>2018-10-01T16:15:09+08:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/typography/</loc>
+    <lastmod>2018-09-29T11:36:33+08:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/examples/typography/</loc>
+    <lastmod>2018-09-29T11:36:33+08:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/examples/creating-a-new-theme/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wlt.coffee/examples/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wlt.coffee/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wlt.coffee/examples/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wlt.coffee/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wlt.coffee/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wlt.coffee/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wlt.coffee/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wlt.coffee/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://wlt.coffee/examples/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
-  
 </urlset>

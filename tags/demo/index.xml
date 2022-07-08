@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 24 Dec 2018 12:29:41 +0800</lastBuildDate>
-    
-	<atom:link href="https://wlt.coffee/tags/demo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 24 Dec 2018 12:29:41 +0800</lastBuildDate><atom:link href="https://wlt.coffee/tags/demo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The &#34;figure&#34; Shortcode</title>
       <link>https://wlt.coffee/examples/the-figure-shortcode/</link>
@@ -21,7 +17,7 @@
       <description>Hugo has figure shortcode built in, so you can easily add figcaptions or hyperlink rel attributes to images. Documentations can be found here:
 https://gohugo.io/content-management/shortcodes/#figure
 This theme has 3 CSS classes made for figure elements:
- big: images will break the width limit of main content area. left: images will float to the left. right: images will float to the right.  If a figure has no class set, the image will behave just like a normal markdown image: !</description>
+big: images will break the width limit of main content area. left: images will float to the left. right: images will float to the right. If a figure has no class set, the image will behave just like a normal markdown image: !</description>
     </item>
     
     <item>
@@ -32,7 +28,7 @@ This theme has 3 CSS classes made for figure elements:
       <guid>https://wlt.coffee/examples/post-with-featured-image/</guid>
       <description>Just define the image URL in the content’s front matter, the featured image will be displayed as the background.
 For example:
----images:- https://picsum.photos/1024/768/?random---This is an array, you can set multiple urls, only the first url will be used. These images is also used in Twitter Cards and the Open Graph metadata.</description>
+--- images: - https://picsum.photos/1024/768/?random --- This is an array, you can set multiple urls, only the first url will be used. These images is also used in Twitter Cards and the Open Graph metadata.</description>
     </item>
     
     <item>
@@ -42,7 +38,7 @@ For example:
       
       <guid>https://wlt.coffee/examples/typography/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- An apple is a sweet, edible fruit produced by an apple tree (Malus pumila).</description>
+An apple is a sweet, edible fruit produced by an apple tree (Malus pumila).</description>
     </item>
     
   </channel>
