@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 19 Oct 2020 20:54:57 -0500</lastBuildDate><atom:link href="https://wlt.coffee/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 20:43:41 -0400</lastBuildDate><atom:link href="https://wlt.coffee/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A composer, a professor, and a computer walk into a bar...</title>
+      <link>https://wlt.coffee/posts/2022-07-07-ai-composer/</link>
+      <pubDate>Thu, 07 Jul 2022 20:43:41 -0400</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2022-07-07-ai-composer/</guid>
+      <description>&lt;p&gt;&amp;hellip; and have a contest about who writes the best music! Who wins? Read on to
+find out.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: you! Especially if you&amp;rsquo;re interested in AI and music&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Hi, my name is William</title>
       <link>https://wlt.coffee/about/</link>
@@ -112,18 +123,6 @@ desks are veritable miracles of delicate wiring and clever engineering. For the
 next few minutes, I&amp;rsquo;ll take you on a whirlwind tour: from simple 1&amp;rsquo;s and 0&amp;rsquo;s to
 the whole, hulking beast that we call a computer.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Audience: anyone and everyone&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Getting started with Jekyll</title>
-      <link>https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/</link>
-      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://wlt.coffee/posts/2019-01-04-getting-started-with-jekyll/</guid>
-      <description>&lt;p&gt;A simple guide to setting up a Jekyll installation. Existing documentation left
-some pieces out, so I&amp;rsquo;ve put together this document to guide anyone else (and
-my future self) through the process.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Audience: tech-oriented folks comfortable on the command line&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

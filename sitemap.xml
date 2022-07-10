@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://wlt.coffee/posts/2022-07-07-ai-composer/</loc>
+    <lastmod>2022-07-07T20:43:41-04:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/education/</loc>
+    <lastmod>2022-07-07T20:43:41-04:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/posts/</loc>
+    <lastmod>2022-07-07T20:43:41-04:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/project/</loc>
+    <lastmod>2022-07-07T20:43:41-04:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/tags/</loc>
+    <lastmod>2022-07-07T20:43:41-04:00</lastmod>
+  </url><url>
+    <loc>https://wlt.coffee/</loc>
+    <lastmod>2022-07-07T20:43:41-04:00</lastmod>
+  </url><url>
     <loc>https://wlt.coffee/about/</loc>
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -10,21 +28,6 @@
   </url><url>
     <loc>https://wlt.coffee/tags/music/</loc>
     <lastmod>2020-10-19T20:54:57-05:00</lastmod>
-  </url><url>
-    <loc>https://wlt.coffee/posts/</loc>
-    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
-  </url><url>
-    <loc>https://wlt.coffee/tags/project/</loc>
-    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
-  </url><url>
-    <loc>https://wlt.coffee/tags/</loc>
-    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
-  </url><url>
-    <loc>https://wlt.coffee/</loc>
-    <lastmod>2020-10-19T20:54:57-05:00</lastmod>
-  </url><url>
-    <loc>https://wlt.coffee/tags/education/</loc>
-    <lastmod>2020-05-23T16:25:14-05:00</lastmod>
   </url><url>
     <loc>https://wlt.coffee/posts/2020-05-12-programming-for-noobs-charming-the-python/</loc>
     <lastmod>2020-05-23T16:25:14-05:00</lastmod>

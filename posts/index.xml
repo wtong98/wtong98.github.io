@@ -6,8 +6,371 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 19 Oct 2020 20:54:57 -0500</lastBuildDate>
+		<lastBuildDate>Thu, 07 Jul 2022 20:43:41 -0400</lastBuildDate>
 		<atom:link href="https://wlt.coffee/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>A composer, a professor, and a computer walk into a bar...</title>
+			<link>https://wlt.coffee/posts/2022-07-07-ai-composer/</link>
+			<pubDate>Thu, 07 Jul 2022 20:43:41 -0400</pubDate>
+			
+			<guid>https://wlt.coffee/posts/2022-07-07-ai-composer/</guid>
+			<description>&lt;p&gt;&amp;hellip; and have a contest about who writes the best music! Who wins? Read on to
+find out.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: you! Especially if you&amp;rsquo;re interested in AI and music&lt;/em&gt;&lt;/p&gt;</description>
+			<content type="html"><![CDATA[<p>&hellip; and have a contest about who writes the best music! Who wins? Read on to
+find out.</p>
+<p><em>Audience: you! Especially if you&rsquo;re interested in AI and music</em></p>
+<hr>
+<p>As AI becomes progressively more integrated in our everyday lives, it is not
+altogether improbable that these technologies might one day dominate in creative
+domains. Here, we&rsquo;ll focus specifically on music. Can an algorithm ever attain
+the level of a human composer? Or will there always remain something indefinable
+and transcendent about a human creation, irreproducible by a machine imitator?</p>
+<figure class="big"><img src="/images/ai-composer/ai_composer.jpg"
+         alt="Robot at the piano"/><figcaption>
+            <p><a href="https://unsplash.com/photos/U3sOwViXhkY">Source</a></p>
+        </figcaption>
+</figure>
+
+<p>This post started life as a project for a data science ethics class. Together
+with my excellent collaborators <a href="https://astronomy.fas.harvard.edu/people/zack-murray">Zach
+Murray</a> and <a href="https://www.linkedin.com/in/kimon-aristotelis-v-5695b7174/">Kimon
+Vogt</a>, we explored a
+tentative, prescriptive criteria for evaluating personhood in AI systems. Our
+original discussion, from which parts of this piece has been cribbed, can be
+found
+<a href="https://wtong-harvard.notion.site/A-criteria-for-personhood-in-artificially-intelligent-systems-1c3d3ce61d5041e3af5f6bb590050b3d">here</a>.</p>
+<h2 id="a-concert-like-no-other">A concert like no other</h2>
+<p><em>October, 1997.</em> A crisp, autumn afternoon at the University of Oregon. Excited
+chatter bubbles from the growing crowd of students, professors, and music
+enthusiasts gathering at the concert hall, anticipating an hour of
+cerebral music and Baroque discussion. A sudden hush descends as esteemed
+pianist Winifred Kerner strides across the stage to the waiting Steinway.</p>
+<p>She performed three pieces.</p>
+<p>Only one was a true Bach.</p>
+<hr>
+<p>In a musical showdown not dissimilar to the famous match between chess grandmaster <a href="https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov">Gary
+Kasperov and IBM&rsquo;s Deep Blue</a>, or the more recent headliner pitting <a href="https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol">Go
+master Lee Sedol against DeepMind’s
+AlphaGo</a>, the Bach
+concert was organized as a competition between a human composer and a machine
+opponent. The contestants were as follows:</p>
+<p><strong>For the humans</strong>: Professor Steve Larson of the UO Music Department. Bach expert
+and music composer.</p>
+<figure class="right"><img src="/images/ai-composer/david_cope.jpg"
+         alt="David Cope"/><figcaption>
+            <p>David Cope, creator of EMI. <a href="https://archive.nytimes.com/www.nytimes.com/library/cyber/week/111197music.html">Source</a></p>
+        </figcaption>
+</figure>
+
+<p><strong>For the machines</strong>: EMI (&ldquo;Experiments in Musical Intelligence,&rdquo; pronounced like
+&ldquo;Emmy&rdquo;). The brainchild of
+David Cope, a professor of algorithmic and computer music at UC Santa Cruz. EMI
+learns to imitate the style of various composers by studying their compositions.</p>
+<p>Upon hearing about EMI, Larson took offense to the notion that a mere algorithm
+could approach the nuance and sublimity of a human composer. That EMI would
+<em>dare</em> to imitate of composer of Bach&rsquo;s stature was nothing short of blasphemy.
+So Larson proposed a challenge. Three pieces would be performed before a public
+audience:</p>
+<ol>
+<li>A genuine Bach</li>
+<li>A composition by EMI, in the &ldquo;style of Bach&rdquo;</li>
+<li>A composition by Professor Larson himself</li>
+</ol>
+<p>Then the audience, composed of music scholars, professionals, and students from
+the University of Oregon area, must vote on the authorship of each piece. The
+results were striking.</p>
+<figure><a href="https://www.youtube.com/watch?v=Xm-GCAPidaY" target="_blank"><img src="https://img.youtube.com/vi/Xm-GCAPidaY/0.jpg"
+         alt="David Cope"/></a><figcaption>
+            <p>Listen to EMI for yourself! Click to hear</p>
+        </figcaption>
+</figure>
+
+<p>Much to Larson&rsquo;s chagrin, the audience decided that EMI&rsquo;s piece <em>was the genuine
+Bach.</em> Somewhat ironically, Larson&rsquo;s own composition was mis-attributed to
+EMI. (As for the real Bach, it was mis-attributed to Larson.) In a remarkable
+triumph for computer-generated music, EMI duped an audience of experienced
+listeners into believing its music was written by a compositional master.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>When later interviewed about his creation, David Cope reflected that &ldquo;when
+[listeners] assume the music is human, they are obviously moved and speak in the
+same terms as if it had been by Chopin [a famous composer]. But when I tell them
+that there is nothing behind the music but cold hard machinery doing addition
+and subtraction, then they won’t admit they were moved.&rdquo;<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+There seems to be something profoundly uncomfortable with attributing human
+qualities &ndash; artistry, creativity, emotion &ndash; to a machine-generated artifact.
+Why?</p>
+<figure class="left"><img src="/images/ai-composer/sims.png"
+         alt="The Sims"/><figcaption>
+            <p>The Sims. <a href="https://www.origin.com/usa/en-us/store/the-sims/the-sims-4">Source</a></p>
+        </figcaption>
+</figure>
+
+<p>Perhaps listeners are uneasy with attributing emotional valence to a
+machine? And yet, if you&rsquo;re old enough (but not too old) to have owned a
+<a href="https://en.wikipedia.org/wiki/Tamagotchi">Tamagotchi</a>, you might recall how
+easy and natural it was to develop a real emotional bond with an entirely
+simulated pet. If you&rsquo;ve ever played <a href="https://en.wikipedia.org/wiki/The_Sims">The
+Sims</a> (or video games broadly), you
+might have experienced deep attachment and real emotional investment in the game
+characters. On an rational level, players may understand that the characters are
+nothing more than software abstractions. But it&rsquo;s still easy to believe that a
+Sim experiences love, pain, hunger, excitement &ndash; the spectrum of human emotion &ndash;
+as evidenced by their interactions with the player.</p>
+<p>Many recent examples in film (<a href="https://en.wikipedia.org/wiki/Her_(film)">Her</a>,
+<a href="https://en.wikipedia.org/wiki/Ex_Machina_(film)">Ex Machina</a>, <a href="https://en.wikipedia.org/wiki/Blade_Runner">Blade
+Runner</a>) and culture
+(<a href="https://www.nytimes.com/2022/04/24/business/akihiko-kondo-fictional-character-relationships.html">fictosexuality</a>,
+<a href="https://www.wired.com/story/lamda-sentient-ai-bias-google-blake-lemoine/">LaMDA</a>)
+explore the deep emotional investment individuals can place in machine
+creations. So if people are generally okay with extending emotional currency to
+digital artifacts, what is it about EMI exactly that makes it hard for
+people to accept its music?</p>
+<h2 id="human-or-machine">Human or machine?</h2>
+<p>Let&rsquo;s try our own version of Larson&rsquo;s contest.</p>
+<p>Below are links to two different pieces. One was written by a human. The other
+was written by a machine. Listen to both, multiple times if you&rsquo;d like, then
+decide which is which.</p>
+<ul>
+<li><a href="/audio/ai-composer/piece_a.mp3">Piece A</a></li>
+<li><a href="/audio/ai-composer/piece_b.mp3">Piece B</a></li>
+</ul>
+<p>Which piece did you like better? Which sounded more &ldquo;human&rdquo;? Did you feel
+any emotions for either, or both? For the piece that sounds like a machine&rsquo;s,
+what &ldquo;gives it away&rdquo;?</p>
+<p>When you&rsquo;re ready, scroll below the ACII art to find out the answer!</p>
+<pre tabindex="0"><code>                                    _____
+                                   | |   \
+                                   | |    \
+                                   | |     \___
+                                   | |         \
+                                   | |          \
+                            0     _|_|___________|
+                           /\/  /____|____________) 
+                        . /  \_|__________________| 
+                        |/__    | )(            )(
+                        | |\\  :| )(   ejm 97   )(
+
+
+
+
+
+                                    ,-.
+                                   ((o))
+                              _  ,-,,-&#39;
+                             ( `/=//_
+                            _  /=/=&#39;_)
+                           ( `/=//_
+                             /=/=&#39;_)
+                            /_/ |
+                           / /`.&#39;   ===========.
+                          / //       ##--------^`
+                         / //
+                        / //
+                       / //
+                      / / |
+                   _ / / -._
+                 .&#39; / /     `.
+                /  / /       `-.
+               /  /_/        &#39; `
+              &#39;             :  &#39;
+             &#39;.       ,-  ,-&#39;.:
+             / /     /.  /  ,-&#39;
+            /  __   7   / /
+         .,&#39;  &#39;  ` &#39;   `._
+         /    |/\|      ,&#39;.
+        / _   _        / ,&#39;
+        :&#39; ` | /     ,&#39; /
+        `.PG |/ _ , &#39; ,&#39;
+           ---&#34;&#34;__ ,-&#39;
+                                                    
+
+
+
+                                                       =_
+                                                       ||\
+                     C                   C             |||\
+       C      c     (\/     C           (\/            ||||\O
+      (\/    (\/    /|     (\/     c    /|             ||||\/\
+      /|     /|    / |     /|     (\/  / |             ||||// \
+     / |    / |   /__|    / |     /|  /__|             |||/  __\|
+    /__|   /__|     &#34;    /__|    / |    &#34;              |__: //| |
+      &#34;      &#34;             &#34;    /__|              -
+                        c       ! &#34;             (   )
+           c           (\/       \                -\
+          (\/     c    /|     ___ \O              - \O
+          /|     (\/  / |    /   \/|)           ( &amp; )/)
+         / |     /|  /__|   |   ./||\      _____  -\/|\
+        /__|    / |    &#34;     \___/ | \    /\ | (_)   | \ 
+          &#34;    /__|           /|\  |__\   -- |       |__\
+                 &#34;                  &#34;       /|\       &#34;
+          O     ______________           
+         /\/  /________________)     O @                          
+        /  \_|___O /___________|    _|/_   \                 O @   
+      |/__      /_oo-#=        |   /( )_\   \-O               \|_  
+      | |\\  :|(/| \/            ;/_)_(_     \_\    O        / |_\
+                ||__      |O      _(   )      \|   /|       / ( )
+       O /      | |\\ =#-@@|     /  /  /     __\| / |     ;/__)_(
+     /_oo-#=            \/ |                //| | __||       (   )
+      | \/               __||    ___O            //| |       /_|_|
+     ||__      ejm97    //| |     \ \/             )&gt;==O     &#39;  &#39;
+     | |\\                          |      O          \/)         
+                                  __||    /|            |   .-O    
+               -#-----           //| |   / |          __|| (=) )   
+                 \                       __||        //| |  \(/|  
+               _ _\O==                  //| |               ___||
+           =#-(_X_)/)                                      // | |
+                \/ |\ 
+                   | \
+                   |__\
+                    &#34;
+
+
+
+
+All artwork are human generated. asciiart.eu
+</code></pre><p>I have a confession to make &ndash; as it happens, <strong>both</strong> pieces are written by
+a machine! <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>But before you found it, did you genuinely believe one of the pieces was
+authored by a human? Does knowing the truth alter your listening experience?</p>
+<h2 id="real-music">&ldquo;Real&rdquo; music?</h2>
+<p>The modern-day successor to EMI is AIVA, which composed both pieces you listened
+to. The algorithm is designed by Aiva Technologies, a European startup that
+develops machine learning solutions for composing themed, cinematic music. As
+you may have experienced, AIVA’s music is often characterized as being
+emotional, coherent, and difficult to distinguish from a score written by a
+human composer. In fact, AIVA has been officially recognized as a composer by a
+European artists&rsquo; guild, <a href="https://aibusiness.com/document.asp?doc_id=760181#:~:text=Founded%20in%202016%20by%20Pierre,and%20Luxembourg%20authors'%20right%20society%2C">the first algorithm to earn this
+distinction</a>.</p>
+<p>Yet however convincing the music sounds, it remains unalterable that AIVA is
+an algorithm. Under the hood, its compositions are produced by processes no
+more inspired or creative than the shifting of bits and adding of numbers. In
+contrast, a composer (or any artist, for that matter) seems closer to the divine.
+From the whispers of Muses, the mysterious Inner Spark, the deep sensitivity
+to all that is Beautiful and Sublime, the true Composer draws on any number of
+suitably mystical inspirations to weave subtle melodies uniquely capable
+of touching the soul. Surely, they are a world apart from anything as mundane as
+a simple computer?</p>
+<p>Perhaps the root of the discomfort in regarding EMI and AIVA as true musicians
+rests in the elevated status of music, and art broadly. As creative endeavors,
+we hold artistic works as the prime example of <em>human</em> sensitivity and
+achievement. To grant equal status to a machine would discount the experience
+for both artists and audiences alike. If a machine can do it, what&rsquo;s so special
+about the human artist? In this sense, the debate over EMI and AIVA stems not
+from a critique over the quality of their output, but from the danger they
+represent to the art community.</p>
+<p>It doesn&rsquo;t have to be this way. There is growing momentum among composers (and
+tech companies) to incorporate AI and machine learning in the creative pipeline.
+Google&rsquo;s open source platform <a href="https://magenta.tensorflow.org/">Magenta</a> offers
+a suite of tools aimed at complementing the creative process, rather than
+replacing it.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> Stuck on a melody? Use
+<a href="https://magenta.tensorflow.org/music-vae">MusicVAE</a> to come up with additional
+ideas. Struggling to nail down that exact synth sound you want?
+<a href="https://magenta.tensorflow.org/nsynth">NSynth</a> is here to help. I&rsquo;ve
+experimented in this space myself, building an <a href="/posts/2020-10-19-bayz-live-coding/">AI-assisted tool for live coding
+music performances</a>. Developing creative
+aids like these is virtually unthinkable without modern AI techniques. With
+these tools in hand, AI-as-composer-aid is well positioned to leverage the
+strengths of AI-driven composition, without wholly sacrificing the human artist.</p>
+<figure><a href="https://www.youtube.com/watch?v=iTXU9Z0NYoU" target="_blank"><img src="https://img.youtube.com/vi/iTXU9Z0NYoU/0.jpg"
+         alt="NSynth and Magenta"/></a><figcaption>
+            <p>Short clip about NSynth, from Magenta. Click to view</p>
+        </figcaption>
+</figure>
+
+<h2 id="composers-of-tomorrow">Composers of tomorrow</h2>
+<p>What&rsquo;s after AIVA? As these technologies improve, it is likely the
+AI composers of the future will become ever more compelling in their work.
+Will we ever reach a point where an AI composer gains widespread acceptance?
+Could an AI-composed piece make it on a Top 40 chart? Where would that leave
+human artists?</p>
+<p>Perhaps in the future, music might be partitioned into two new categories:
+&ldquo;standard&rdquo; and &ldquo;artisanal.&rdquo; Standard music is written by AI. Press a button
+on a computer and presto! An instant hit. No whiny artists to pay, no lengthy
+wait for new music, a studio can produce quality music quickly and cheaply.
+And heck, if it sounds good, why not?</p>
+<p>For listeners who remain resolutely bothered by AI composers, there is the
+second category. As the name suggests, &ldquo;artisanal&rdquo; music is still composed by
+a living, breathing artist. It&rsquo;s more expensive to produce, and the quality
+might not match the carefully-tuned perfection achievable by a machine, but
+it nonetheless commands a premium for that indefinable &ldquo;human touch.&rdquo;</p>
+<p>In the not-that-far future, we may arrive at a coexistance between machine and
+human artistry, but other questions remain. Highlighting a few:</p>
+<ul>
+<li><strong>Credit</strong>: algorithms like AIVA must have a <em>training dataset</em> in order to
+learn how to compose music. Typically, the pieces in the training set were
+written by humans. If AIVA composes a new piece, does the credit go to the
+algorithm, or to the artists in the training set? Before you answer, consider
+that AIVA could very well be copying entire measures directly from its
+training set, with most listeners none the wiser. Before you answer again,
+consider that human musicians also learn from a training set, and occasionally
+copy entire measures directly from their training set, with most listeners none the wiser.</li>
+<li><strong>Copyright</strong>: does an algorithm own the pieces it composes? Or do they belong
+to the company that made them? In <a href="https://www.lavan.com.au/advice/intellectual_property_technology/copyright_in_source_code_and_digital_products">one striking court case</a>, the Federal Court of Autralia
+ruled that a particular piece of source code could not be copyrighted by the
+company because it was generated by a software agent, not a human author.
+Does a company have any more right over music that it didn&rsquo;t compose?
+Can an algorithm claim meaningful ownership over its creations?</li>
+<li><strong>Personhood</strong>: as our algorithms become progressively more sophisticated,
+will they ever gain a measure of autonomy, or even sentience? This is a gnarly
+can of worms to open. If you&rsquo;re interested, please do refer to the original
+<a href="https://wtong-harvard.notion.site/A-criteria-for-personhood-in-artificially-intelligent-systems-1c3d3ce61d5041e3af5f6bb590050b3d">essay</a>
+that inspired this post, where this issue is explored somewhat more deeply.</li>
+</ul>
+<figure><img src="/images/ai-composer/xkcd.png"
+         alt="Computers vs. Humans"/><figcaption>
+            <p><a href="https://xkcd.com/1875/">Source</a></p>
+        </figcaption>
+</figure>
+
+<h2 id="recommended-readings">Recommended readings</h2>
+<p>Looking for more? Check out the following resources if you want to&hellip;</p>
+<ul>
+<li>
+<p><strong>start building something!</strong> The <a href="https://magenta.tensorflow.org/get-started/">Magenta docs</a>
+and <a href="https://arxiv.org/abs/2108.12290">some</a> <a href="https://www.tandfonline.com/doi/full/10.1080/09298215.2018.1515233">of</a>
+<a href="https://arxiv.org/abs/1803.05428">the</a> <a href="https://ieeexplore.ieee.org/abstract/document/8581038">literature</a> in the field
+are a great place to start.
+Also, <a href="https://web.mit.edu/music21/">music21</a> is an excellent Python library for
+experimenting in algorithmic music composition.</p>
+</li>
+<li>
+<p><strong>gripe about the intrusion of AI in music</strong> You might find a kindred soul in
+<a href="https://web.mit.edu/allanmc/www/benjamin.pdf">Walter Benjamin</a>, who grappled
+with related issues around the relationship between art and technology.</p>
+</li>
+<li>
+<p><strong>learn more about broader issues around AI, creativity, and personhood</strong> <a href="https://oxford.universitypressscholarship.com/view/10.1093/oso/9780198844037.001.0001/oso-9780198844037-chapter-7">This review</a>
+is a great place to start. You might also be interested in
+<a href="https://en.wikipedia.org/wiki/Edmond_de_Belamy">Edmond de Belamy</a>, a striking
+application of AI to portraiture.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>In a related vein, a few years ago, Google released an AI capable of composing Bach-like
+music as a <a href="https://www.google.com/doodles/celebrating-johann-sebastian-bach">Doodle</a>.
+The underlying algorithms are entirely different, but the spirit is much the same.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://archive.nytimes.com/www.nytimes.com/library/cyber/week/111197music.html">https://archive.nytimes.com/www.nytimes.com/library/cyber/week/111197music.html</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>&ldquo;Piece A&rdquo; is <a href="https://www.youtube.com/watch?v=57v6z1YikNA">&ldquo;A Bucket of Spring&rdquo;</a>.
+&ldquo;Piece B&rdquo; is <a href="https://www.youtube.com/watch?v=UAlJIp3J7io">&ldquo;Evening Star&rdquo;</a>.
+Both pieces are composed by <a href="https://www.aiva.ai/">AIVA</a>. If you liked them, more are readily accessible on <a href="https://www.youtube.com/channel/UCykVChITx5kqBoGkzfz8iZg">YouTube</a>
+and <a href="https://open.spotify.com/artist/785Ystnoa1blYHi5DmBcqp">Spotify</a>.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>I am in no way endorsed by Google or the Magenta team.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>]]></content>
+		</item>
 		
 		<item>
 			<title>bayz: live coding &#43; bayesian program learning</title>

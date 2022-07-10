@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 19 Oct 2020 20:54:57 -0500</lastBuildDate><atom:link href="https://wlt.coffee/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 20:43:41 -0400</lastBuildDate><atom:link href="https://wlt.coffee/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A composer, a professor, and a computer walk into a bar...</title>
+      <link>https://wlt.coffee/posts/2022-07-07-ai-composer/</link>
+      <pubDate>Thu, 07 Jul 2022 20:43:41 -0400</pubDate>
+      
+      <guid>https://wlt.coffee/posts/2022-07-07-ai-composer/</guid>
+      <description>&lt;p&gt;&amp;hellip; and have a contest about who writes the best music! Who wins? Read on to
+find out.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Audience: you! Especially if you&amp;rsquo;re interested in AI and music&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>bayz: live coding &#43; bayesian program learning</title>
       <link>https://wlt.coffee/posts/2020-10-19-bayz-live-coding/</link>
